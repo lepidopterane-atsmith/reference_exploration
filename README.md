@@ -1,9 +1,9 @@
-Reference explanation
+Reference exploration in Allen & Greenough's Cicero Commentary
 ==================
 
 ## what's this?
 
-It's a commentary sandbox for working in CS 204. This is part of my term project for that class, you can read more about that project here. for code I've been working on, see scripts/comm_encement.ipynb and scripts/commentary_wizard.py
+It's a commentary sandbox for working in CS 204. This is part of my term project for that class, you can read more about that project [here](https://docs.google.com/document/d/1AjlfhHeE6wSgd2_42MBsY2i2rXNvNrtmkh6CzjWVYH4/edit?usp=sharing). for code I've been working on, see scripts/comm_encement.ipynb and scripts/commentary_wizard.py
 
 |URN|Author|Short Title|
 |---|---|---|
