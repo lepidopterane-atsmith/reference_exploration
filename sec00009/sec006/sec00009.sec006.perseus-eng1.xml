@@ -1,0 +1,1563 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title type="work">Select Orations of Cicero, Allen and Greenough's Edition.</title>
+				<author>J. B. Greenough, G. L. Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" cert="medium">2000-08-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Select Orations of <bibl>
+						<author n="Cic.">Cicero</author>
+					</bibl> Allen and Greenough's Edition.
+					Revised by J. B. Greenough and G. L. Kittredge, with a special
+					vocabulary by J. B. Greenough.
+				</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+					<p>This pointer extracts speech and chapter and section.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+					<p>This pointer extracts speech and chapter.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer extracts speech.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+			</change>
+			<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+			</change>
+			<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+			</change>
+			<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+			</change>
+			<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+			</change>
+			<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Arch." xml:lang="eng">
+		<body>
+			<div type="commentary" n="Arch." subtype="speech">
+				<head>Oration For Archias (<title xml:lang="lat">Pro A. Licinio Archia Poeta</title>.)<date>B.C. 62</date>
+				</head>
+				<div type="textpart" subtype="chapter" n="Argument">
+					<head>Argument</head>
+					<list type="simple">
+						<item>
+							<foreign xml:lang="lat">Exordium</foreign>.
+
+<list type="simple">
+								<item>CHAP. <bibl n="Cic. Arch. 1">1</bibl> Cicero's obligations to Archias. </item>
+								<item>
+									<bibl n="Cic. Arch. 2">2</bibl>. He justifies the unusual tone of his argument. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">Narratio</foreign>.
+
+<list type="simple">
+								<item>
+									<bibl n="Cic. Arch. 3">3</bibl>. Early career of Archias: he is enrolled as a citizen of Heraclia. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">Confirmatio</foreign>.
+
+<list type="simple">
+								<item>
+									<bibl n="Cic. Arch. 4">4</bibl>. His technical claim: his registry, acts of citizenship, domicile. </item>
+								<item>
+									<bibl n="Cic. Arch. 5">5</bibl>. Argument from the public records. </item>
+								<item>
+									<bibl n="Cic. Arch. 6">6</bibl>. The case is now closed.  Further argument is unnecessary. Literature an indispensable relaxation, and also a source of moral strength. </item>
+								<item>
+									<bibl n="Cic. Arch. 7">7</bibl>. All famous men have been devoted to letters. </item>
+								<item>
+									<bibl n="Cic. Arch. 8">8</bibl>, <bibl n="Cic. Arch. 9">9</bibl>. Great artists are of themselves worthy of admiration. The poet is especially sacred: he is the herald of fame. </item>
+								<item>
+									<bibl n="Cic. Arch. 10">10</bibl>. Greek is a surer passport to fame than Latin.  Men inferior to Archias have been honored with citizenship. </item>
+								<item>
+									<bibl n="Cic. Arch. 11">11</bibl>, <bibl n="Cic. Arch. 12">12</bibl>. Fame is the strongest motive to acts of public virtue. Literature is the most enduring of monuments. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">
+								<foreign xml:lang="lat">Peroratio</foreign>
+							</foreign>.
+
+<list type="simple">
+								<item>
+									<bibl n="Cic. Arch. 12">12</bibl> (sect. <bibl n="Cic. Arch. 31">31</bibl>). Appeal to the court to protect Archias the poet in his rights. </item>
+							</list>
+						</item>
+					</list>
+				</div>
+				<div type="textpart" n="1-3" subtype="chapter">
+					<head>I. Exordium</head>
+					<p>The case of Archias, though not a public one, yet had its origin in the
+						politics of the time. The aristocratic faction, suspecting that much of the
+						strength of their opponents was derived from the fraudulent votes of those
+						who were not citizens, procured in B.C. 65 the passage of the <foreign
+							xml:lang="lat">Lex Papia</foreign>, by which "all the strangers who
+						possessed neither Roman nor Latin burgess-rights were to be ejected from the
+						capital." Archias, the poet, a native of Antioch, but for many years a Roman
+						citizen, a friend and client of Lucius Lucullus, was accused in <date>B.C.
+						62.</date> by a certain Gratius, under this law, on the ground that he was
+						not a citizen. Cicero, a personal friend of Archias, undertook the defence,
+						and the case was tried before the brother of the orator, Quintus Cicero,
+						then praetor </p>
+					<p>It was a very small matter to disprove the charge and establish Archias'
+						claims to citizenship. The greater part of this speech, therefore, is made
+						up of a eulogy upon the poet and upon poetry and literature in general. It
+						is, for this reason, one of the most agreeable of Cicero's orations, and
+						perhaps the greatest favorite of them all.
+</p>
+					<div type="textpart" n="1-3" subtype="section">
+						<p>Cicero's obligations to Archias make it a duty to undertake his defence. The unusual tone of the argument justified.
+</p>
+					</div>
+					<div type="textpart" n="1" subtype="section">
+						<milestone n="154.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">judices</lem>
+							</app>, i.e. the members of a special court (<foreign xml:lang="lat">quaestio</foreign>) established by the <foreign xml:lang="lat">Lex Papia</foreign> (see Introd. to the oration, p.154) to inquire into cases arising under that law.
+
+<milestone n="154.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">versatum</lem>
+							</app>: cf. the date of the defence of Roscius and the opening passage of that oration.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujusce rei</lem>
+							</app>, i.e. <foreign xml:lang="lat">dicendi</foreign>.
+
+<milestone n="155.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ratio</lem>
+							</app>, <gloss>knowledge</gloss>, i.e. <gloss>theoretic acquaintance</gloss>, contrasted with <app>
+								<lem xml:lang="lat">exercitatio</lem>
+							</app>, <gloss>practice</gloss>.
+
+<milestone n="155.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">A. Licinius</lem>
+							</app>: following the custom of naturalized foreigners, as well as freedmen, Archias had taken the gentile name of his noble friends and patrons, the Luculli.  Cicero's motive in always speaking of him by his Roman name is obvious.
+
+<milestone n="155.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">inde usque</lem>
+							</app>, <gloss>from as far back as that I say</gloss>. 
+
+<milestone n="155.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">principem</lem>
+							</app>, <gloss>master</gloss>.
+
+<milestone n="155.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">rationem</lem>
+							</app>, <gloss>course</gloss>.  For the connection of the meanings of this word, see Vocab.
+
+<milestone n="155.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">a quo</lem>
+							</app> relates to <app>
+								<lem xml:lang="lat">huic</lem>
+							</app>, which is dat. after <app>
+								<lem xml:lang="lat">ferre</lem>
+							</app>; <app>
+								<lem xml:lang="lat">quo</lem>
+							</app> relates to <app>
+								<lem xml:lang="lat">id</lem>
+							</app>: <gloss>surely, to the man himself from whom I have received that whereby</gloss>, etc.
+
+<milestone n="155.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ceteris</lem>
+							</app>, <gloss>all the rest</gloss> [of my fellow-citizens], i.e. other than Archias.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">alios</lem>
+							</app>, <gloss>some of them</gloss>.
+
+<milestone n="155.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">opem</lem>
+							</app> corresponds to <app>
+								<lem xml:lang="lat">opitulari</lem>
+							</app>; <app>
+								<lem xml:lang="lat">salutem</lem>
+							</app>, to <app>
+								<lem xml:lang="lat">servare</lem>
+							</app>. </p>
+					</div>
+					<div type="textpart" n="2" subtype="section">
+						<milestone n="155.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">neque</lem>
+							</app>, <gloss>and not</gloss>.
+
+<milestone n="155.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dicendi ratio aut disciplina</lem>
+							</app>, <gloss>art or science of oratory</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne nos quidem</lem>
+							</app>, etc., i.e. not even I, though by profession an orator, have devoted myself to oratory alone. </p>
+					</div>
+					<div type="textpart" n="3" subtype="section">
+						<milestone n="155.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quaestione legitima</lem>
+							</app>: see note on <foreign xml:lang="lat">judices</foreign>, p.154, 1.
+
+<milestone n="155.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">severissimos</lem>
+							</app>, i.e. before men of the old Roman stamp, who might not be favorably impressed by such praise of literature.
+
+<milestone n="155.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">forensi sermone</lem>
+							</app> is not used here in its special meaning, "the language of the courts," but in its wider sense, <gloss>the language of the Forum</gloss>, i.e. the ordinary tone of practical affairs (the Forum being the <foreign xml:lang="lat">centre</foreign> of Roman business and politics).
+
+<milestone n="155.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut ... patiamini</lem>
+							</app>, a purp. clause in appos. with <app>
+								<lem xml:lang="lat">veniam</lem>
+							</app> (1.25).
+
+<milestone n="155.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc concursu</lem>
+							</app>, locat. abl. expressing the circumstances; so also <app>
+								<lem xml:lang="lat">hac vestra humanitate</lem>
+							</app>, <gloss>with men of your cultivation</gloss>.
+
+<milestone n="155.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc praetore</lem>
+							</app>: Q. Cicero was himself a poet and man of critical taste.
+
+<milestone n="155.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">paulo. . . liberius</lem>
+							</app>, <gloss>with somewhat unusual freedom: § </gloss>29 1, a (93, a); B. 240,1; G. 297; H. 498 (444,1); H-B. 241,2.
+
+<milestone n="155.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">otium ac studium</lem>
+							</app>, <gloss>a quiet life of study</gloss> (almost hendiadys); so <app>
+								<lem xml:lang="lat">judiciis periculisque</lem>
+							</app> below. </p>
+					</div>
+				</div>
+				<div type="textpart" n="4-6" subtype="chapter">
+					<head>II. <foreign xml:lang="lat">Narratio</foreign>
+					</head>
+					<div type="textpart" n="4-6" subtype="section">
+						<p>Earlier career of Archias. His celebrity in Asia and elsewhere. His removal to Rome and his distinguished patrons there. He becomes a citizen of Heraclia.
+</p>
+					</div>
+					<div type="textpart" n="4" subtype="section">
+						<milestone n="156.3" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum</lem>
+							</app>: causal, but best translated <gloss>when</gloss>.
+
+<milestone n="156.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">esset</lem>
+							</app>: for tense, see § <bibl n="AG 589">589</bibl>, b, I (337, b, I); B. 268, 4; G. 597, R.4; H. 647(527, iii); H.-B. 581, b, N.
+
+<milestone n="156.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">asciscendum fuisse</lem>
+							</app>: in the direct, <foreign xml:lang="lat">asciscendus erat</foreign>; § <bibl n="AG 517">517</bibl>, d (308,d); B. 304,3, b; G. 597,R.3,a; H. 582(511,2); H-B. 581,a; cf. note on Pompey's Military Command, sect. <bibl n="Cic. Man. 50">50</bibl> (<ref n="pl88.32">p. 88, l. 32</ref>), <foreign xml:lang="lat">erat deligendus</foreign>.
+
+<milestone n="156.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">urbe</lem>
+							</app>: § <bibl n="AG 282">282</bibl>,d(184,c); G. 411, R.3; H. 393,7(363,4 2); H-B. 452, a.     .
+
+<milestone n="156.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">contigit</lem>
+							</app>, sc. <foreign xml:lang="lat">ei</foreign>, i.e. Archias.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">post</lem>
+							</app>, <gloss>afterwards</gloss>. </p>
+					</div>
+					<div type="textpart" n="5" subtype="section">
+						<milestone n="156.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">tunc</lem>
+							</app>, <gloss>at that time</gloss>.  This was the long period of comparative quiet between the Gracchan disturbances (<date from="-0133" to="-0121">
+								<date when="-0133">B.C. 133</date>-121</date>) and the tribunate of Drusus (<date when="-0091">B.C. 91</date>), which was followed by the Social War and the civil wars of Marius and Sulla.
+
+<milestone n="156.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Latio</lem>
+							</app>: not the geographical Latium merely, but all towns which at that time possessed Latin citizenship; that is, the Latin colonies, such as Venusia, the birthplace of the poet Horace.
+
+<milestone n="156.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de ingeniis</lem>
+							</app>, i.e. could form some opinion about the talents of literary men.
+
+<milestone n="156.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">absentibus</lem>
+							</app>, <gloss>people at a distance</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Mario et Catulo</lem>
+							</app> (coss. <date when="-0102">B.C. 102</date>); of these, Marius was renowned for his exploits, while Catulus was a good officer, and also a man of culture.
+
+<milestone n="156.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nactus est</lem>
+							</app>, etc., <gloss>he happened to find holding the consulship.</gloss>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eos, quorum alter</lem>
+							</app>, <gloss>men of such a kind that one of them</gloss>, etc. This would not only furnish him with themes for his poetry but insure appreciation of his genius.
+
+<milestone n="156.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Luculli</lem>
+							</app>: Lucius, the one who fought against Mithridates, and his brother Marcus; both of them belonged to the highest ranks of the aristocracy, and were men of distinguished taste and culture.
+
+<milestone n="156.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ingeni</lem>
+							</app>, pred. gen. after an understood <foreign xml:lang="lat">erat</foreign>: <gloss>this was</gloss> [a proof] <gloss>not only of his genius</gloss>, etc.
+
+<milestone n="156.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut . . . esset</lem>
+							</app>, result clause in app. with <app>
+								<lem xml:lang="lat">hoc</lem>
+							</app> (l.29). </p>
+					</div>
+					<div type="textpart" n="6" subtype="section">
+						<milestone n="157.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">jucundus</lem>
+							</app>, etc.: ever since the introduction of Greek culture at Rome, it had been customary for cultivated Romans of high rank to entertain Greek men of letters in their houses, partly as tutors and partly as companions.  Such associates frequently accompanied their patrons on their journeys and even on their campaigns.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Metello Numidico</lem>
+							</app>: the most distinguished member of this family.  He was predecessor of Marius in the war against Jugurtha, and from this service in Numidia received his <foreign xml:lang="lat">agnomen</foreign>.
+
+<milestone n="157.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Aemilio</lem>
+							</app>, i.e. M. Aemilius Scaurus (cos. <date when="-0115">B.C. 115</date>), for many years <foreign xml:lang="lat">princeps senatus</foreign>.
+
+<milestone n="157.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Catulo</lem>
+							</app>: see note on <ref n="pl156.23">p. 156, l. 23</ref>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">L. Crasso</lem>
+							</app>: the most distinguished orator of his time, a man of genius and culture (see Introd., <ref n="intro. 2">ch. ii, p. xxxiv</ref>); he died <date when="-0091">B.C. 91</date>.
+
+<milestone n="157.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Drusum</lem>
+							</app> (M. Livius), tribune <date when="-0091">B.C. 91</date>, a distinguished orator and statesman, who lost his life in a vain attempt to reconcile the aristocratic and democratic factions in the republic.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Octavios</lem>
+							</app>: see Cat. 3, sect. <bibl n="Cic. Catil. 3.24">24</bibl>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Catonem</lem>
+							</app>: probably the father of the famous Cato of Utica is meant.
+
+<milestone n="157.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Hortensiorum</lem>
+							</app>: the most eminent of these was Q. Hortensius, the rival of Cicero and his opponent in the case of Verres.
+
+<milestone n="157.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si qui forte</lem>
+							</app>, <gloss>those (if there were any) who</gloss>, etc.
+
+<milestone n="157.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Heracliam</lem>
+							</app>: an important Greek city on the southern coast of Lucania.  In the war with Pyrrhus it had fought on the side of the Romans, and <date when="-0278">B.C. 278</date> it entered into an alliance of the closest and most favorable character (<app>
+								<lem xml:lang="lat">aequissimo jure ac foedere</lem>
+							</app>).  </p>
+					</div>
+				</div>
+				<div type="textpart" n="7-30" subtype="chapter">
+					<head>III. <foreign xml:lang="lat">Confirmatio</foreign>
+					</head>
+					<div type="textpart" n="7-11" subtype="section">
+						<p>Archias received Roman citizenship under the Lex Plautia-Papiria, complying with all the provisions of that law. The evidence of this cannot be shaken; the testimony of the census is unnecessary. No further argument is needed; the case is closed.
+</p>
+					</div>
+					<div type="textpart" n="7" subtype="section">
+						<milestone n="157.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Silvani lege</lem>
+							</app>, etc., i.e. the <foreign xml:lang="lat">Lex Plautia-Papiria</foreign>, of the tribunes M. Plautius Silvanus and C. Papirius Carbo (not to be confounded with his infamous cousin Cneius, the Marian leader after the death of Cinna), extended the Roman citizenship to all Italian communities which had not yet received it.  These towns now exchanged their independence for Roman citizenship, and became incorporated with the republic; though many of them, as Heraclia, hesitated about making the change, and did it with great reluctance.  They lost all rights of independent government (such as that of coining money, the <foreign xml:lang="lat">jus exsili</foreign>, etc.). Latin became the official language; justice was administered by Roman law; and in most cases their government was organized on the model of Rome, having <foreign xml:lang="lat">duumviri</foreign>,for consuls, and a <foreign xml:lang="lat">curia</foreign> for the Senate.  The passage here given from the Plautian-Papirian Law contains its application to citizens of foreign birth, like Archias.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si qui</lem>
+							</app>, etc.: the law is quoted in indir. disc., but the main clause is omitted, being implied in <app>
+								<lem xml:lang="lat">data est</lem>
+							</app>; see § <bibl n="AG 592">592</bibl>, 2 (341, c) ; G. 663, 2, b; H.-B. 535, I, a.
+
+<milestone n="157.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">essent professi</lem>
+							</app>, <gloss>should have declared their intention</gloss>.
+
+<milestone n="157.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Q. Metellum</lem>
+							</app> [<foreign xml:lang="lat">Pium</foreign>], praetor, <date when="-0089">B.C. 89</date>: the most eminent living member of this family, and one of the leaders of the aristocracy. </p>
+					</div>
+					<div type="textpart" n="8" subtype="section">
+						<milestone n="157.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Grati</lem>
+							</app>, the complainant (see Introd., p.154 of text).
+
+<milestone n="158.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">religione</lem>
+							</app>, <gloss>conscientiousness</gloss>.
+
+<milestone n="158.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">desideras</lem>
+							</app>, <gloss>call for</gloss> (lit. <gloss>miss, feel the want of</gloss>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Italico bello</lem>
+							</app>, i.e. the Social War: § <bibl n="AG 424">424</bibl>, d (259, a); G. 394, R.; H. 486 (429); H-B. 439, a, 3.
+
+<milestone n="158.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">municipi</lem>
+							</app>: since the bestowal of the Roman citizenship, the Italian <foreign xml:lang="lat">civitates</foreign> had become Roman <foreign xml:lang="lat">municipia</foreign> (see Introd., p. liii).
+
+<milestone n="158.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">idem</lem>
+							</app>, <gloss>you yourself</gloss> (lit. <gloss>the same man</gloss>).
+</p>
+						<p> </p>
+					</div>
+					<div type="textpart" n="9" subtype="section">
+						<milestone n="157.22" unit="pg_l"/>
+						<p>In sect. <bibl n="Cic. Arch. 8">8</bibl> Cicero shows that Archias was a citizen of Heraclia and so came under the first requirement of the law; in sect. <bibl n="Cic. Arch. 9">9</bibl> he claims that his client had also complied with the other two requirements (<app>
+								<lem xml:lang="lat">domicilium</lem>
+							</app> and <app>
+								<lem xml:lang="lat">professio</lem>
+							</app>).
+
+<milestone n="158.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civitatem datam</lem>
+							</app>, i.e. by the law before cited.
+
+<milestone n="158.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">professione</lem>
+							</app>, <gloss>list of declarations</gloss>.
+
+<milestone n="158.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conlegio</lem>
+							</app>: the praetors, when regarded as a whole, could be spoken of as a "board."
+
+<milestone n="158.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum</lem>
+							</app>, <gloss>while</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Appi</lem>
+							</app>, i.e. Appius Claudius, husband of Caecilia (the friend of Roscius: see Rosc. Am., sect. <bibl n="Cic. S. Rosc. 50">50</bibl>) and father of the infamous Clodius.
+
+<milestone n="158.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Gabini</lem>
+							</app>: see Introd. to Pompey's Military Command.
+
+<milestone n="158.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">damnationem</lem>
+							</app>: he was condemned, <date when="-0054">B.C. 54</date>, for extortion on complaint of the Achaeans.
+
+<milestone n="158.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">L. Lentulum</lem>
+							</app>: nothing further is known of him; he probably presided over a court (<foreign xml:lang="lat">judices</foreign>) to determine cases involving citizenship under the new law. </p>
+					</div>
+					<div type="textpart" n="10" subtype="section">
+						<milestone n="158.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">multis</lem>
+							</app> and <app>
+								<lem xml:lang="lat">praeditis</lem>
+							</app> are dat. after <app>
+								<lem xml:lang="lat">impertiebant</lem>
+							</app>;
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">arte</lem>
+							</app>, abl. after <app>
+								<lem xml:lang="lat">praeditis</lem>
+							</app>.
+
+<milestone n="158.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Graecia</lem>
+							</app>, i.e. Magna Graecia, the Greek cities of Italy.
+
+<milestone n="158.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">credo</lem>
+							</app> (ironical), <gloss>I suppose</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Locrensis</lem>
+							</app>: Locri Epizephyrii, a Greek city near Rhegium.
+
+<milestone n="158.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod</lem>
+							</app> relates to <app>
+								<lem xml:lang="lat">id</lem>
+							</app>, which is governed by <app>
+								<lem xml:lang="lat">largiri</lem>
+							</app> understood.
+
+<milestone n="159.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ingeni</lem>
+							</app> limits <app>
+								<lem xml:lang="lat">gloria</lem>
+							</app>, which depends on <app>
+								<lem xml:lang="lat">praedito</lem>
+							</app>.
+
+<milestone n="159.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civitatem datam</lem>
+							</app>, i.e. by the <foreign xml:lang="lat">Lex Plautia-Papiria</foreign>.
+
+<milestone n="159.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">legem Papiam</lem>
+							</app>: see Introd. to the oration.
+
+<milestone n="159.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illis</lem>
+							</app>, sc. <foreign xml:lang="lat">tabulis</foreign>, i.e. of Tarentum, Rhegium, and Naples. </p>
+					</div>
+					<div type="textpart" n="11" subtype="section">
+						<milestone n="159.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">census</lem>
+							</app>: the lists of citizens made out by the censors for purposes of taxation.  These were, of course, excellent evidence on a question of citizenship; but they were not needed in this case.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">requiris</lem>
+							</app>: cf. <foreign xml:lang="lat">desideras</foreign> in the same sense in sect. <bibl n="Cic. Arch. 8">8</bibl> (<ref n="pl158.6">p. 158, l. 6</ref>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">est obscurum</lem>
+							</app> (ironical), <gloss>it is not generally known</gloss>.
+
+<milestone n="159.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">proximis</lem>
+							</app>, abl. of time: translate by <gloss>under</gloss>.  The censors referred to were L. Gellius and Cn. Lentulus (<date when="-0070">B.C. 70</date>).  <app>
+								<lem xml:lang="lat">clarissimo</lem>
+							</app>: observe the art with which Cicero here again calls attention to the connection of Archias with the distinguished Romans any one of whom could at any moment have procured him the citizenship if he had not already possessed it.
+
+<milestone n="159.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">apud exercitum</lem>
+							</app>, i.e. in the war against Mithridates (see Pompey's Military Command).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">superioribus</lem>
+							</app>, sc. <foreign xml:lang="lat">censoribus</foreign>. New censors were regularly appointed every five years; those here referred to were Q. Marcius Philippus and M. Perperna (<date when="-0086">B.C. 86</date>). In the present instance the succession had been interfered with by Sulla, but restored in <date when="-0070">B.C. 70</date>.
+
+<milestone n="159.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in Asia</lem>
+							</app>: this was in the First Mithridatic War, in which Lucullus served as <foreign xml:lang="lat">quaestor</foreign> to Sulla.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">primis</lem>
+							</app>, i.e. the first after the passage of the <foreign xml:lang="lat">lex Plautia-Papiria</foreign>: these were L. Julius Caesar and P. Crassus (<date when="-0089">B.C. 89</date>).
+
+<milestone n="159.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">esse versatum</lem>
+							</app> (sc. <foreign xml:lang="lat">eum</foreign>), <gloss>had availed himself of</gloss>: this clause is the obj. of <foreign xml:lang="lat">criminaris</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">testamentum</lem>
+							</app>, etc., acts which no foreigner could do.
+
+<milestone n="159.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in beneficiis</lem>
+							</app>, etc., <gloss>his name was reported for a reward from the state</gloss> (i.e. on the ground of some special merit); this, of course, implied citizenship.
+
+<milestone n="159.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">suo</lem>
+							</app>, etc., i.e. Archias and his friends knew that he was a citizen and had acted as such, whatever might be said on the other side.
+</p>
+						<p>At this point Cicero practically rests his case.  The remainder of his speech is devoted to the praise of poetry and literature.  This eulogy is, however, skillfully connected with the argument.  Literature is useful in the state, he contends, and poets are particularly in favor with great men. Hence Archias could not have failed to receive the citizenship as a gift from some of his illustrious Roman friends if he had not held it already.  Since he is a citizen, so eminent and useful a man should be protected in his rights. </p>
+					</div>
+					<div type="textpart" n="12-16" subtype="section">
+						<p>Literature is an indispensable relaxation: and also a source of moral strength. Hence all famous men have been devoted to letters.  The dignity and delight of liberal study.
+</p>
+					</div>
+					<div type="textpart" n="12" subtype="section">
+						<milestone n="159.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ubi</lem>
+							</app> (<foreign xml:lang="lat">locum ubi</foreign>) <app>
+								<lem xml:lang="lat">. . . reficiatur</lem>
+							</app>, rel. clause of purpose.
+
+<milestone n="159.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">suppetere</lem>
+							</app> has for subject the suppressed antecedent of <app>
+								<lem xml:lang="lat">quod</lem>
+							</app>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">posse</lem>
+							</app> (with a fut. force), <gloss>should be able</gloss>.
+
+<milestone n="159.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">contentionem</lem>
+							</app>, <gloss>strain</gloss>.
+
+<milestone n="159.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ego</lem>
+							</app> (emphat.), etc., <gloss>for my part I admit</gloss> etc.  We should remember that the more old-fashioned of Cicero's contemporaries were still inclined to regard literary and artistic pursuits as frivolous in comparison with the more "truly Roman" professions of war and politics (cf. <bibl n="Verg. A. 6.847">Aeneid, 6. 847</bibl> ff.).  Hence it was important for Cicero to show that literature was of practical value to the man of affairs.
+
+<milestone n="159.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">his studiis</lem>
+							</app>, the study of letters in general, including all varieties of literature, poetry as well as prose.
+
+<milestone n="159.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nullius tempore</lem>
+							</app>, etc., <gloss>the necessities or interests of no one</gloss> (i.e. as a client). </p>
+					</div>
+					<div type="textpart" n="13" subtype="section">
+						<milestone n="160.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ceteris</lem>
+							</app> depends on <app>
+								<lem xml:lang="lat">conceditur</lem>
+							</app> (l. 4).
+
+<milestone n="160.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad ipsam requiem</lem>
+							</app>, <gloss>even to repose</gloss>.
+
+<milestone n="160.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">temporum</lem>
+							</app> limits <app>
+								<lem xml:lang="lat">quantum</lem>
+							</app> (1.3), which has <app>
+								<lem xml:lang="lat">tantum</lem>
+							</app> (l.6) for antecedent.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">alii</lem>
+							</app>: notice how this differs in meaning from <app>
+								<lem xml:lang="lat">ceteris</lem>
+							</app>, the first-mentioned pursuits (attending to business, celebrating festivals, etc.) are common to everybody, the last (being dissipations) belong only to "some people."
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tempestivis conviviis</lem>
+							</app>, <gloss>early dinners</gloss>, i.e. beginning by daylight, or in business hours,
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">a mark of luxury and idleness</lem>
+							</app>: we should refer to "late dinners."
+
+<milestone n="160.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">oratio et facultas</lem>
+							</app>: hendiadys.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quantacumque</lem>
+							</app>, etc., i.e. <gloss>such as I have</gloss> (a modest disclaimer).
+
+<milestone n="160.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">periculis</lem>
+							</app>: Cicero prided himself on defending cases rather than acting for the prosecution (cf. <foreign xml:lang="lat">amicorum temporibus</foreign>, etc., Pompey's Military Command, sect. <bibl n="Cic. Man. 1">1</bibl>).
+
+<milestone n="160.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae</lem>
+							</app>, i.e. the mere ability to speak.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa</lem>
+							</app> (obj. of <app>
+								<lem xml:lang="lat">hauriam</lem>
+							</app>), i.e. the moral character resulting from the <app>
+								<lem xml:lang="lat">praecepta</lem>
+							</app> mentioned below. </p>
+					</div>
+					<div type="textpart" n="14" subtype="section">
+						<milestone n="160.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">multorum</lem>
+							</app>, i.e. great minds whose thoughts have found expression in literature.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">multis litteris</lem>
+							</app>, <gloss>wide reading</gloss>.
+
+<milestone n="160.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nihil esse</lem>
+							</app>, etc., these doctrines had been the commonplaces of philosophy and letters for hundreds of years before Cicero wrote, and to the cultivated Roman they took the place which with us belongs to the ethical teachings of sacred literature.
+
+<milestone n="160.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">parvi</lem>
+							</app>, <gloss>of slight account</gloss>: § <bibl n="AG 417">417</bibl> (252, a); B. 169,4; G. 379, 380, 1;  H. 448 (404); H.-B. 356, 1.
+
+<milestone n="160.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exemplorum</lem>
+							</app>, i.e. examples of heroism and virtue recorded in literature.  The moral education of the ancients consisted largely in the study of the lives of eminent men of past ages.
+
+<milestone n="160.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">accederet</lem>
+							</app>, <gloss>were thrown upon them</gloss>.. </p>
+					</div>
+					<div type="textpart" n="15" subtype="section">
+						<milestone n="160.27" unit="pg_l"/>
+						<p>Observe the attitude of the Romans toward literature, which they valued as a source of ethical and political cultivation, and not, like the Greeks, for its own sake or as a means of affording aesthetic pleasure. </p>
+					</div>
+					<div type="textpart" n="16" subtype="section">
+						<milestone n="161.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ex hoc</lem>
+							</app>, etc.: Cicero enumerates the most distinguished patrons of the newly introduced Greek culture.  Cato is separated from the rest because he was in theory opposed to this tendency on account of its imagined ill effects; hence the rather apologetic tone in which Cicero speaks of him.
+
+<milestone n="161.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Africanum</lem>
+							</app>: Scipio the younger (Aemilianus).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Laelium</lem>
+							</app>: the younger Laelius (surnamed <foreign xml:lang="lat">Sapiens</foreign>), whose friendship with Scipio Aemilianus forms the groundwork of Cicero's famous treatise <title xml:lang="lat">De Amicitia</title>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Furium</lem>
+							</app>: L. Furius Philus (cos. <date when="-0136">B.C. 136</date>), a patron of literature.
+</p>
+						<p> These three men belonged to the so-called Scipionic Circle, which was especially influential in the introduction of Greek culture.
+
+<milestone n="161.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Catonem</lem>
+							</app>: M. Porcius Cato, called the Censor, was one of the leading men of Rome in the first half of the second century B.C.: a shrewd, hard-headed Roman of the old school, full of prejudices, and priding himself on his blunt manners.  He was a distinguished antiquarian, and wrote books on antiquities and agriculture.
+
+<milestone n="161.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">senem</lem>
+							</app>: he gives the name to Cicero's dialogue <title>on Old Age</title> (Cato Major).
+
+<milestone n="161.15-23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod si</lem>
+							</app>, etc.: even if literature, Cicero argues, had no great practical or ethical value (as it has), it would still be worthy of respect as a means of mental refreshment and diversion.  The passage is a very famous tribute to liberal studies.
+
+<milestone n="161.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ceterae</lem>
+							</app>, sc. <foreign xml:lang="lat">animi adversiones</foreign> (from 1.17).
+
+<milestone n="161.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adversis</lem>
+							</app> [<foreign xml:lang="lat">rebus</foreign>], dat. with <app>
+								<lem xml:lang="lat">praebent</lem>
+							</app>. </p>
+					</div>
+					<div type="textpart" n="17-24" subtype="section">
+						<p>Great artists are themselves worthy of admiration. The poet is especially sacred: he is the herald of fame. Alexander at the tomb of Achilles.
+</p>
+					</div>
+					<div type="textpart" n="17" subtype="section">
+						<milestone n="161.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">deberemus</lem>
+							</app>: § <bibl n="AG 517">517</bibl>, c, N.1 (308, C, N.1); B. 304, 3, a, N. ; G. 597, R.3, b; Cf. H. 583 (511, I, N.3) ; H.-B. 582, 3, a.
+
+<milestone n="161.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">videremus</lem>
+							</app>: subj. because an integral part of the cont. to fact <foreign xml:lang="lat">apodosis</foreign>.
+
+<milestone n="161.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Rosci</lem>
+							</app>: Q. Roscius, the most eminent actor of his time, defended by Cicero in a speech which is still extant.
+
+<milestone n="161.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">corporis</lem>
+							</app>: observe the emphatic position as opposed to <app>
+								<lem xml:lang="lat">animorum</lem>
+							</app> (l. 31).  In the ancient drama the action was much more important as compared with the delivery and facial expression than is the case on the modern stage. </p>
+					</div>
+					<div type="textpart" n="18" subtype="section">
+						<milestone n="162.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">novo genere</lem>
+							</app>: such praise of letters was, of course, an innovation on the formal proceedings of a Roman court.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quotiens</lem>
+							</app>, etc.: given as a remarkable instance of the poetical improvisation illustrating the <app>
+								<lem xml:lang="lat">celeritas</lem>
+							</app> mentioned in § <bibl n="Cic. Arch. 17">17</bibl>.
+
+<milestone n="162.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">revocatum</lem>
+							</app> [<foreign xml:lang="lat">hunc</foreign>], subject of <app>
+								<lem xml:lang="lat">dicere</lem>
+							</app>.  The <foreign xml:lang="fra">encore</foreign> was a common Roman practice, as with us.
+
+<milestone n="162.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sic</lem>
+							</app>, <gloss>this</gloss> (referring to the indir. disc. that follows).
+
+<milestone n="162.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Ennius</lem>
+							</app>: the father of Latin poetry.  He was born at Rudiae in Magna Graecia (<date when="-0239">B.C. 239</date>), but wrote in Latin.  His principal work was the <title xml:lang="lat">Annales</title>, an epic poem upon Roman history, lost except for a few fragments. </p>
+					</div>
+					<div type="textpart" n="19" subtype="section">
+						<milestone n="162.19" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">bestiae</lem>
+							</app>, etc.: alluding to the myths of Orpheus and Arion (see Ovid, Met. 10.3; Fasti, 2. 83-118; Virg., Ecl. 8.56).
+
+<milestone n="162.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Homerum</lem>
+							</app>, etc.: the names of the cities which thus claimed Homer are given in the following hexameter verse: <quote>
+								<l>Smyrna, Chios, Colophon, Salamis, Rhodes, Argos, Athenae.</l>
+							</quote>
+							<milestone n="162.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">olim</lem>
+							</app>, almost equiv. to an adj.: Cf. § <bibl n="AG 321">321</bibl>, d (188, e); G. 439, N.4; H. 497, 5 (359, N.4); H.-B. 295, C.
+
+<milestone n="162.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Cimbricas res</lem>
+							</app>: the war with the Cimbri and Teutones, who invaded Italy and were at length defeated by Marius (the Teutones, <date when="-0102">B.C. 102</date>; the Cimbri, 101).
+
+<milestone n="162.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">durior</lem>
+							</app>: Marius was a rude and illiterate soldier. The illustration (p.163) shows what seems to be the most trustworthy portrait of Marius (from the impression of a coin, now lost); various busts have been identified with him, but without any probable evidence. </p>
+					</div>
+					<div type="textpart" n="20" subtype="section">
+						<milestone n="163.3" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Themistoclem</lem>
+							</app>: the great Athenian statesman and general, who won the battle of Salamis in the second Persian invasion (<date when="-0480">B.C. 480</date>) and afterwards, by his skillful policy, raised Athens to its greatest height of power. </p>
+					</div>
+					<div type="textpart" n="21" subtype="section">
+						<milestone n="163.8" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">For the statements in this section</lem>
+							</app>, see Pompey's Military Command
+
+<milestone n="163.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">natura et regione</lem>
+							</app>: hendiadys.
+
+<milestone n="163.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ejusdem</lem>
+							</app>, i.e. Lucullus.
+
+<milestone n="163.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nostra</lem>
+							</app>, <gloss>as ours</gloss> (predicate), agreeing with <app>
+								<lem xml:lang="lat">pugna</lem>
+							</app>.  Cicero means that these exploits, since they have been immortalized by Archias, will always remain the glory of the Roman people.
+
+<milestone n="164.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae</lem>
+							</app>, <gloss>these things</gloss> (just mentioned); <app>
+								<lem xml:lang="lat">quorum</lem>
+							</app> limits <app>
+								<lem xml:lang="lat">ingeniis</lem>
+							</app> and refers to <app>
+								<lem xml:lang="lat">eis</lem>
+							</app>. </p>
+					</div>
+					<div type="textpart" n="22" subtype="section">
+						<milestone n="164.4" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Africano superiori</lem>
+							</app>: the conqueror of Hannibal.
+
+<milestone n="164.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in sepulcro Scipionum</lem>
+							</app>: this tomb on the Appian Way has been discovered, and in it a bust of <foreign xml:lang="lat">peperino</foreign> (not marble), which has by some been supposed to be that here referred to.  It now stands upon the sarcophagus of Scipio in the Vatican museum (Fig. 42).
+
+<milestone n="164.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus</lem>
+							</app>: M. Porcius Cato, later called <foreign xml:lang="lat">Uticensis</foreign>, from his killing himself at Utica after Caesar's victory.  Cato the Censor was his great-grandfather.
+
+<milestone n="164.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Maximi</lem>
+							</app>, etc.: Q. Fabius Maximus, "the shield of Rome," in the Second Punic War; M. Marcellus, "the sword of Rome" (see note on <ref n="pl48.5">p. 48, l. 5</ref>); Q. Fulvius Flaccus, a distinguished officer in the same war.
+
+<milestone n="164.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illum</lem>
+							</app>, i.e. Ennius.
+
+<milestone n="164.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Heracliensem</lem>
+							</app>:  Heraclia (see note on <ref n="pl157.11">p. 157, l. 11</ref>), as being an important city, is here contrasted with the insignificant Rudiae.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civitatibus</lem>
+							</app> . § <bibl n="AG 375">375</bibl> (232 a), G 354. H. 431, 2 (388, 1); H.-B. 373, 2. </p>
+					</div>
+					<div type="textpart" n="23" subtype="section">
+						<milestone n="164.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Graeca leguntur</lem>
+							</app>, <gloss>Greek is read</gloss>.  Greek was, in the ancient world, almost the universal language of polite society; cf. the use of French in modern times.
+
+<milestone n="164.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quo</lem>
+							</app> (<gloss>whither</gloss>) relates to <foreign xml:lang="lat">eodem</foreign> (<foreign xml:lang="lat">thither</foreign>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cupere</lem>
+							</app> governs the clause <app>
+								<lem xml:lang="lat">quo . . . penetrare</lem>
+							</app>.
+
+<milestone n="165.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">populis</lem>
+							</app>, dat. after <foreign xml:lang="lat">ampla</foreign>, <gloss>a noble thing for them</gloss>.
+
+<milestone n="165.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eis</lem>
+							</app>, i.e. the individuals by whom these exploits are performed as contrasted with their peoples as a whole. </p>
+					</div>
+					<div type="textpart" n="24" subtype="section">
+						<milestone n="165.10" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Magnus</lem>
+							</app>, i.e. Pompey. </p>
+					</div>
+					<div type="textpart" n="25-30" subtype="section">
+						<p>Many would have been glad to give Archias the citizenship if he had not already possessed it. All men thirst for glory, which he can confer. Literature is the most enduring of monuments.
+</p>
+					</div>
+					<div type="textpart" n="25" subtype="section">
+						<milestone n="165.17" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">esset</lem>
+							</app>: § <bibl n="AG 517">517</bibl>,0 (308,a); B. 304, 2 G. 597, R.1; H. 579, I (510,   N.2); H.-B. 581.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civitate donaretur</lem>
+							</app>: § <bibl n="AG 364">364</bibl> (225, d); B.187, i, a; G. 348; H. 426, 6 (384, ii, 2); H.-B. 365, b.
+
+<milestone n="165.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">donaret</lem>
+							</app>, sc. <foreign xml:lang="lat">civitate</foreign>.
+
+<milestone n="165.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">repudiasset</lem>
+							</app>: the <foreign xml:lang="lat">protasis</foreign> is implied in <foreign xml:lang="lat">petentem</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quem</lem>
+							</app>, subject of <app>
+								<lem xml:lang="lat">jubere</lem>
+							</app>, below.
+
+<milestone n="165.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de populo</lem>
+							</app>, <gloss>of the people</gloss>, i.e. of low birth.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod . . . fecisset</lem>
+							</app>, <gloss>which he had made as an epigram</gloss> (poetical address) <gloss>to him</gloss>; for gender, see § <bibl n="AG 296">296</bibl>, a (195, d); B. 250, 3; cf. G. 211, R.5 H. 396, 2 (445, 4); H.-B. 326, I.
+
+<milestone n="165.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tantummodo . . . longiusculis</lem>
+							</app>, <gloss>merely with the alternate verses a little longer</gloss>, i.e. it was written in some metre in which (as in elegiac verse) long and short lines alternated; <app>
+								<lem xml:lang="lat">tantummodo</lem>
+							</app> implies that this was its only merit.
+
+<milestone n="165.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eis rebus</lem>
+							</app>, i.e. confiscated goods. Apparently a commander could take out from the booty anything he desired to bestow upon a soldier as a reward; and here the confiscated goods are treated in the same manner. </p>
+					</div>
+					<div type="textpart" n="26" subtype="section">
+						<milestone n="165.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">pingue atque peregrinum</lem>
+							</app>, cognate accusatives: § <bibl n="AG 390">390</bibl>,a(240,a); B. 176,2,b,N.; G.333,2,N.6; H.409 and 1 (371,ii); H.-B. 396, 2.
+
+<milestone n="166.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">prae nobis ferendum</lem>
+							</app>, <gloss>a thing to be proud of</gloss>
+							<milestone n="166.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">optimus quisque</lem>
+							</app>: § <bibl n="AG 313">313</bibl>, b (93,c); B. 252,5, c; G. 318,2; H. 515, 2 (458, I); H.-B. 278, 2, b.
+
+<milestone n="166.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in eo ipso</lem>
+							</app>, <gloss>in the very act</gloss>
+							<milestone n="166.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">praedicari</lem>
+							</app>: impersonal. </p>
+					</div>
+					<div type="textpart" n="27" subtype="section">
+						<milestone n="166.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Brutus</lem>
+							</app>: D. Junius Brutus (cos. <date when="-0138">B.C. 138</date>) conquered the Lusitanians (of Portugal).
+
+<milestone n="166.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Acci</lem>
+							</app>: <gloss>L. Accius</gloss> (less properly Attius), a tragic poet (born <date when="-0170">B.C. 170</date>); distinguished for vigor and sublimity; he lived long enough for Cicero in his youth to converse with him.
+
+<milestone n="166.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Fulvius</lem>
+							</app>: M. Fulvius Nobilior (cos. <date when="-0189">B.C. 189</date>) subdued Aetolia. He was distinguished as a friend of Greek literature, and built, from the spoils of war, a temple to Hercules and the Muses.
+
+<milestone n="166.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">prope armati</lem>
+							</app>, <gloss>having scarce laid aside their arms</gloss>.
+
+<milestone n="166.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">togati</lem>
+							</app>: see note on <ref n="pl125.17">p. 125, l. 17</ref>. </p>
+					</div>
+					<div type="textpart" n="28" subtype="section">
+						<milestone n="166.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quas res</lem>
+							</app>, i.e. the suppression of Catiline's conspiracy.
+
+<milestone n="166.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adornavi</lem>
+							</app>, <gloss>I supplied him</gloss> with materials (i.e. facts).
+
+<milestone n="166.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid est quod</lem>
+							</app>, etc.: § <bibl n="AG 531">531</bibl>, 2 (317, 2); B. 282, 2; G. 631, 2; H. 590 (497, 1); H.-B. 513, 2. </p>
+					</div>
+					<div type="textpart" n="29" subtype="section">
+						<milestone n="166.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">nec tantis</lem>
+							</app>, etc.: here the apod. begins. </p>
+					</div>
+					<div type="textpart" n="30" subtype="section">
+						<milestone n="167.5" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">parvi animi</lem>
+							</app>, <gloss>mean-spirited</gloss>: § <bibl n="AG 345">345</bibl> (215); B. 203, I; G. 365; H. 440, 3 (394, v); H.-B. 355
+
+<milestone n="167.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imagines</lem>
+							</app>, <gloss>busts</gloss>.  Whoever held any <foreign xml:lang="lat">curule</foreign> office (dictator, consul, interrex, praetor, curule aedile) thereby secured to his posterity the <foreign xml:lang="lat">jus imaginum</foreign>, i.e. the right to place in their halls and carry in funeral processions a wax mask of him as well as of any other deceased members of the family of curule rank.  Since this right was a distinguishing mark of the Roman nobility, it was naturally highly prized. </p>
+					</div>
+				</div>
+				<div type="textpart" n="31" subtype="chapter">
+					<head>IV. <foreign xml:lang="lat">Peroratio</foreign>
+					</head>
+					<div type="textpart" n="31" subtype="section">
+						<p>Archias the poet should be protected in the rights of citizenship, which are legally his.
+</p>
+					</div>
+					<div type="textpart" n="31" subtype="section">
+						<milestone n="167.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">pudore eo</lem>
+							</app>, <gloss>of such high character</gloss> (i.e. sense of honor and self-respect, as contrasted with the unprincipled Greek hangers-on with whom Roman society was infested).
+
+<milestone n="167.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vetustate</lem>
+							</app>, i.e. long-continued friendship (see sect. <bibl n="Cic. Arch. 5">5</bibl>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id existimari depends on convenit</lem>
+							</app>, <gloss>it is fitting</gloss>.
+
+<milestone n="167.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">videatis</lem>
+							</app>, subj. of integral part.
+
+<milestone n="167.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">municipi</lem>
+							</app>, i.e. Heraclia.
+
+<milestone n="167.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">comprobetur</lem>
+							</app>, subj. of characteristic.
+
+<milestone n="167.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut</lem>
+							</app>, with <app>
+								<lem xml:lang="lat">accipiatis</lem>
+							</app>, <ref n="pl168.2">p. 168, l. 2</ref>.
+
+<milestone n="168.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ex eo numero</lem>
+							</app>, i.e. of poets.
+
+<milestone n="168.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ab eo qui</lem>
+							</app>, etc.: Q. Cicero (see Introd.).  </p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

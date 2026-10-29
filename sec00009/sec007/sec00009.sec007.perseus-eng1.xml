@@ -1,0 +1,4574 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title type="work">Select Orations of Cicero, Allen and Greenough's Edition.</title>
+				<author>J. B. Greenough, G. L. Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" cert="medium">2000-08-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Select Orations of <bibl>
+						<author n="Cic.">Cicero</author>
+					</bibl> Allen and Greenough's Edition.
+					Revised by J. B. Greenough and G. L. Kittredge, with a special
+					vocabulary by J. B. Greenough.
+				</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+					<p>This pointer extracts speech and chapter and section.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+					<p>This pointer extracts speech and chapter.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer extracts speech.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+			</change>
+			<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+			</change>
+			<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+			</change>
+			<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+			</change>
+			<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+			</change>
+			<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Mil." xml:lang="eng">
+		<body>
+			<div type="commentary" n="Mil." subtype="speech">
+				<head>Defence of Milo. (<title xml:lang="lat">Pro Milone</title>) <date>B.C. 52</date>.</head>
+				<div type="textpart" subtype="chapter" n="Argument">
+					<head>Argument</head>
+					<list type="simple">
+						<item>
+							<foreign xml:lang="lat">Exordium</foreign>.
+
+<list type="simple">
+								<item>CHAP <bibl n="Cic. Mil. 1">1</bibl>, <bibl n="Cic. Mil. 2">2</bibl>. The court is surrounded by armed men. But the jurors need not fear: public sympathy is with Milo: the jurors are free to maintain justice.  Unfortunate position of the defendant. Clodius can be proved to have been the aggressor in the affray: Milo acted in self-defence. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">Confutatio</foreign>.
+
+<list type="simple">
+								<item>(I) <bibl n="Cic. Mil. 3">3</bibl>, <bibl n="Cic. Mil. 4">4</bibl>. Homicide is not always a crime; it is especially justifiable in self-defence.  </item>
+								<item> (II) <bibl n="Cic. Mil. 5">5</bibl>, <bibl n="Cic. Mil. 6">6</bibl> (sect. <bibl n="Cic. Mil. 14">14</bibl>). The decree of the Senate touches only the riot: it does not determine the guilty party. </item>
+								<item>(III) <bibl n="Cic. Mil. 6">6</bibl> (sect.<bibl n="Cic. Mil. 15">15</bibl>), <bibl n="Cic. Mil. 7">7</bibl>, <bibl n="Cic. Mil. 8">8</bibl>. Pompey's action in carrying a law for the establishment of this investigation was not prejudicial to Milo.  He left the question of Milo's guilt to the court.  </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">
+								<foreign xml:lang="lat">Narratio</foreign>
+							</foreign>.
+
+<list type="simple">
+								<item>
+									<bibl n="Cic. Mil. 9">9</bibl>-<bibl n="Cic. Mil. 11">11</bibl>. The question is, Which lay in wait for the other?  history of the controversy.  Why Clodius desired Milo's death, and how he planned to meet him; the encounter on the Appian Way. </item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">
+								<foreign xml:lang="lat">Confirmatio</foreign>
+							</foreign>.
+
+<list type="simple">
+								<item>(I)
+
+<list type="simple">
+										<item>
+											<bibl n="Cic. Mil. 12">12</bibl>-<bibl n="Cic. Mil. 13">13</bibl>. Which was to be the gainer by the other's death? Strong motive in the case of Clodius; no motive in Milo's case. </item>
+										<item>
+											<bibl n="Cic. Mil. 14">14</bibl>. Habitual violence of Clodius: opposite character of Milo. </item>
+										<item>
+											<bibl n="Cic. Mil. 15">15</bibl>-<bibl n="Cic. Mil. 16">16</bibl>. Milo had before spared Clodius when he had good opportunities to kill him: would he have plotted his death on so unfavorable an occasion? </item>
+										<item>
+											<bibl n="Cic. Mil. 17">17</bibl>-<bibl n="Cic. Mil. 19">19</bibl>. How Clodius knew of Milo's journey and informed himself of his setting out: pretext of the death of Cyrus.  Milo knew nothing of Clodius's movements. </item>
+										<item>
+											<bibl n="Cic. Mil. 20">20</bibl>-<bibl n="Cic. Mil. 21">21</bibl>. Comparison of the conditions: Milo was on strange ground and unprepared.  Clodius was fully prepared. </item>
+										<item>
+											<bibl n="Cic. Mil. 22">22</bibl>. Why Milo manumitted his slaves: it was a generous and right act, and not for the sake of suppressing testimony. The evidence of Clodius's slaves goes for nothing. </item>
+										<item>
+											<bibl n="Cic. Mil. 23">23</bibl>-<bibl n="Cic. Mil. 26">26</bibl>. Milo's after acts: the false charges against him, especially of plotting against Pompey the supposed hostility of Pompey explained away. </item>
+									</list>
+								</item>
+								<item>(II)
+
+<list type="simple">
+										<item>
+											<bibl n="Cic. Mil. 27">27</bibl>-<bibl n="Cic. Mil. 30">30</bibl>. Yet if Milo had killed Clodius purposely, all would have approved  The crimes of Clodius: would any have him restored to life? If Milo had slain him he might have claimed glory for the deed. </item>
+										<item>
+											<bibl n="Cic. Mil. 31">31</bibl>-<bibl n="Cic. Mil. 33">33</bibl>. It was the act of the gods, who first made Clodius mad, that he might rush on his destruction. </item>
+									</list>
+								</item>
+							</list>
+						</item>
+						<item>
+							<foreign xml:lang="lat">
+								<foreign xml:lang="lat">Peroratio</foreign>
+							</foreign>
+							<list type="simple">
+								<item>
+									<bibl n="Cic. Mil. 34">34</bibl>. Milo deserves the compassion of the judges: he bids farewell to the ungrateful city. </item>
+								<item>
+									<bibl n="Cic. Mil. 35">35</bibl>. Calmly resigned he appeals to the judgment of posterity. </item>
+								<item>
+									<bibl n="Cic. Mil. 36">36</bibl>, <bibl n="Cic. Mil. 37">37</bibl>. Milo's cause is Cicero's own.  Cicero appeals to the judges in his own name  The exile of Milo will be a calamity to the defenders of Rome. </item>
+								<item>
+									<bibl n="Cic. Mil. 38">38</bibl>. Happy the country that receives him!  Closing appeal to the court. </item>
+							</list>
+						</item>
+					</list>
+				</div>
+				<div type="textpart" n="1-6" subtype="chapter">
+					<head>I. Exordium</head>
+					<p>T. Annius Milo was a young man of good family and a recognized leader, on the
+						aristocratic side, in the turbulent politics of the time during the absence
+						of Caesar in Gaul and following the disastrous campaign of Crassus in the
+						East. His bitterest opponent was P. Clodius, the leader of the popular
+						party, a man of high birth and versatile talents, but of infamous life, and
+						an unscrupulous partisan. Both sides depended to a great extent on organized
+						violence. On the one side was the city mob, headed by Clodius. On the other,
+						Milo maintained a band of professional bullies and prize-fighters (<foreign
+							xml:lang="lat">gladiatores</foreign>). </p>
+					<p>Under these two leaders, the old political strife, always attended with some
+						violence, became almost a succession of riots. The disorders were so great
+						that the year <date>B.C. 53</date> was half over before the consuls, who
+						should have been chosen six months before the beginning of the year, could
+						be elected. When finally, in July, 53, Cn. Domitius Calvinus and M. Valerius
+						Messala were chosen, the campaign for the following year began at once. Milo
+						was a candidate for the consulship, and Clodius for the praetorship. Riots
+						were of almost daily occurrence, and no elections could be held. The year 52
+						began without either consuls or praetors in office, and it became obvious
+						that peace could be restored only by the death of either Clodius or Milo.
+						The latter was a candidate for the consulship, but his election had been
+						successfully resisted by Clodius. On the 18th of January the quarrel came to
+						a bloody crisis. Milo had set out from Rome, towards nightfall, with a large
+						retinue, including his troop of armed guards, for Lanuvium, a village about
+						twenty miles SE. of Rome, where he held an office of some local dignity. He
+						was met on the Appian Way, a few miles out, by Clodius, who was returning to
+						the city from one of his estates on horseback, with thirty armed attendants.
+						As they passed each other, their followers came to blows. Clodius was
+						wounded, and driven into a shop or tavern by the wayside. Milo, unwilling to
+						leave so dangerous an enemy alive, followed him up; and Clodius, with a
+						dozen others, among them the owner of the tavern, was killed. The meeting
+						was probably accidental on both sides; but each had openly threatened the
+						other's life, and hence each party loudly accused the other of premeditated
+						assault and actual or intended murder. Anarchy broke loose in Rome. The
+						funeral of Clodius was an occasion of riot and conflagration. Other
+						disorders followed. Quiet was only restored by the appointment of Pompey as
+						"consul without colleague" (practically dictator), and for about six months
+						the city was held by him under a sort of martial law. A special court was
+						established for the trial of all cases arising out of the brawl in the
+						Appian Way. The arraignment of Milo before this court on the charge of
+						assault and homicide took place about the 10th of April. Cicero undertook
+						his defence both from political motives and from personal regard. By
+						Pompey's orders the court was surrounded by armed troops (a strange sight at
+						that time in Rome) to protect it from the violence of the mob which raged
+						outside. Cicero, whose nerves were shaken by the uproar, lost his
+						self-command, and spoke "not with his usual firmness." Milo was condemned by
+						thirty-eight votes out of fifty-one, and went into exile at Marseilles.
+						Cicero, dissatisfied with the speech actually delivered, as taken down by
+						short-hand, wrote out at his leisure the masterpiece of eloquence and
+						specious argument which follows. </p>
+					<div type="textpart" n="1-4" subtype="section">
+						<p>The court is surrounded by armed men, but the jurors need not fear: the guards are not hostile to Milo, and all good men are on his side: the jurors are free to maintain justice.
+</p>
+					</div>
+					<div type="textpart" n="1" subtype="section">
+						<milestone n="171.4" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">perturbetur de</lem>
+							</app>, <gloss>is alarmed for.</gloss>
+							<milestone n="171.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">novi judici</lem>
+							</app>, i.e. the special tribunal established by vote of the people to try all cases arising out of the brawl between Milo and Clodius. On this occasion the court was surrounded, not by the usual throng of spectators, but by an armed guard (see Introd., p. 170 of text), — hence <foreign xml:lang="lat">nova forma</foreign>.
+
+<milestone n="171.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">requirunt</lem>
+							</app>, <gloss>miss, seek in vain.</gloss>
+						</p>
+					</div>
+					<div type="textpart" n="2" subtype="section">
+						<milestone n="171.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">pro templis</lem>
+							</app>: see plan of Forum. The guards held the entrances to these temples as important strategic points for defence against the mob.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non . . . non adferunt aliquid</lem>
+							</app>, <gloss>do not fail to bring something</gloss> (of terror or constraint).
+
+<milestone n="171.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut . . . possimus</lem>
+							</app>, <gloss>so that we cannot even be relieved of fear</gloss> (<foreign xml:lang="lat">non timere</foreign>) <gloss>without some fear</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">foro</lem>
+							</app>, <app>
+								<lem xml:lang="lat">judicio</lem>
+							</app>: such a display of arms in places especially devoted to occupations of peace must necessarily cause some uneasiness. <pb n="429"/>
+							<milestone n="171.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si . . . putarem</lem>
+							</app>: Cicero artfully assumes throughout the oration that the authorities (including Pompey) are on the side of Milo.
+
+<milestone n="171.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">me recreat</lem>
+							</app>: to preserve the emphatic position we may change the voice, —<gloss>I am reassured</gloss>; so <app>
+								<lem xml:lang="lat">reficit</lem>
+							</app>, <gloss>I am revived</gloss>.
+
+<milestone n="171.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">justitiae suae</lem>
+							</app>: § <bibl n="AG 343">343</bibl>, c (214, d); cf. B. 198, 3; cf. G. 366; cf. H. 439 (401); H.-B. 340; 50 <foreign xml:lang="lat">sapientiae</foreign> in 1.19.
+
+<milestone n="171.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">putaret</lem>
+							</app>, <gloss>would not have thought</gloss>: § <bibl n="AG 446">446</bibl> (311, a); B. 280, 4; G. 258; H. 552, 554, 2, 3 (485 and N.1); H.-B. 519, 2.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tradidisset</lem>
+							</app>, subj. of integral part. </p>
+					</div>
+					<div type="textpart" n="3" subtype="section">
+						<milestone n="171.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa arma</lem>
+							</app>, etc.: on the first day of the trial, when M. Marcellus began to cross-examine one of the witnesses against Milo, he was so terrified by the rush of the mob that he took refuge on the <foreign xml:lang="lat">praetor</foreign>'s bench. Pompey, alarmed by the same disturbance, came down next day with an armed guard, and the trial was allowed to proceed without interruption.
+
+<milestone n="171.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quieto</lem>
+							</app>, etc.: i.e. not only to be undisturbed but to be greatly encouraged.
+
+<milestone n="171.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae quidem est civium</lem>
+							</app>, <gloss>so far at least as it consists of citizens</gloss> (covertly suggesting that the supporters of Clodius were not citizens, but gladiators and the like).
+
+<milestone n="171.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">neque . . . non</lem>
+							</app>, etc.: notice the double negative, — <gloss>there is no one... who does not</gloss>, etc.
+
+<milestone n="171.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">decertari</lem>
+							</app> (impersonal), <gloss>that the conflict is</gloss>.  Here Cicero suggests what one of the chief points of his defence is to be, — that Milo had always acted in defence of the state.
+
+<milestone n="172.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eorum</lem>
+							</app>, <gloss>namely, of those</gloss>: § <bibl n="AG 344">344</bibl> (214, e); B. 197; G. 368, a.; cf. H. 441 (397, I); H.-B. 349.
+
+<milestone n="172.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hesterna contione</lem>
+							</app>, <gloss>yesterday's harangue</gloss>.  The day before, after the court adjourned, one T. Munatius Plancus (see sect. <bibl n="Cic. Mil. 12">12</bibl>) had harangued the crowd, urging them to be on hand next day and not suffer Milo to escape.  On this day, the last of the trial, shops were closed throughout the city; Pompey posted guards in the Forum and all its approaches; he himself sat, as on the day before, in front of the Treasury, girt with a select body of troops.  When Cicero began to speak, "he was received by an outcry of the party of Clodius, who could not be restrained even by fear of the surrounding soldiery."
+
+<milestone n="172.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">judicaretis</lem>
+							</app>: § <bibl n="AG 444">444</bibl> (268); B. 277; G. 259; H. 557 (486, ii); H.-B. 503.
+
+<milestone n="172.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">retineatis</lem>
+							</app>: the penalty for the offence with which Milo was charged was banishment, by which he would lose his rights as citizen. <pb n="430"/>
+						</p>
+					</div>
+					<div type="textpart" n="4" subtype="section">
+						<milestone n="172.11" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">locus</lem>
+							</app>, <gloss>opportunity</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">amplissimorum ordinum</lem>
+							</app>: the court was made up of Senators, <foreign xml:lang="lat">equites</foreign>, and <foreign xml:lang="lat">tribuni aerarii</foreign>.
+
+<milestone n="172.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">delectis</lem>
+							</app>: the whole body of jurors (360) was selected, though the particular jury (of 51) was drawn by lot.
+
+<milestone n="172.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">re et sententus</lem>
+							</app>, <gloss>by act and verdict</gloss>
+						</p>
+					</div>
+					<div type="textpart" n="5-6" subtype="section">
+						<p>Unfortunate position of the defendant, whose efforts in behalf of the state have brought him before the Courts. Cicero declines t urge Milo's public services as a defence: he will rest the whole case on his ability to show that Clodius was the aggressor in the affray.
+</p>
+					</div>
+					<div type="textpart" n="5" subtype="section">
+						<milestone n="172.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">nobis duobus</lem>
+							</app>, <gloss>than we two</gloss>, i.e. the orator and his client.  Cicero constantly associates himself with Milo in this fashion, thus not merely following the custom of advocates, but also representing Milo as engaged in the same kind of opposition to the dangerous elements in the state as that which had made his own consulship illustrious.
+
+<milestone n="172.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">crudelissimorum</lem>
+							</app>: exile was the worst that Milo had to fear. Here Cicero alludes to his own experience of it, which had resulted from his patriotic efforts against the Catilinarian conspirators.
+
+<milestone n="172.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ceteras</lem>
+							</app>, etc.: it was to be expected that a politician should undergo abuse and even illegal violence in the stormy public life of the time, but such dangers were not to be anticipated in an impartial court.
+
+<milestone n="172.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ex cunctis ordinibus</lem>
+							</app>: see note on <foreign xml:lang="lat">ordinum</foreign>, sect. <bibl n="Cic. Mil. 4">4</bibl> (<ref n="pl172.11">p. 172, l. 11</ref>).
+
+<milestone n="172.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">salutem</lem>
+							</app>, i.e. not his personal safety in the modern sense, but his political rights (see note on 1.23, above).
+
+<milestone n="172.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">talis viros</lem>
+							</app>: it was admitted, says Asconius, that no body of jurors had ever been more illustrious or just than those who composed this court. </p>
+					</div>
+					<div type="textpart" n="6" subtype="section">
+						<milestone n="173.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quamquam</lem>
+							</app>, <gloss>and yet</gloss> (corrective).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribunatu</lem>
+							</app>: in the year <date when="-0057">B.C. 57</date> Milo, as tribune, had materially assisted in procuring the recall of Cicero from banishment.  It was partly gratitude for this service that led Cicero to undertake Milo's defence.
+
+<milestone n="173.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">abutemur</lem>
+							</app>, <gloss>take unfair advantage of</gloss>  Cicero declines to use Milo's services to the state as an argument in his favor, and boldly declares that he will put the case on the bare facts, contending that Milo acted in self-defence.  But in the very act of declining to dwell on these services he subtly emphasizes them, </p>
+					</div>
+				</div>
+				<div type="textpart" n="7-22" subtype="chapter">
+					<head>II. <foreign xml:lang="lat">Confutatio</foreign>
+					</head>
+					<p>The <foreign xml:lang="lat">Confutatio</foreign> (or answer to objections) in this case precedes the <foreign xml:lang="lat">Confirmatio</foreign> (or affirmative argument).  Certain notions, Cicero says, must be got out of the way, as being prejudicial to his client, before the main question is taken up.  These are: (i) that a self-confessed homicide is guilty of crime (answered by showing that it is sometimes lawful to kill a man, especially in self-defence:  sects. <bibl n="Cic. Mil. 7">7</bibl>-<bibl n="Cic. Mil. 11">11</bibl>); (ii) that the Senate prejudged Milo guilty when it voted that the affray was unlawful violence (<foreign xml:lang="lat">contra rem publicam factam</foreign>) (answered by showing that it was the fact of the disorder, and not the guilt or innocence of either party to it, that the Senate passed upon: sects. <bibl n="Cic. Mil. 12">12</bibl>-<bibl n="Cic. Mil. 14">14</bibl>); (iii) that Pompey similarly prejudged Milo's guilt by providing for the present special investigation (answered in a similar way: sects. <bibl n="Cic. Mil. 15">15</bibl>-<bibl n="Cic. Mil. 22">22</bibl>). Having cleared the ground by disposing of these three matters, Cicero proceeds to the real question at issue: Which of the two, Milo or Clodius, lay in wait to kill the other?</p>
+					<div type="textpart" n="7-11" subtype="section">
+						<p>I. Homicide is not always unjustifiable. It is allowed in a case of self-defence, like the present.
+</p>
+					</div>
+					<div type="textpart" n="7" subtype="section">
+						<milestone n="173.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">fuerit</lem>
+							</app>, subj. of integral part.
+
+<milestone n="173.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad eam orationem</lem>
+							</app>, <gloss>to that line of argument</gloss>
+							<milestone n="173.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">videntur</lem>
+							</app>, etc.: § <bibl n="AG 582">582</bibl> (330, b, 1); B. 332, b; G. 528, R.2; H. 611, N.1, 2 (534, i, N.1)  cf. H.-B. 590, I and a.
+
+<milestone n="173.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">primum</lem>
+							</app>, i.e. the first capital trial that occurred in Rome.
+
+<milestone n="173.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">M. Horati</lem>
+							</app>: the famous story of the three Horatii and the three Curiatii.  When Horatius was condemned to death for the murder of his sister, he was acquitted on appeal to the people; and this incident passed as the origin of <foreign xml:lang="lat">provocatio</foreign>, or appeal to the people from the decision of a magistrate.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nondum libera</lem>
+							</app>, i.e. under the kings: it was in the reign of Tullus Hostilius, <date when="-0668">B.C. 668</date>.
+
+<milestone n="173.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">comitiis</lem>
+							</app>, i.e. by the vote of the Roman people assembled to decide the appeal. </p>
+					</div>
+					<div type="textpart" n="8" subtype="section">
+						<milestone n="173.26" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">P. Africanum</lem>
+							</app>, i.e. <foreign xml:lang="lat">Aemilianus</foreign>: he was cousin (by adoption) and brother-in-law of Gracchus, and friendly to the spirit of his reforms, although not sympathizing with his violent course.
+
+<milestone n="173.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">C. Carbone</lem>
+							</app>: C. Carbo was an unscrupulous politician who supported Ti. Gracchus, but afterwards was a bitter antagonist of C. Gracchus. <pb n="432"/>
+							<milestone n="173.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Ahala</lem>
+							</app>, etc.: these are cases which would have to be called infamous murders unless the principle that homicide is sometimes justifiable were admitted.  The instances referred to were stock examples in Roman oratory (see Cat. 1, sects. <bibl n="Cic. Mil. 3">3</bibl>, <bibl n="Cic. Mil. 4">4</bibl>), though, in fact, Ahala and the others were all driven into exile by a reaction of popular feeling.
+
+<milestone n="173.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">senatus</lem>
+							</app>: because the execution of the Catilinarian conspirators was by vote of the Senate.
+
+<milestone n="174.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fictis fabulis</lem>
+							</app>, properly, <gloss>mythical dramas</gloss>: the reference is to the <foreign xml:lang="lat">Eumenides</foreign> of Aeschylus, which treats of the expiation of the guilt of Orestes, son of Agamemnon, at the court of Areopagus in Athens. When six judges had pronounced for condemnation and six for acquittal, Pallas gave her casting vote for mercy.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">doctissimi</lem>
+							</app>, i.e. the greatest poets. </p>
+					</div>
+					<div type="textpart" n="9" subtype="section">
+						<milestone n="174.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">duodecim tabulae</lem>
+							</app>: the "Twelve Tables" were the code which formed the basis of Roman law, drawn up <date when="-0451">B.C. 451</date> by an elected board of ten commissioners (<foreign xml:lang="lat">decemviri</foreign>).  This codification of the laws continued in force, and was the starting point of the legal education of every Roman, and of all later development of Roman law.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quoquo modo</lem>
+							</app>, <gloss>under any circumstances</gloss>.
+
+<milestone n="174.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quoquo modo</lem>
+							</app>, <gloss>in whatever way</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quis</lem>
+							</app> (indefinite), <gloss>one</gloss>; the preceding <foreign xml:lang="lat">quis</foreign> is interrogative.
+
+<milestone n="174.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vi vis . . . defenditur</lem>
+							</app>, <gloss>violence offered is repelled by force. </gloss>-<foreign xml:lang="lat">pudicitiam</foreign> . . . <foreign xml:lang="lat">eriperet</foreign>, <gloss>tried to rob of his honor</gloss>.
+
+<milestone n="174.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribunus</lem>
+							</app>: C. Lusius, son of Marius's sister. This was a stock instance among rhetoricians in arguing the just limits of self-defence.
+
+<milestone n="174.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">scelere solutum</lem>
+							</app>, <gloss>acquitted of guilt</gloss>. </p>
+					</div>
+					<div type="textpart" n="10" subtype="section">
+						<milestone n="174.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vero</lem>
+							</app>: introducing, as usual, a strong case.
+
+<milestone n="174.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">comitatus</lem>
+							</app>, <gloss>body-guards</gloss>, which would seem to have been a common thing among these gentlemen of Rome, as among the partisan chieftains of the Middle Ages.
+
+<milestone n="174.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">volunt</lem>
+							</app>, <gloss>mean</gloss>.
+
+<milestone n="174.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adripuimus</lem>
+							</app>, <gloss>caught</gloss>; <app>
+								<lem xml:lang="lat">hausimus</lem>
+							</app>, <gloss>imbibed</gloss>; <foreign xml:lang="lat">expressimus</foreign>, <gloss>wrought out</gloss>; <app>
+								<lem xml:lang="lat">imbuti</lem>
+							</app>, <gloss>steeped</gloss>.
+
+<milestone n="175.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut . . . esset</lem>
+							</app>, purpose clause after <foreign xml:lang="lat">lex</foreign> (a word of decreeing).
+
+<milestone n="175.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">incidisset</lem>
+							</app>: in the words of the <foreign xml:lang="lat">lex</foreign>, - <foreign xml:lang="lat">incident</foreign>. </p>
+					</div>
+					<div type="textpart" n="11" subtype="section">
+						<milestone n="175.3" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sflent</lem>
+							</app>: notice the emphatic position.
+
+<milestone n="175.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">velit</lem>
+							</app>: subjunctive because of sit.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ante . . . quam</lem>
+							</app>: § <bibl n="AG 434">434</bibl> (262); G. 574, R.1; H. (p.293, footnote 1); cf. 14.-B. 507, 4, footnote 1
+
+<milestone n="175.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">etsi</lem>
+							</app>, i.e. there is no need for me to appeal to the law of nature to establish the right to kill in self-defence, for this right is established <pb n="433"/>  by the judicial interpretation of a particular statute (of Sulla).  This statute (<foreign xml:lang="lat">de sicariis</foreign>) dealt with murder in general and went so far as to provide a penalty for the carrying of a weapon with intent to kill. The courts had ruled, says Cicero, that, under this law, a man who carried a weapon for self-defence was not carrying it <foreign xml:lang="lat">hominis occidendi causa</foreign>, in the meaning of the statute.
+
+<milestone n="175.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">judicaretur</lem>
+							</app>: the subject is antecedent of <foreign xml:lang="lat">qui</foreign>.
+
+<milestone n="175.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc maneat in causa</lem>
+							</app>, <gloss>let this point stand as the law of the case</gloss>. </p>
+					</div>
+					<div type="textpart" n="12-14" subtype="section">
+						<p>II. The decree of the Senate touches only the fact of the riot: it does not determine the guilty party. The question of Milo's guilt or innocence is left to the court without prejudgment.
+</p>
+					</div>
+					<div type="textpart" n="12" subtype="section">
+						<milestone n="175.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sequitur illud</lem>
+							</app>, <gloss>the next point is this</gloss>: § <bibl n="AG 597">597</bibl>, d, i (344, d, I); Cf. H.-B. 625.
+
+<milestone n="175.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">contra rem publicam factam</lem>
+							</app>: a technical phrase, amounting to "unlawful (unconstitutional) violence"; cf. our "a breach of the peace."
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illam</lem>
+							</app>, i.e. <foreign xml:lang="lat">caedem</foreign>.
+
+<milestone n="175.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sententiis</lem>
+							</app>, .e. its expressed vote; <app>
+								<lem xml:lang="lat">studiis</lem>
+							</app>, i.e. the interest it displayed in Milo's behalf?
+
+<milestone n="175.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nec tacitis</lem>
+							</app>, <gloss>loudly</gloss>; <app>
+								<lem xml:lang="lat">nec occultis</lem>
+							</app>, <gloss>in plain terms</gloss>.
+
+<milestone n="176.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">declarant</lem>
+							</app>: to preserve the emphasis we may change the voice, — <gloss>it is shown by</gloss>, etc.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus ambusti tribuni</lem>
+							</app>: the body of Clodius, left in the highway, had been picked up and sent to Rome, where its wounds were exposed to public gaze till, in the fury of the time, it was dragged to the Senate-house.  Here a funeral-pile was made of desks, benches, and other furniture, and in the conflagration the Senate-house itself, with several other buildings, was destroyed.  The tribune T. Munatius Plancus, who incited the mob to burn the body, is called <foreign xml:lang="lat">ambustus</foreign>, <gloss>fire-scorched</gloss>, because his influence suffered in the reaction of public feeling which followed the unintended conflagration; hence, too, his <gloss>harangues</gloss> (<foreign xml:lang="lat">contiones</foreign>) are referred to as <gloss>still-born</gloss> (<foreign xml:lang="lat">intermortuae</foreign>).
+
+<milestone n="176.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potentiam</lem>
+							</app>, <gloss>unlawful domination</gloss>.
+
+<milestone n="176.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">officiosos</lem>
+							</app>, <gloss>serviceable</gloss>, in the way of forensic advocacy.
+
+<milestone n="176.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sane</lem>
+							</app>, <gloss>if you like; or for aught I care</gloss>. </p>
+					</div>
+					<div type="textpart" n="13" subtype="section">
+						<milestone n="176.10" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vero</lem>
+							</app>: in reference to the statement at the beginning of sect. <bibl n="Cic. Mil. 12">12</bibl>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hanc quaestionem</lem>
+							</app>, <gloss>this special court</gloss>
+							<milestone n="176.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cujus</lem>
+							</app>: observe that the relative precedes the antecedent (<app>
+								<lem xml:lang="lat">ejus</lem>
+							</app>), as often in Latin.  There is no antecedent noun ("man," "person") expressed.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de illo incesto stupro</lem>
+							</app>, <gloss>that incestuous outrage</gloss>: this refers to a frightful scandal when the mysteries of the <foreign xml:lang="lat">Bona Dea</foreign> (a rite held solely by women) were profaned by Clodius's introducing himself in female attire.  The mysteries were being held at the official residence of Caesar, then <foreign xml:lang="lat">pontifex maximus</foreign>, and the latter's wife Pompeia was thought to have connived at the intrusion.  Caesar affected to believe no harm, but presently divorced Pompeia, with the famous remark that "Caesar's wife must be above suspicion."  Being brought to trial, Clodius tried to prove an <foreign xml:lang="lat">alibi</foreign>, but this attempt was frustrated, in part by the testimony of Cicero.  A corrupt jury acquitted Clodius, but he never forgave Cicero for appearing as a witness against him.
+
+<milestone n="176.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">erepta</lem>
+							</app>: a special investigation had been ordered on account of the religious importance of the case; hence the decision was <gloss>taken away from</gloss> the Senate.
+
+<milestone n="176.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cur igitur</lem>
+							</app>, etc.: Cicero puts himself for the moment in the place of the other side and himself asks the question which an objector might put.  He answers this question in <foreign xml:lang="lat">quia nulla</foreign>, etc. (1.19).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">incendium curiae</lem>
+							</app>: see note on sect. <bibl n="Cic. Mil. 12">12</bibl> (p. 176, 1. I), above.
+
+<milestone n="176.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Lepidi</lem>
+							</app>: after the death of Clodius, M. Aemilius Lepidus (afterwards triumvir with Octavianus and Antony) had been appointed <foreign xml:lang="lat">interrex</foreign>, a formality necessary to give regularity to the forms of election when there were no consuls (see Introd. to this Oration, p.170 of text). In the disorders that followed his house was stormed and plundered by the mob.
+
+<milestone n="176.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non contra</lem>
+							</app>, [which is] <gloss>not</gloss>, etc. </p>
+					</div>
+					<div type="textpart" n="14" subtype="section">
+						<milestone n="176.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa defensio</lem>
+							</app>, <gloss>such a defence</gloss>, i.e. the defence by violence (cf. <foreign xml:lang="lat">vi vis defenditur</foreign>, sect. <bibl n="Cic. Mil. 9">9</bibl>).
+
+<milestone n="176.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">e re publica</lem>
+							</app>, <gloss>in the interest of the commonwealth</gloss>.
+
+<milestone n="177.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">decrevi</lem>
+							</app>, <foreign xml:lang="lat">notavi</foreign>, <gloss>I voted, I marked</gloss>, i.e. as deserving punishment, leaving the person of the criminal to the decision of the court (sect. <bibl n="Cic. Mil. 31">31</bibl>).  These words refer to Cicero's acts and votes in the Senate when Pompey's law was under discussion (see note on 1.8).
+
+<milestone n="177.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">crimen</lem>
+							</app>: <gloss>the charge</gloss> against any particular person; <app>
+								<lem xml:lang="lat">rem</lem>
+							</app>, <gloss>the act itself</gloss>
+							<milestone n="177.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribunum</lem>
+							</app>: Plancus.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">licuisset</lem>
+							</app>: the action was stayed by the tribune's <foreign xml:lang="lat">intercessio</foreign>.
+
+<milestone n="177.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">decernebat</lem>
+							</app>, <gloss>it was on the point of deciding:</gloss> § <bibl n="AG 471">471</bibl>, e (277, c); B. 260, 3; G. 233; H. 530 (469, ii'); cf. H.-B. 484.
+
+<milestone n="177.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">extra ordinem</lem>
+							</app>, <gloss>out of turn</gloss>: i.e. that they should have precedence of the regular docket, but that no new provisions should be made for an investigation.
+
+<milestone n="177.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">divisa sententia est</lem>
+							</app>, <gloss>the question was divided</gloss>.  When Pompey's proposed law <foreign xml:lang="lat">de vi</foreign>, establishing a special tribunal (<foreign xml:lang="lat">hanc quaestionem</foreign>, sect. <bibl n="Cic. Mil. 13">13</bibl>) for the investigation of the disturbances referred to, was discussed in the Senate, a resolution opposed to it was offered. This consisted of two clauses: (I) that the disturbances were <foreign xml:lang="lat">contra rem publicam</foreign>, and (2) that cases arising out of them should be brought in the regular courts, but should be advanced on the docket (<foreign xml:lang="lat">veteribus</foreign> —<foreign xml:lang="lat">legibus</foreign>, <foreign xml:lang="lat">extra ordinem</foreign>).  The tribune Q. Fufius Calenus (whom Cicero refuses to name:  <foreign xml:lang="lat">nescio quo</foreign>) demanded that the question be divided. The first clause was then passed, whereupon the tribune Plancus interposed his veto (<foreign xml:lang="lat">empta intercessione</foreign>, l.10) and prevented the second from being voted upon.  Thus it was made to appear that the Senate approved the new tribunal, and Pompey's law was immediately passed by the public assembly, while the more cautious action of the Senate (<foreign xml:lang="lat">reliqua auctoritas</foreign>) was blocked by the <foreign xml:lang="lat">intercessio</foreign> of Plancus. </p>
+					</div>
+					<div type="textpart" n="15-22" subtype="section">
+						<p>III. Pompey's action in carrying a law to establish this special investigation was not a prejudgment of Milo's case. No such tribunal was established when Africanus was murdered. There was no special sanctity in Clodius, nor is his death a public calamity. Pompey has left the question of Milo's guilt or innocence to the court.
+</p>
+					</div>
+					<div type="textpart" n="15" subtype="section">
+						<milestone n="177.11" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">at enim</lem>
+							</app>: introducing another supposed objection of Cicero's opponents.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">rogatione</lem>
+							</app>, i.e. when he brought his law <foreign xml:lang="lat">de vi</foreign> (just referred to) before the people for enactment (the proceedings in the Senate having been merely deliberative).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">re</lem>
+							</app>, <gloss>the facts</gloss> of the affray; <app>
+								<lem xml:lang="lat">causa</lem>
+							</app>, <gloss>the case</gloss> of the accused.
+
+<milestone n="177.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae . . . facta esset</lem>
+							</app>: § <bibl n="AG 592">592</bibl>, 3 (341, d); B. 323; G. 628; H. 649, I (528, i); H.-B. 535, I, a.
+
+<milestone n="177.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nempe</lem>
+							</app>, etc., <gloss>simply. that an investigation should be made</gloss>.
+
+<milestone n="177.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">juris defensionem</lem>
+							</app>, <gloss>a defence on a point of law</gloss>, (as to justification of the homicide).
+
+<milestone n="177.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hanc salutarem litteram</lem>
+							</app>, <gloss>this saving letter</gloss> (<foreign xml:lang="lat">hanc</foreign>, because in favor of his client), i.e. a chance to acquit.  Each juror inscribed on his ballot A (<foreign xml:lang="lat">absolvo</foreign>) for acquittal, or C or K (<foreign xml:lang="lat">condemno</foreign>) for conviction. Fig. 44 shows (on the reverse) a voting urn and a ballot marked A and C. </p>
+					</div>
+					<div type="textpart" n="16" subtype="section">
+						<milestone n="177.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Publione</lem>
+							</app>, etc., i.e. whether his act (<app>
+								<lem xml:lang="lat">quod</lem>
+							</app>, <gloss>what</gloss>) was something he owed to Clodius, or a concession to the exigencies of the time, which demanded the investigation, <pb n="436"/>
+							<milestone n="177.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">domi</lem>
+							</app>, etc.: the following are examples of assassination in which no extraordinary tribunal (commissioned for investigation) was established. They are cited in support of Cicero's contention that in establishing such a tribunal in the present case Pompey was not pre-judging the innocence of Clodius and consequent guilt of Milo, but merely yielding to the necessities of the public situation.
+
+<milestone n="177.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Catonis</lem>
+							</app>: M. Porcius Cato (the Younger); see note on Archias, sect. <bibl n="Cic. Arch. 22">22</bibl> (<ref n="pl164.8">p. 164, l. 8</ref>).
+
+<milestone n="177.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Drusus</lem>
+							</app>: M. Livius Drusus (;on of Marcus) was murdered by some unknown person on returning home from an exciting political debate (<date when="-0091">B.C. 91</date>).
+
+<milestone n="178.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Africano</lem>
+							</app>, i.e. Aemilianus. He was actively opposed to the plans of C. Gracchus for the division of the Latian lands; and, while the controversy was at its hottest, was found dead in his bed with marks (it was thought) of strangulation. His wife, sister of the tribune, and Gracchus himself lay under some suspicion of the crime, which was probably the act of Carbo (see note to sect. <bibl n="Cic. Mil. 8">8</bibl>, <ref n="pl173.27">p. 173, l. 27</ref>).
+
+<milestone n="178.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quem immortalem</lem>
+							</app>, etc.: Scipio was murdered at the age of fifty-six. </p>
+					</div>
+					<div type="textpart" n="17" subtype="section">
+						<milestone n="178.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">intersit</lem>
+							</app>: § <bibl n="AG 440">440</bibl> (266, c); B. 308; G. 264; H. 559, 3 (484 111)  H B 532, I.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">summorum</lem>
+							</app>, <foreign xml:lang="lat">infimorum</foreign>, simply <gloss>high</gloss> and <gloss>low</gloss>.
+
+<milestone n="178.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quidem</lem>
+							</app>, <gloss>yet</gloss>
+							<milestone n="178.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">monumentis</lem>
+							</app>, <gloss>
+								<foreign xml:lang="lat">memoria</foreign>4</gloss> i.e. the road itself.  The Appian Way was constructed <date when="-0312">B.C. 312</date> by the censor Ap. Claudius Caecus, an ancestor of Clodius.  This circumstance is skillfully used to tell against Clodius, rather than in his favor. </p>
+					</div>
+					<div type="textpart" n="18" subtype="section">
+						<milestone n="178.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">M. Papirium</lem>
+							</app>: this was one of Clodius's earliest exploits. Papirius, a friend of Pompey, was killed in a brawl about a son of Tigranes, held as hostage at Rome, whom Clodius was trying to rescue and send back for a great ransom to Asia, having by a trick got him out of the hands of his custodian.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non fuit</lem>
+							</app>, etc.: an illustration of the idea expressed in <foreign xml:lang="lat">impune</foreign>, 1.16, above.
+
+<milestone n="178.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae</lem>
+							</app>, <foreign xml:lang="lat">te</foreign>. the Appian Way.
+
+<milestone n="178.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">templo Castoris</lem>
+							</app>, where the Senate was then holding session. The circumstance took place in the year of Clodius's tribunate (<date when="-0058">B.C. 58</date>), <pb n="437"/> while Pompey was in the Senate.  "he instantly went home and stayed there." </p>
+					</div>
+					<div type="textpart" n="19" subtype="section">
+						<milestone n="178.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">num quae</lem>
+							</app>, <gloss>was there any</gloss>, etc.
+
+<milestone n="178.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">haec</lem>
+							</app>, i.e. <foreign xml:lang="lat">res</foreign>, <foreign xml:lang="lat">vir</foreign>, <foreign xml:lang="lat">tempus</foreign>.
+
+<milestone n="178.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">summa</lem>
+							</app> (pred. to <foreign xml:lang="lat">omnia</foreign>), <gloss>in the highest degree</gloss>.
+
+<milestone n="179.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">proinde quasi</lem>
+							</app>, <gloss>just as if</gloss> etc.: § <bibl n="AG 524">524</bibl>(312); B. 307; G. 602; H. 584,2 (513, ii, N.1); H.-B. 504,3. That is, the <gloss>overt act</gloss> must be judged by its obvious intent. </p>
+					</div>
+					<div type="textpart" n="20" subtype="section">
+						<milestone n="180.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">luget</lem>
+							</app>, etc.: the whole description is, with intentional irony, in lively contrast with the real facts. </p>
+					</div>
+					<div type="textpart" n="21" subtype="section">
+						<milestone n="180.5" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">non fuit</lem>
+							</app>, etc., <gloss>that was not the reason</gloss>, contradicting the ironical statements just made; the real reason is given in the clause introduced by <foreign xml:lang="lat">sed</foreign>.
+
+<milestone n="180.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cur . . . censeret</lem>
+							</app>: § <bibl n="AG 575">575</bibl>, b (334, b); B. 300, 2; G. 467; cf. H. 642,3(523, ii, I,N.); H-B. 513, 2.
+
+<milestone n="180.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ferendam</lem>
+							</app>, <gloss>should be</gloss> (proposed to the people to be) <gloss>voted</gloss>.
+
+<milestone n="180.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">reconciliatue</lem>
+							</app>: Pompey had lately renewed friendly relations with Clodius.
+
+<milestone n="180.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">delegit</lem>
+							</app>: the choice of the <gloss>
+								<foreign xml:lang="lat">judices</foreign>
+							</gloss> was left to Pompey.
+
+<milestone n="180.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">neque . . . hoc cogitavit</lem>
+							</app>, <gloss>he had no such idea</gloss>.
+
+<milestone n="180.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non</lem>
+							</app>, etc., <gloss>for my influence is not limited to my personal friendships</gloss>.
+
+<milestone n="180.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuit . . . non</lem>
+							</app>, <gloss>could not but</gloss>
+						</p>
+					</div>
+					<div type="textpart" n="22" subtype="section">
+						<milestone n="180.23" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod</lem>
+							</app>, <gloss>in that</gloss>: § <bibl n="AG 572">572</bibl>, a (333, a); B. 299, 2 ; G. 525, 2 ; H. 588, 31 N. (516, 2, N.); H-B. 552, 2.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Domiti</lem>
+							</app>: L. Domitius Ahenobarbus (consul, <date when="-0054">B.C. 54</date>), afterwards a leader against Caesar in the Civil War, an arrogant and uncompromising upholder of the aristocracy. The emperor Nero was his descendant.
+
+<milestone n="180.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">consularem</lem>
+							</app>: sc. <foreign xml:lang="lat">praeesse</foreign>.
+
+<milestone n="180.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">documenta maxima</lem>
+							</app>: in his praetorship (<date when="-0058">B.C. 58</date>) Domitius had roughly cut his way through a crowd of the followers of Clodius, killing many of them. </p>
+					</div>
+				</div>
+				<div type="textpart" n="23-31" subtype="chapter">
+					<head> III.<foreign xml:lang="lat">Narratio</foreign>
+					</head>
+					<div type="textpart" n="23-31" subtype="section">
+						<p>The sole question to be decided is: Which was the aggressor, — Milo or Clodius? Account of the affray: The death of Milo was necessary to Clodius: Clodius had threatened Milo: he lay in wait for him and attacked him, but was killed himself. From this plain statement of facts it may be judged who was the intending assassin.
+</p>
+					</div>
+					<div type="textpart" n="23" subtype="section">
+						<milestone n="180.32" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">si neque</lem>
+							</app>, etc.: a recapitulation of the whole of the <foreign xml:lang="lat">Confutatio</foreign> (sects. <bibl n="Cic. Mil. 7">7</bibl>-<bibl n="Cic. Mil. 22">22</bibl>).
+
+<milestone n="181.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vellemus</lem>
+							</app>: § <bibl n="AG 447">447</bibl>, 1 (311, b); B. 280, 4; G. 258; H. 556 (486, i); H.-B. 519, I, b.
+
+<milestone n="181.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">uter utri</lem>
+							</app>, <gloss>which against the other</gloss> (lit. <gloss>which against which</gloss>). </p>
+					</div>
+					<div type="textpart" n="24" subtype="section">
+						<milestone n="181.10" unit="pg_l"/>
+						<p>All that precedes is intended merely to brush aside prejudices and gain for the case a hearing on its merits: at this point the real defence begins with a statement of facts in which every incident is made to tell heavily against Clodius.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in praetura</lem>
+							</app>: at the time of his death Clodius was candidate for this office (see Introd. to the oration).
+
+<milestone n="181.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non multos mensis</lem>
+							</app>: really less than six.  At whatever time the magistrates were elected, they could hold office only for the year for which they were chosen.  In this case, since the election was delayed till long after the beginning of the year, the term of office was very considerably shortened.
+
+<milestone n="181.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">honoris gradum</lem>
+							</app>: the ambition of a Roman was to complete the series of <foreign xml:lang="lat">curule</foreign> offices (<foreign xml:lang="lat">cursus honorum</foreign>) as speedily as possible.
+
+<milestone n="181.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">annum suum</lem>
+							</app>, <gloss>the regular year</gloss> in which he could legally be a candidate.
+
+<milestone n="181.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">religione aliqun</lem>
+							</app>, <gloss>from some religious scruple, as it is generally (Ut fit</gloss>). </p>
+					</div>
+					<div type="textpart" n="25" subtype="section">
+						<milestone n="181.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">consule Milone</lem>
+							</app>: equiv. to a fut. <foreign xml:lang="lat">protasis</foreign>; § <bibl n="AG 52">52</bibl>!, a (310, a); B. 305, I , G. 600, I; H. 575, 9 (507, N.7); H.-B. 578, 6. Milo was a candidate for the consulship.
+
+<milestone n="181.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fieri</lem>
+							</app>, <gloss>was likely to be elected</gloss> (i.e. as things were going at the time of speaking, hence the pres.).
+
+<milestone n="181.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">convocabat</lem>
+							</app>, not officially, but in the course of his canvass.
+
+<milestone n="181.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Collinam novam</lem>
+							</app>, <gloss>a new Colline tribe</gloss>.  Of the thirty-five tribes, the four city tribes ranked lowest, because the freedmen and poor citizens were placed in them; and of these the <foreign xml:lang="lat">Collina</foreign> was least  reputable of all. It was through the <foreign xml:lang="lat">collegia compitalicia</foreign>, or local clubs, that Clodius worked upon the city tribes; and, by the exaggerated expression that he registered an entirely new <foreign xml:lang="lat">Collina</foreign>, it appears to be meant that the new and perhaps fraudulent names that he got upon the list outnumbered the genuine voters.
+
+<milestone n="181.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ille</lem>
+							</app>, Clodius; <app>
+								<lem xml:lang="lat">hic</lem>
+							</app>, Milo (as generally in this speech).
+
+<milestone n="181.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">suffragiis</lem>
+							</app>:  there had already been several attempts to elect magistrates, which had failed through the obstructive tricks familiar to Roman politicians.  Hence the preference of the citizens was already well known <gloss>by their votes</gloss>. </p>
+					</div>
+					<div type="textpart" n="26" subtype="section">
+						<milestone n="182.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sflvas publicas</lem>
+							</app>: probably some depredations of Clodius in Etruria, where he had extensive estates. </p>
+					</div>
+					<div type="textpart" n="27" subtype="section">
+						<milestone n="182.11" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sollemne</lem>
+							</app>, <gloss>
+								<foreign xml:lang="lat">annua</foreign>4</gloss> or occurring at regular seasons (see derivation in Vocab.).  The adjectives indicate that Milo's journey was undertaken regularly, legally, and of necessity, and hence that the idea that he went out to kill Clodius is absurd.
+
+<milestone n="182.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Lanuvium</lem>
+							</app>: this was an old town of Latium, about twenty miles southeast of Rome.  It contained a temple of Juno Sospita, a local divinity, so famous that, when Lanuvium became a <foreign xml:lang="lat">municipium</foreign> of Rome, this sanctuary was, by special arrangement, received into the Roman religious system.  The <foreign xml:lang="lat">flamen</foreign>, or special priest, of Juno Sospita had to be inaugurated by the chief magistrate (<foreign xml:lang="lat">dictator</foreign>) of the <foreign xml:lang="lat">municipium</foreign>.  Milo, of Lanuvian origin, a <foreign xml:lang="lat">municeps</foreign> of the town, now held the latter office.
+
+<milestone n="182.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dictator</lem>
+							</app>: this word, evidently an old name for the highest magistrate of a community, was in Rome applied to an extraordinary magistrate, but in other Italian towns it retained its earlier signification (as here).
+
+<milestone n="182.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ita</lem>
+							</app>, <gloss>under such circumstances</gloss>: an indication that Clodius sacrificed something of importance (namely, his presence at an assembly of the people) in order to lay this ambuscade for Milo.  Milo, on the other hand (<foreign xml:lang="lat">autem</foreign>), was going about his regular business, as narrated in what follows. </p>
+					</div>
+					<div type="textpart" n="28" subtype="section">
+						<milestone n="182.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quoad</lem>
+							</app>, etc.: the Senate adjourned on this day about the fourth hour (between ten and eleven A.M.).
+
+<milestone n="182.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">calceos</lem>
+							</app>: the Senator wore a special kind of shoe adorned with a crescent-shaped ornament (<foreign xml:lang="lat">lunula</foreign>); his tunic was also distinguished by the broad purple stripe in front (<foreign xml:lang="lat">latus clavus</foreign>).  When travelling, a Roman put off his <foreign xml:lang="lat">toga</foreign> and badges of office and put on a heavy travelling cloak (<foreign xml:lang="lat">paenula</foreign>) and other easy garments. <pb n="440"/>
+							<milestone n="182.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id temporis</lem>
+							</app>: § <bibl n="AG 397">397</bibl>, a (240, b); B. 185, 2; G. 336, N.2; H. 416, 2 (378, 2); H.-B. 388, b.
+
+<milestone n="182.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ob viam fit</lem>
+							</app>: this was just beyond Bovillie (Albano), a village about nine miles from Rome.
+
+<milestone n="182.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">raeda</lem>
+							</app> (<foreign xml:lang="lat">rheda</foreign>), a four-wheeled family carriage.
+
+<milestone n="182.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Graecis comitibus</lem>
+							</app>, singers, dancers, etc. (see sect. <bibl n="Cic. Mil. 55">55</bibl>).
+
+<milestone n="182.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hic insidiator</lem>
+							</app>, i.e. Milo (of course ironical).
+
+<milestone n="182.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">apparasset</lem>
+							</app>, i.e. as the accusers say: see § <bibl n="AG 592">592</bibl>, 3 (341, d); B. 323; G. 628; H. 649, i (528, I); H.-B. 535, I, a.
+
+<milestone n="182.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">paenulatus</lem>
+							</app>: the <foreign xml:lang="lat">paenula</foreign> went on over the head, like a Mexican poncho, and so confined the arms (Fig. 47). It was the usual travelling cloak of a Roman.
+
+<milestone n="182.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">comitatu</lem>
+							</app>: this troop of singing boys and maidens was, no doubt, to take part in the village procession next day at Lanuvium. </p>
+					</div>
+					<div type="textpart" n="29" subtype="section">
+						<milestone n="182.31" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">hora undecima</lem>
+							</app>: this would be about half past four P.M. In reality, as we learn from other sources, it was nearly two hours earlier; and Milo had stopped at an inn in Bovillae, in order (as was charged) to make sure of not missing his enemy.
+
+<milestone n="183.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adversi . . . occidunt</lem>
+							</app>, <gloss>they attack and kilt</gloss>
+							<milestone n="183.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">pugnari</lem>
+							</app>, impersonal.
+
+<milestone n="183.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">succurrere</lem>
+							</app>: § <bibl n="AG 558">558</bibl>, b (331, C, 2); cf. B. 295, 31 N.; G. 549, N.1; H. 505, ii, 2; H.-B. 587.
+
+<milestone n="183.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fecerunt . . . quod quisque . . . voluisset</lem>
+							</app>: this sentence is greatly admired as a delicate way of glossing over awkward facts.
+
+<milestone n="183.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">derivandi</lem>
+							</app>, i.e. from Milo, the master, to the irresponsible slaves.
+
+<milestone n="183.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">voluisset</lem>
+							</app>: for constr., see § <bibl n="AG 521">521</bibl>, a (310, a) ; B. 305, I ; G. 600, I; H. 595, 9 (507, N.7); H.-B. 578, 6. </p>
+					</div>
+					<div type="textpart" n="30" subtype="section">
+						<milestone n="183.17" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">consecuta sit</lem>
+							</app>, i.e. by the death of Clodius.
+
+<milestone n="183.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">prosit</lem>
+							</app>, hortatory subjunctive.
+
+<milestone n="183.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuerit</lem>
+							</app>: for tense, see § <bibl n="AG 485">485</bibl>, c (287, c) ; B. 268, 6  G. 513; H. 550 (495, vi); H.-B. 481.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quin servaret</lem>
+							</app>, <gloss>without saving</gloss>; cf. <foreign xml:lang="lat">quin judicetis</foreign>, <gloss>without judging</gloss> (1.26, below).
+
+<milestone n="183.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ratio doctis</lem>
+							</app>, etc.: observe the exquisite skill with which Cicero here enunciates and applies the universal law of self-defence. </p>
+					</div>
+					<div type="textpart" n="31" subtype="section">
+						<milestone n="183.28" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Observe that this section</lem>
+							</app> (sect. <bibl n="Cic. Mil. 31">31</bibl>), which ends the <foreign xml:lang="lat">Narratio</foreign> (or statement of facts), is similar to sect. <bibl n="Cic. Mil. 23">23</bibl>, which introduces the <foreign xml:lang="lat">Narratio</foreign>: both contain a summing up of the results arrived at in the <foreign xml:lang="lat">Confutatio</foreign> (sects. <bibl n="Cic. Mil. 7">7</bibl>-<bibl n="Cic. Mil. 22">22</bibl>) and both end with a statement of the main question: Which lay in wait for the other?  Much of the effort of persuasive argument depends on such repetitions, at the proper moment, of points already made.
+
+<milestone n="183.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">optabilius fuit</lem>
+							</app>: § <bibl n="AG 522">522</bibl>, a (311, c); B. 304, 3, a; G. 254, R.1; H. 583 (511, N.1); H.-B. 582, 3, a.
+
+<milestone n="183.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">semel</lem>
+							</app>, <gloss>once only</gloss>.
+
+<milestone n="183.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illud</lem>
+							</app>, referring forward to <foreign xml:lang="lat">occisusne</foreign>, etc. (as often).
+
+<milestone n="184.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id</lem>
+							</app>, i.e. the fact that there was a plot laid by somebody. Throughout the argument Cicero insists that neither the Senate nor Pompey intended to prejudge the guilt of Milo.
+
+<milestone n="184.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de hoc</lem>
+							</app>, i.e. the question <foreign xml:lang="lat">ab utro factae sint</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">latum est</lem>
+							</app>, etc., i.e. this was the intent of Pompey's law <foreign xml:lang="lat">de vi</foreign>.
+
+<milestone n="184.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hic</lem>
+							</app>, i.e. my client;
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ille</lem>
+							</app>, i.e. Clodius.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut ne sit</lem>
+							</app>, subj. of purpose (i.e. the purpose of the investigation).  </p>
+					</div>
+				</div>
+				<div type="textpart" n="29-91" subtype="chapter">
+					<head> IV. <foreign xml:lang="lat">Confirmatio</foreign>
+					</head>
+					<p>The <foreign xml:lang="lat">Confirmatio</foreign> in this oration consists of two parts.  In the first (sects. <bibl n="Cic. Mil. 32">32</bibl>-<bibl n="Cic. Mil. 71">71</bibl>), Cicero handles the question of self-defence directly, maintaining that all the circumstances point to Clodius as the aggressor in the affray.  In the second (sects. <bibl n="Cic. Mil. 72">72</bibl>
+						<bibl n="Cic. Mil. 91">91</bibl>), he argues that, even if Milo had not had this justification, his killing Clodius would not have been a crime but a patriotic act.
+</p>
+					<div type="textpart" n="32-35" subtype="section">
+						<p>Clodius had a strong motive to kill Milo: Milo had no motive to kill Clodius.
+</p>
+					</div>
+					<div type="textpart" n="32" subtype="section">
+						<milestone n="184.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">probari</lem>
+							</app>, etc.: the evidence on this point would, of course, be purely circumstantial and inferential, and to Cicero's wonderful skill in dealing with such evidence is due much of the interest of what follows.
+
+<milestone n="184.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in illa</lem>
+							</app>, <gloss>in the case of the</gloss>, etc.
+
+<milestone n="184.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fllud Cassianum</lem>
+							</app>, <gloss>that noted saying of Cassius</gloss>. L. Cassius Longinus Ravilla (cos. <date when="-0127">B.C. 127</date>) was one of the most upright men of his time, distinguished as a <foreign xml:lang="lat">quaesitor</foreign> (presiding officer) of special trials. <pb n="442"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cui bono</lem>
+							</app>, <gloss>for whose advantage</gloss>: § <bibl n="AG 382">382</bibl>, I and N.1 (233, a); B. 191, 2; G. 356, R.1; H. 433 (390, i); H.-B. 360 and b; not "for what advantage," as it is often wrongly given in English.  The question of "motive" in cases of murder was as much insisted on in ancient trials as it is today (cf. Rosc. Am., note at. 23, p. 10, 1. 16).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">personis</lem>
+							</app>, <gloss>parties</gloss>: the  persona is properly the <gloss>mask</gloss>, which indicates by its features the "character" in a play.
+
+<milestone n="184.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">atqui</lem>
+							</app>, etc., <gloss>now, by the killing of Milo</gloss>, etc.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adsequebatur</lem>
+							</app>, <gloss>was going to gain</gloss>: § <bibl n="AG 471">471</bibl>, c (277,c); B. 260,3; G. 233; H. 534, 2 (469, I); cf. H-B. 484.
+
+<milestone n="184.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non eo consule</lem>
+							</app>, <gloss>without having one as consul</gloss>.
+
+<milestone n="184.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quibus . . . coniventibus</lem>
+							</app>: these competitors of Milo were P. Plautius Hypsaeus and Q. Metellus Scipio, — the latter an adopted son of Metellus Pius. He took a leading part on Pompey's side in the Civil War, and was defeated by Caesar at Thapsus, <date when="-0046">B.C. 46</date>.
+
+<milestone n="184.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">speraret</lem>
+							</app>: integral part of the purpose clause <app>
+								<lem xml:lang="lat">ut . . . esset</lem>
+							</app>: so also <app>
+								<lem xml:lang="lat">cuperent</lem>
+							</app>, <app>
+								<lem xml:lang="lat">vellent</lem>
+							</app>, <app>
+								<lem xml:lang="lat">possent</lem>
+							</app>, below.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cogitatis</lem>
+							</app>: artfully suggesting that the mad conduct of Clodius was not mere hot-headedness but was deliberately planned to further his ambitious designs.
+
+<milestone n="184.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illi</lem>
+							</app>, i.e. the consuls.
+
+<milestone n="184.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tantum beneficium</lem>
+							</app>: they would owe their election to him. </p>
+					</div>
+					<div type="textpart" n="33" subtype="section">
+						<milestone n="184.26" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ille</lem>
+							</app>, i.e. Clodius.
+
+<milestone n="184.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fuerit impositurus</lem>
+							</app>: indir. quest. for <foreign xml:lang="lat">-turus fuit</foreign> = <foreign xml:lang="lat">imposuisset</foreign>; § <bibl n="AG 517">517</bibl>, d (308, d and N.); B. 304, 3, b, 322, b; G. 597, R5, a; H. 582, 2 (511, 2, N.); H-B. 581, b, 2.
+
+<milestone n="184.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Clodi</lem>
+							</app>: Sex. Clodius, client and confidential agent of the demagogue Clodius.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">librarium</lem>
+							</app>, i.e. the "budget" of laws which Clodius had on hand to propose.  Cicero humorously speaks as if these filled a whole <foreign xml:lang="lat">librarium</foreign> or book cabinet.
+
+<milestone n="184.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eripuisse e domo</lem>
+							</app>, i.e. from P. Clodius's house, in the riots that followed his death.
+
+<milestone n="184.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Palladium</lem>
+							</app>: the image of Pallas, kept in the citadel of Troy, and taken thence by a nocturnal enterprise of Ulysses and Diomed. The sanctity and adventures of this portfolio suggest the comparison.
+
+<milestone n="185.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si nactus esses</lem>
+							</app>, <gloss>if you could find him</gloss>.
+
+<milestone n="185.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">per</lem>
+							</app>: the words of adjuration are either intentionally omitted or lost.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus legis</lem>
+							</app>: a proposed law of Clodius by which the freedmen were to be distributed among all the thirty-five tribes (see note, sect. <bibl n="Cic. Mil. 25">25</bibl>, p. 181, 1.26).  Sex. Clodius, the son of a freedman, is shrewdly hinted at as author of the law.
+
+<milestone n="185.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de nostrum omnium</lem>
+							</app>: such a rhetorical break is called <foreign xml:lang="lat">aposiopesis</foreign>. Cicero would have said something like <foreign xml:lang="lat">proscriptione</foreign> or <foreign xml:lang="lat">caede</foreign>, but he affects to be alarmed at the threatening look with which Sex. Clodius hears his allusion (<foreign xml:lang="lat">aspexit</foreign> me <foreign xml:lang="lat">illis oculis</foreign>).
+
+<milestone n="185.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">lumen curiae</lem>
+							</app>, a pun: Cicero calls Sex. Clodius <gloss>a light of the senate-house</gloss>, meaning (1) sarcastically, that he was a distinguished Senator, and (2) that he was the <gloss>incendiary</gloss> who, by burning Clodius's body, had set the <foreign xml:lang="lat">curia</foreign> on fire (see note on sect. <bibl n="Cic. Mil. 12">12</bibl>, <ref n="pl176.1">p. 176, l. 1</ref>).
+
+<milestone n="185.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">poenitus</lem>
+							</app> [= <foreign xml:lang="lat">punitus</foreign>] <foreign xml:lang="lat">es</foreign> (often <foreign xml:lang="lat">deponent</foreign> in Cicero):  nothing was more horrible to the ancients than the loss of due funeral rites. The burning of Clodius's body by the mob deprived him of all the honors to which he was entitled.
+
+<milestone n="185.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">erat</lem>
+							</app>: § <bibl n="AG 522">522</bibl>, a (311, c); B. 304, 3, a; G. 254, p.1; H. 583 (511, N.1); H-B. 582, 3, a.
+
+<milestone n="185.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imaginibus</lem>
+							</app>: a Claudius should have a long line of most distinguished images.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">infelicissimis</lem>
+							</app>, <gloss>ill-omened</gloss>, as obtained by riotous violence. </p>
+					</div>
+					<div type="textpart" n="34" subtype="section">
+						<milestone n="185.19" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">audistis</lem>
+							</app>, etc.: the words in italics are supplied by conjecture.
+
+<milestone n="185.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non dicam</lem>
+							</app>: parenthetical.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">obstabat</lem>
+							</app>: the supposed remark of an opponent.
+
+<milestone n="185.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">repugnante eo</lem>
+							</app>, <gloss>in spite of his opposition</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fiebat</lem>
+							</app> (<foreign xml:lang="lat">se consul</foreign>), <gloss>was coming to be</gloss> (see note <foreign xml:lang="lat">onfieri</foreign>, sect. <bibl n="Cic. Mil. 25">25</bibl>, p. iii, 1.22).
+
+<milestone n="185.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nec me</lem>
+							</app>, etc., i.e. the positive support of Cicero was not more useful to Milo's canvass than the antagonism of so bad a man as Clodius.
+
+<milestone n="185.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">apud vos</lem>
+							</app>, i.e. you and such men as you in your capacity as electors.
+
+<milestone n="186.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quis dubitaret?</lem>
+							</app>
+							<gloss>who could</gloss> [then] <gloss>hesitate?</gloss> § <bibl n="AG 444">444</bibl> (268); B. 277; G; 259; H. 557 (486, ii); H-B. 517, I.
+
+<milestone n="186.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Clodio remoto</lem>
+							</app>, i.e. s9 long as Clodius was alive many would vote for Milo as being his declared enemy, but now that Clodius k out of the way, Milo must rely only on the ordinary means (<foreign xml:lang="lat">usitatis</foreign> jam rebus) of securing suffrages.
+
+<milestone n="186.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne . . . metueretis</lem>
+							</app>: § <bibl n="AG 537">537</bibl>, a, N. (319, a, N.); G. 553, I; cf. H.-B. 502, 3, a, footnote1. </p>
+					</div>
+					<div type="textpart" n="35" subtype="section">
+						<milestone n="186.13" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">at. etc.</lem>
+							</app>, <gloss>but</gloss> (some one will say).
+
+<milestone n="186.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">haec</lem>
+							</app>, <gloss>these considerations</gloss>. <pb n="444"/>
+							<milestone n="186.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civile</lem>
+							</app>, <gloss>political</gloss> (such as a good citizen must feel).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ille erat ut odisset</lem>
+							</app>, hi 1115 <gloss>case there was a motive for hating</gloss> (a purpose clause after <foreign xml:lang="lat">erat</foreign>
+							<foreign xml:lang="lat">= causa erat</foreign>).
+
+<milestone n="186.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">reus Milonis fuit</lem>
+							</app>, i.e. liable to an accusation on the part of Milo.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">lege Plotia</lem>
+							</app> (or Plautia): the Roman statute against assault. </p>
+					</div>
+					<div type="textpart" n="36-38" subtype="section">
+						<p>The habitual violence of Clodius, as contrasted with the law-abiding character of Milo, shows which of the two must have been the aggressor in this instance. Milo never used force except to ward off the violence of Clodius.
+</p>
+					</div>
+					<div type="textpart" n="36" subtype="section">
+						<milestone n="186.27" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">nihil</lem>
+							</app>, etc.: of course ironical.
+
+<milestone n="186.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid? ego</lem>
+							</app>, etc.: Cicero gives his own experience as an example of Clodius's violent way of acting.
+
+<milestone n="186.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">diem</lem>
+							</app>, etc.: example of legal proceedings which Cicero says, ironically, he avoided by fleeing from the city: the first phrase (diem <foreign xml:lang="lat">dixerat</foreign>) refers to a notice of an accusation before the public assembly; the second (<foreign xml:lang="lat">multam</foreign>
+							<foreign xml:lang="lat">inrogarat</foreign>), to a bill for a fine; the third (<foreign xml:lang="lat">actionem perduellionis</foreign>), to an action on a capital charge before the <foreign xml:lang="lat">comitia centuriata</foreign>.
+
+<milestone n="187.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">servorum</lem>
+							</app>, etc.: the facts, as opposed to the ironical statement that precedes.  Cicero had really to fear, not judicial proceedings instituted by Clodius, but mob violence instigated by him. </p>
+					</div>
+					<div type="textpart" n="37" subtype="section">
+						<milestone n="187.4" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vidi enim</lem>
+							</app>, <gloss>I saw with my own eyes</gloss>.  Cicero here artfully recounts other violent acts of Clodius, in the form of reasons which moved him, — thus killing two birds with one stone.
+
+<milestone n="187.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Hortensium</lem>
+							</app>: Cicero's early rival, and opponent in the case of Verres.  He was now one of Milo's counsel.
+
+<milestone n="187.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Vibienus</lem>
+							</app>: probably a lapse of Cicero's memory.  He was killed in the riots after the death of Clodius.
+
+<milestone n="187.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">haec</lem>
+							</app>, <app>
+								<lem xml:lang="lat">huic</lem>
+							</app>, <app>
+								<lem xml:lang="lat">haec</lem>
+							</app>: notice the emphatic repetition (<foreign xml:lang="lat">anaphora</foreign>).
+
+<milestone n="187.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Papiri</lem>
+							</app>: see note on sect. IS (p. 178,1. IS).
+
+<milestone n="187.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad regiam</lem>
+							</app>: the old palace of Numa on the <foreign xml:lang="lat">Sacra Via</foreign> at the point where it reached the Forum.  It adjoined the temple of Vesta, and was occupied by the <foreign xml:lang="lat">pontifex maximus</foreign> (at this time Caesar). When Augustus was made <foreign xml:lang="lat">pontifex maximus</foreign> he gave the Regia to the Vestal Virgins.  The occasion here referred to was probably an election riot in the preceding year. </p>
+					</div>
+					<div type="textpart" n="38" subtype="section">
+						<milestone n="187.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid</lem>
+							</app>, etc., <gloss>what like deed of Milo's?</gloss>
+							<milestone n="187.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">detrahi non posset</lem>
+							</app>, on account of the disturbances and lawlessness of the time. <pb n="445"/>
+							<milestone n="187.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuitne</lem>
+							</app> = <foreign xml:lang="lat">nonne potuit</foreign>: § <bibl n="AG 332">332</bibl>, c (210, d); B. 162, 2, c; G.454 R2; H-B 231,1, b, N.1.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">deos penatis</lem>
+							</app>: see note, Cat. 4, sect. <bibl n="Cic. Catil. 4.18">18</bibl> (<ref n="pl151.5">p. 151, l. 5</ref>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fllo oppugnante</lem>
+							</app>: this was an attack not by a mob but by an armed band, made upon Milo's house, November 12, <date when="-0057">B.C. 57</date>, the year of Cicero's return.
+
+<milestone n="187.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Fabricio</lem>
+							</app>: Q. Fabricius, tribune <date when="-0057">B.C. 57</date>; be was the originator and defender of the bill for Cicero's return from exile; an attack was made upon him by the partisans of Clodius, and he barely escaped with his life.
+
+<milestone n="187.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Caecili</lem>
+							</app>, <foreign xml:lang="lat">praetor</foreign>
+							<date when="-0057">B.C. 57</date>.  He was attacked while presiding over the games of Apollo in July.
+
+<milestone n="187.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">lata lex</lem>
+							</app>, i.e. the law proposed for his recall.
+
+<milestone n="187.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">facti</lem>
+							</app>, i.e. the killing of Clodius.  </p>
+					</div>
+					<div type="textpart" n="39-43" subtype="section">
+						<p>Milo had not killed Clodius when he might have done it with impunity and even with credit to himself. Would he have plotted his death at so unfavorable a moment?
+</p>
+					</div>
+					<div type="textpart" n="39" subtype="section">
+						<milestone n="188.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">consensus</lem>
+							</app>, <gloss>universal feeling</gloss>.
+
+<milestone n="188.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">praetores</lem>
+							</app>: all except Appius Claudius, brother of Clodius; <foreign xml:lang="lat">tribuni</foreign>: all except two, Numerius Rufus and Sex. Atilius Serranus.
+
+<milestone n="188.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">auctor</lem>
+							</app>, the responsible originator; <app>
+								<lem xml:lang="lat">dux</lem>
+							</app>, <gloss>champion</gloss>, who led it to a successful issue.
+
+<milestone n="188.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">decretum</lem>
+							</app>: this word is sometimes used for the proclamation of a magistrate, which was properly <foreign xml:lang="lat">edictum</foreign>.  The <foreign xml:lang="lat">decretum</foreign> was the ordinance of a <foreign xml:lang="lat">collegium</foreign> or council, especially of the Senate, but also of any municipal body.  The decree here referred to was passed by the municipal Senate (<foreign xml:lang="lat">curia</foreign>) of Capua, upon Pompey's proposition.
+
+<milestone n="183.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui . . . ejus</lem>
+							</app>, <gloss>of any one who</gloss>, equivalent to a conditional construction: § <bibl n="AG 519">519</bibl> (316); B. 312, 2; G. 593, i ; H. (507, iii, 2); H.-B. 577.  For the imperfect <foreign xml:lang="lat">cogitaretur</foreign> (impers.), see § <bibl n="AG 517">517</bibl>, a (308, a) ; B. 304, 2; G. 597, a.1; 14.579, I (510, N.2) ; H.-B. 581. (In present time it would be <foreign xml:lang="lat">si quis interemerit, cogitetur</foreign>. In past time, when it becomes contrary to fact, the same relation between the tenses is retained.) </p>
+					</div>
+					<div type="textpart" n="40" subtype="section">
+						<milestone n="188.13" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">bis</lem>
+							</app>: once for the attack on his house (sect. <bibl n="Cic. Mil. 38">38</bibl>, above); the other occasion is unknown.
+
+<milestone n="188.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">et reo</lem>
+							</app>: Clodius, as aedile (<date when="-0056">B.C. 56</date>), had laid a charge against Milo (<foreign xml:lang="lat">dixit diem Miloni</foreign>) of employing gladiators to bring about by intimidation the law for Cicero's recall.
+
+<milestone n="188.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">gravissimam . . . partem</lem>
+							</app>, <gloss>a most important part in political affairs</gloss>.
+
+<milestone n="188.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fuit</lem>
+							</app>: see note on <foreign xml:lang="lat">erat</foreign>, sect. <bibl n="Cic. Mil. 33">33</bibl> (<ref n="pl185.12">p. 185, l. 12</ref>).
+
+<milestone n="188.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in scalarum tenebris</lem>
+							</app>, the stairway of a bookseller's shop, as Cicero says elsewhere (Phil. ii, 9).  The affair took place <date when="-0053">B.C. 53</date>, when Antony, at this time a friend of Cicero, was candidate for the quaestorship.
+
+<milestone n="188.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nulla sua invidia</lem>
+							</app>, <gloss>with no odium to himself</gloss>: § <bibl n="AG 348">348</bibl>, a (217, a); B. 243, 2; G. 304, N.2; 11.440, 2, N.2 (396, iii, N.2); H.-B. 354, d. </p>
+					</div>
+					<div type="textpart" n="41" subtype="section">
+						<milestone n="188.26" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">destringendos</lem>
+							</app>: § <bibl n="AG 500">500</bibl>, 4 (294, d); B. 337, 7, b, 2; G. 430; H. 622 (544, 2, N.2); H.-B. 612, iii. A fragment of a lost oration says that the two consuls were knocked down by stones.
+
+<milestone n="188.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">flberet</lem>
+							</app>, <gloss>might please</gloss>.
+
+<milestone n="188.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">jure</lem>
+							</app>, etc.: observe the antithesis carried out in all the modifiers (<app>
+								<lem xml:lang="lat">jure</lem>
+							</app>, <app>
+								<lem xml:lang="lat">injuria</lem>
+							</app>; <app>
+								<lem xml:lang="lat">loco</lem>
+							</app>, <app>
+								<lem xml:lang="lat">iniquo loco</lem>
+							</app>, etc.).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">loco</lem>
+							</app>, <gloss>with the advantage</gloss> of ground (see note, Cat. 2, sect. 1, <ref n="pl114.5">p. 114, l. 5</ref>). </p>
+					</div>
+					<div type="textpart" n="42" subtype="section">
+						<milestone n="189.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">contentio</lem>
+							</app>, <gloss>struggle for</gloss>.
+
+<milestone n="189.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ambitio</lem>
+							</app>, <gloss>the canvass</gloss> ("going about " for votes).
+
+<milestone n="189.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">obscure qualifies cogitari</lem>
+							</app>, but is displaced to oppose <foreign xml:lang="lat">palam</foreign>.
+
+<milestone n="189.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fabulam fictam</lem>
+							</app>, <gloss>a got-up story</gloss> (an election lie).
+
+<milestone n="189.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">molle</lem>
+							</app>, <gloss>sensitive</gloss>; <app>
+								<lem xml:lang="lat">tenerum</lem>
+							</app>, <gloss>delicate</gloss>; fragile, <gloss>unstable</gloss>; <foreign xml:lang="lat">flexibile</foreign>, <gloss>changeable</gloss>. </p>
+					</div>
+					<div type="textpart" n="43" subtype="section">
+						<milestone n="189.13" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">augusta. . . auspicia</lem>
+							</app>: rhetorical for <foreign xml:lang="lat">comitia centuriata quae auspicato fiunt</foreign> (see Introd., p. lxiii). All the higher magistrates had to be elected at these <foreign xml:lang="lat">comitia</foreign>.
+
+<milestone n="189.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">veniebat</lem>
+							</app>: § <bibl n="AG 471">471</bibl>, c (277, c); B. 260, 3; G. 233; H. 530 (469, I); Cf. H.-B. 484.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">idem</lem>
+							</app>, <gloss>on the other hand</gloss> (lit. <gloss>the same</gloss> [supposition]). </p>
+					</div>
+					<div type="textpart" n="44-52" subtype="section">
+						<p>Clodius had threatened to kill Milo, and the affray happened in accordance with his threats. He knew of the journey of Milo: Milo, on the other hand, knew nothing of the movements of Clodius.  Summary review of the conduct of both before the affray (Sects. <bibl n="Cic. Mil. 51">51</bibl>, <bibl n="Cic. Mil. 52">52</bibl>).
+</p>
+					</div>
+					<div type="textpart" n="44" subtype="section">
+						<milestone n="189.24" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Petili</lem>
+							</app>, <app>
+								<lem xml:lang="lat">Cato</lem>
+							</app>: Petilius and Cato are addressed personally, as prominent men sitting as <foreign xml:lang="lat">judices</foreign>.  Such appeals would not now be tolerated, but were consistent with ancient procedure.
+
+<milestone n="189.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Favonio</lem>
+							</app>: Favonius (see sect. <bibl n="Cic. Mil. 26">26</bibl>) was a friend and great admirer of Cato, with whom he had previously taken part in some proceedings against Clodius.  He was afterwards one of the conspirators against Caesar. </p>
+					</div>
+					<div type="textpart" n="45" subtype="section">
+						<milestone n="189.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">fefellit</lem>
+							</app>, i.e. the day which he had mentioned in making this threat did not fail to bring about the (attempted) accomplishment of it.
+
+<milestone n="190.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quo die?</lem>
+							</app> Cicero is again enlarging (cf. sect. <bibl n="Cic. Mil. 27">27</bibl>) on the fact that Clodius had every reason to remain at Rome on the day of the murder, but that Milo's leaving the city was natural and necessary. The significance of all this as to the question <foreign xml:lang="lat">uter utri insidias fecerit</foreign> (sect. <bibl n="Cic. Mil. 23">23</bibl>) is obvious.
+
+<milestone n="190.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mercenano tribuno</lem>
+							</app>: speeches were made this day by C. Sallustius (the historian) and Q. Pompeius Rufus.  Probably the latter is here meant.
+
+<milestone n="190.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">approperaret</lem>
+							</app>, <gloss>had been making haste</gloss>: § <bibl n="AG 517">517</bibl>, a (308, a); B. 304, 2; G. 597, R.1; H. 579, I (510, N.2) ; H.-B. 581.
+
+<milestone n="190.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">facultas</lem>
+							</app>: omit, as being a gloss.
+
+<milestone n="190.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid?</lem>
+							</app> i.e. what are we to infer? </p>
+					</div>
+					<div type="textpart" n="46" subtype="section">
+						<milestone n="190.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui. . . potuerit</lem>
+							</app>, <gloss>how could he have known?</gloss>
+							<milestone n="190.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut . . . rogasset</lem>
+							</app>: § <bibl n="AG 527">527</bibl>, a (313, a); cf. B. 308; G. 608; H. 586, ii (515, iii); H-B. 532, 2, b.
+
+<milestone n="190.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quaesierit sane</lem>
+							</app>, <gloss>suppose (if you will) that he did ask:</gloss> § <bibl n="AG 440">440</bibl> (266, c); cf. B. 308; G. 264; H. 559, 3 (484, iii); H.-B. 532, I.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid largiar</lem>
+							</app>, <gloss>how much I grant</gloss>, i.e. how liberal I am in making concessions to the other side.
+
+<milestone n="190.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Q. Arrius</lem>
+							</app>: one of the witnesses.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">corruperit</lem>
+							</app>: same constr. as <foreign xml:lang="lat">quaesierit</foreign>.
+
+<milestone n="190.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">eadem hora</lem>
+							</app>: in the famous trial of the violation of the mysteries (sect. <bibl n="Cic. Mil. 13">13</bibl>) Clodius had tried to prove an <foreign xml:lang="lat">alibi</foreign> by showing, from Causinius's testimony, that he had spent that night at his house at Interamna (Terni, on the river Nar in Umbria, ninety miles away); but he was confuted by the evidence of Cicero, who testified that he had seen him in Rome the same day. This act of Cicero's Clodius never forgot or forgave.
+
+<milestone n="190.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mansurum fuisse</lem>
+							</app>: § <bibl n="AG 589">589</bibl>, b, 2 (337, b, 2); B. 322; G. 597, R.4 ; H. 647 (527, iii); H.-B. 581, b, I  the <foreign xml:lang="lat">protasis</foreign> is suppressed but may be supplied from the <foreign xml:lang="lat">sed</foreign> clause following. </p>
+					</div>
+					<div type="textpart" n="47" subtype="section">
+						<milestone n="190.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">liberatur</lem>
+							</app>, <gloss>is proved</gloss> (lit. <gloss>is cleared</gloss>).
+
+<milestone n="190.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">profectus esse</lem>
+							</app>: depending on <foreign xml:lang="lat">liberatur</foreign>; § <bibl n="AG 582">582</bibl> (330, b); cf. B. 332; G. 528, I; H. 611, N.1 (534, I, N.1); cf. H.-B. 590, 1.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quippe</lem>
+							</app>, <gloss>of course</gloss>.
+
+<milestone n="190.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">obvius futurus</lem>
+							</app>, <gloss>expecting to meet</gloss>
+							<milestone n="190.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">rogatione</lem>
+							</app>, i.e. Pompey's law to establish this court of inquiry.
+
+<milestone n="190.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">majoris</lem>
+							</app>, <gloss>more important</gloss>: this charge was afterwards brought up against Cicero by Mark Antony. <pb n="448"/>
+							<milestone n="190.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">abjecti homines</lem>
+							</app>: C. Sallustius and Q. Pompeius (note on sect. <bibl n="Cic. Mil. 45">45</bibl>, p.190, 1.2). </p>
+					</div>
+					<div type="textpart" n="48" subtype="section">
+						<milestone n="191.4" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">occurrit</lem>
+							</app>, <gloss>meets me</gloss>.
+
+<milestone n="191.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si quidem</lem>
+							</app>, <gloss>yes, if</gloss>.
+
+<milestone n="191.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">video</lem>
+							</app> (emphat.), <gloss>I see clearly</gloss>.
+
+<milestone n="191.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid nuntiaret</lem>
+							</app>?  § <bibl n="AG 444">444</bibl> (268); B. 277; G. 259; H. 557 (486, ii); cf. H.-B. 515, I.
+
+<milestone n="191.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">obsignavi</lem>
+							</app>, <gloss>endorsed</gloss>. The names of witnesses were written on the back of wills, etc., after they were closed and sealed.
+
+<milestone n="191.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quem pridie</lem>
+							</app>, etc., i.e. Clodius, when he left Rome, knew that Cyrus was dying, and so the news of his actual death need not have changed his plans. Hence Cicero infers that this messenger was sent to give Clodius information of Milo's movements and not (as pretended) of the death of Cyrus.  Observe the skill with which every circumstance is made to tell in favor of Cicero's contention that Clodius lay in wait for Milo. </p>
+					</div>
+					<div type="textpart" n="49" subtype="section">
+						<milestone n="191.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">age</lem>
+							</app>, <gloss>well then</gloss>; sit, etc., <gloss>suppose it were so</gloss> (that the messenger informed him about Cyrus).
+
+<milestone n="191.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">properato</lem>
+							</app>: § <bibl n="AG 411">411</bibl>,a(243, e, N.); B. 218, 2,c; G. 406; H.477, iii (414, iv, N.3); H.-B. 430, 2.
+
+<milestone n="191.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">insidiator</lem>
+							</app>: ironical, as before. </p>
+					</div>
+					<div type="textpart" n="50" subtype="section">
+						<milestone n="191.23" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">credidisset</lem>
+							</app>: the <foreign xml:lang="lat">protasis</foreign> is implied in <foreign xml:lang="lat">neganti</foreign>; § <bibl n="AG 521">521</bibl>, a (310, a); B. 305, I; G. 600, I H. 575, 9 (507, N.7); H-B. 578, 6.
+
+<milestone n="191.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sustinuisset</lem>
+							</app>, <gloss>would have borne the brunt of</gloss>.
+
+<milestone n="191.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">latronum</lem>
+							</app>: highway robbery, with violence, was pretty common in the near neighborhood of Rome.
+
+<milestone n="191.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">multi</lem>
+							</app>, etc.: here it is hinted that the crimes of Clodius (who had estates in Etruria) had made him many enemies (see note, sect. <bibl n="Cic. Mil. 26">26</bibl>), on some of whom the suspicion might have fallen.
+
+<milestone n="191.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">timentes</lem>
+							</app>: his spoliations were so notorious that many who had not yet suffered might be supposed to have killed him through fear of his future depredations. Observe that Cicero keeps before the minds of the jury the view that the killing of Clodius was a great public service. </p>
+					</div>
+					<div type="textpart" n="51" subtype="section">
+						<milestone n="191.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod ut</lem>
+							</app> (see note on <foreign xml:lang="lat">rogasset</foreign>, <ref n="pl190.10">p. 190, l. 10</ref>), <gloss>now though</gloss> (cf. <foreign xml:lang="lat">quod si</foreign>).
+
+<milestone n="192.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">constare . . . omnia</lem>
+							</app>, etc.: in this and the following section Cicero sums up the arguments given in detail in sects. <bibl n="Cic. Mil. 32">32</bibl>-<bibl n="Cic. Mil. 51">51</bibl>.  The review is intended to show that, up to the moment of the affray, all the circumstances point to Clodius and not to Milo as the <foreign xml:lang="lat">insidiator</foreign>. </p>
+					</div>
+					<div type="textpart" n="52" subtype="section">
+						<milestone n="192.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">nihil umquam</lem>
+							</app>, etc.: on the contrary, Cicero says elsewhere (Att. iv, 3), speaking of the disorder that followed his return from exile, "If he [Clodius] comes in his way, I foresee that he will be killed by Milo. He does not hesitate to do it; he openly professes it (<foreign xml:lang="lat">prae se fert</foreign>)."
+
+<milestone n="192.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">causam finxisse</lem>
+							</app>, <gloss>invented an excuse</gloss>.  </p>
+					</div>
+					<div type="textpart" n="53-56" subtype="section">
+						<p>The place where the affray occurred was one that would have been selected by Clodius. Milo was unprepared for an affray (his wife was with him, etc.): Clodius was fully prepared.
+</p>
+					</div>
+					<div type="textpart" n="53" subtype="section">
+						<milestone n="192.19" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">etiam</lem>
+							</app>, <gloss>any longer</gloss>.
+
+<milestone n="192.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">substructiones</lem>
+							</app> (see sect. <bibl n="Cic. Mil. 85">85</bibl>), <gloss>buildings</gloss>, but with the idea of walls, grading, and the like, made necessary by the great size of the buildings fashionable among the Roman nobles.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">versabantur</lem>
+							</app>, <gloss>used to be employed</gloss>.
+
+<milestone n="192.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">adversari</lem>
+							</app>, i.e. Clodius.
+
+<milestone n="192.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ab eo</lem>
+							</app>, i.e. Clodius. </p>
+					</div>
+					<div type="textpart" n="54" subtype="section">
+						<milestone n="192.31" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid minus</lem>
+							</app>, Sc. <gloss>
+								<foreign xml:lang="lat">quam</foreign> Milo</gloss>.
+
+<milestone n="193.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illum</lem>
+							</app>, <gloss>the other</gloss>.
+
+<milestone n="193.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tarde</lem>
+							</app>, etc.: cf. sect. <bibl n="Cic. Mil. 49">49</bibl>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui</lem>
+							</app> (adv.) <app>
+								<lem xml:lang="lat">convenit</lem>
+							</app>, <gloss>what fitness in that?</gloss>
+							<milestone n="193.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hic</lem>
+							</app>, i.e. Milo.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">veniret</lem>
+							</app>: § <bibl n="AG 553">553</bibl> (328); B. 293, iii, 2; G. 572; H. 603, ii, 2 (519, ii, 2); H.-B. 507,5. </p>
+					</div>
+					<div type="textpart" n="55" subtype="section">
+						<milestone n="193.11" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Graeculi</lem>
+							</app>, dimin. of contempt: "Greeklings."
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in castra Etrusca</lem>
+							</app>, i.e. to Catiline's camp, for which, says Asconius, he had once really set out.
+
+<milestone n="193.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nugarum nihil</lem>
+							</app>, <gloss>no nonsense</gloss>, such as buffoons, minstrels, and the like.
+
+<milestone n="193.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nisi ut</lem>
+							</app>, etc., <gloss>except such persons as you might call a picked band</gloss>, etc. (lit. <gloss>except in such a way as</gloss>, etc.).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">virum a viro lectum</lem>
+							</app>: in allusion to a custom in the Roman army of selecting men for dangerous service one at a time, each new man being designated by the last.
+
+<milestone n="193.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mulier</lem>
+							</app>, said scornfully of Clodius, as being a coward. </p>
+					</div>
+					<div type="textpart" n="56" subtype="section">
+						<milestone n="193.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">odio</lem>
+							</app>: § <bibl n="AG 382">382</bibl>, I and N.1 (233, a); B. 191; G. 356; H. 433, 2 (390, i); H.-B. 360 and b.
+
+<milestone n="193.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">propositam</lem>
+							</app>, <gloss>put up fir sale</gloss>; <app>
+								<lem xml:lang="lat">addictam</lem>
+							</app>, <gloss>knocked down</gloss> (terms of the auction room).
+
+<milestone n="193.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Martem communeni</lem>
+							</app>, <gloss>the favor of Mars</gloss>: a proverbial phrase implying that the favors of Mars are impartially bestowed, now on the one side now on the other (cf. our "the fortune of war"). <pb n="450"/>
+							<milestone n="193.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">pransi</lem>
+							</app>: the <foreign xml:lang="lat">prandium</foreign> was the noon-day meal, generally simple, of fruit and bread, but made by high-livers a luxurious meal.
+
+<milestone n="193.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">interciusum</lem>
+							</app>, i.e. Clodius had passed Milo himself, who was thus shut off from his own followers. </p>
+					</div>
+					<div type="textpart" n="57-60" subtype="section">
+						<p>Milo's manumission of his slaves was to reward them, and not for the sake of suppressing testimony. The evidence of Clodius's slaves is worthless.
+</p>
+					</div>
+					<div type="textpart" n="57" subtype="section">
+						<milestone n="194.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">manu misit</lem>
+							</app>: here Cicero pauses to reply to an argument on the other side.  Only slaves could be forced to give testimony by torture (Rosc. Am., sect. <bibl n="Cic. S. Rosc. 35">35</bibl>).  As Milo had freed his, it was maintained by the prosecution that he wished to destroy evidence. Manumission under such circumstances was forbidden by later law.
+
+<milestone n="194.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">indagamus hic</lem>
+							</app>, i.e. the legal aspect of the case is to be considered at this point.
+
+<milestone n="194.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nescis</lem>
+							</app>, <gloss>you know not how</gloss>: § <bibl n="AG 456">456</bibl> (27 i) ; B. 328, I ; G. 423 ; H. 607 (533); H.-B. 586. </p>
+					</div>
+					<div type="textpart" n="58" subtype="section">
+						<milestone n="194.16" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">propter quos vivit</lem>
+							</app>, i.e. to whom he owes his life.
+
+<milestone n="194.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id</lem>
+							</app>, i.e. the service of saving his life.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod</lem>
+							</app>, <gloss>the fact that:</gloss> § <bibl n="AG 572">572</bibl> (333); B. 299, I  G. 525, I  H. 588, I (540, iv); H-B. 552, I. </p>
+					</div>
+					<div type="textpart" n="59" subtype="section">
+						<milestone n="194.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quaestiones</lem>
+							</app>, <gloss>examination</gloss> (by torture) of Clodius's slaves.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">urgent</lem>
+							</app>, i.e. is a difficult point for the defence to meet.
+
+<milestone n="194.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in atrio Libertatis</lem>
+							</app>: it was in this hall (probably near the present column of Trajan) that questions touching the liberation of slaves were considered, and that torture was inflicted, — not in mockery of the name, but to excite in the slave some hope of freedom.
+
+<milestone n="194.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Appius</lem>
+							</app>: an elder brother of Clodius.
+
+<milestone n="194.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de servis</lem>
+							</app>: the passage in brackets seems necessary to the sense.  The exception <foreign xml:lang="lat">de incestu</foreign> is mentioned to bring the jest upon Clodius.
+
+<milestone n="194.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">proxime</lem>
+							</app>, <gloss>very near</gloss>: i.e. by having his murder treated as sacrilege (i.e. an offence against the gods) in respect to the question of slaves.  The whole passage is an argument <foreign xml:lang="lat">a fortiori</foreign>.  If the Romans excluded enforced testimony of a master's slaves, even when the truth could be arrived at thereby, how much more should this be excluded here, where the temptation to lie was so great that no trustworthy evidence could be expected from them.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">deos accessit</lem>
+							</app> is punningly used in two senses, — first, of his near approach to being a god (by having an offence against him treated as sacrilege); second, of his unlawful intrusion on the mysteries of the Bona Dea.
+
+<milestone n="194.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad ipsos</lem>
+							</app>, i.e. in the mysteries of Bona Dea (<ref n="pl176.14">p. 176, l. 14</ref>, note).
+
+<milestone n="195.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non quin</lem>
+							</app>, <gloss>not but</gloss>: § <bibl n="AG 540">540</bibl>, N.3 (321, R.); B. 286,1, b; G. 541, N.2; H. 588, ii, 2 (516, 2); H-B. 535, 2, b. </p>
+					</div>
+					<div type="textpart" n="60" subtype="section">
+						<milestone n="195.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">cave . . . mentiaris</lem>
+							</app>: § <bibl n="AG 450">450</bibl>, 2 (269,a,3); G. 271,2; H. 561, 2 (489, 2); H-B. 501, 3,0, 2.
+
+<milestone n="195.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">arcas</lem>
+							</app>, <gloss>cells</gloss>, lit. <gloss>chests</gloss> (of timber), which in more ancient times were apparently used for this purpose.
+
+<milestone n="195.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">integrius</lem>
+							</app>, <gloss>sounder</gloss>, i.e. less biased (of course ironical). </p>
+					</div>
+					<div type="textpart" n="61-63" subtype="section">
+						<p>Milo's conduct after the affray shows his innocence. He returned to Rome and made no attempt to conceal himself, scorning the evil rumors that were rife. No guilty man would have acted in this way.
+</p>
+					</div>
+					<div type="textpart" n="61" subtype="section">
+						<milestone n="195.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Romam revertisse</lem>
+							</app>: it was at first thought that Milo had gone into voluntary exile after the murder. In fact, however, he had returned to Rome on the night when the <foreign xml:lang="lat">curia</foreign> was burned, and the reaction caused by the fire and the riots encouraged him to appear in public and renew his canvass for the consulship.  Cicero skillfully represents this conduct as due to the courage of innocence.
+
+<milestone n="195.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">se populo . . . senatni commisit</lem>
+							</app>, i.e. by appearing in his place among them.
+
+<milestone n="195.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">praesidils</lem>
+							</app>, i.e. the special power with which Pompey was clothed as sole consul, which is further dwelt on in the following (see sect. <bibl n="Cic. Mil. 65">65</bibl>).
+
+<milestone n="195.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">magna metuenti</lem>
+							</app>, etc.: Pompey was on friendly terms with Clodius and might well fear that the violent act of Milo threatened his own position in the state and even his life (see note on sect. <bibl n="Cic. Mil. 66">66</bibl>, <ref n="pl197.26">p. 197, l. 26</ref>). </p>
+					</div>
+					<div type="textpart" n="62" subtype="section">
+						<milestone n="196.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">imperitorum</lem>
+							</app>, <gloss>strangers</gloss> to his character (though well intentioned). </p>
+					</div>
+					<div type="textpart" n="63" subtype="section">
+						<milestone n="196.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illud</lem>
+							</app>, the <gloss>fact</gloss> (in appos. with the clause <app>
+								<lem xml:lang="lat">ut . . . trucidaret</lem>
+							</app>).
+
+<milestone n="196.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fecisset</lem>
+							</app>: for <gloss>fecit</gloss> of the dir. disc.; so <foreign xml:lang="lat">voluisset</foreign> in l. 11, below.
+
+<milestone n="196.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tanti</lem>
+							</app>, predicate gen. of indefinite value.
+
+<milestone n="196.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fortem virum</lem>
+							</app>, <gloss>brave man that he was</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quin . . . cederet</lem>
+							</app>, <app>
+								<lem xml:lang="lat">auferret</lem>
+							</app>, <app>
+								<lem xml:lang="lat">relinqueret</lem>
+							</app>: § <bibl n="AG 558">558</bibl>, a, N.2 (332, g, N.2); B. 298, b; G. 555, R.3; H. 596, I (505, i); cf. H.-B. 502, 31 b and footnote 4.
+
+<milestone n="196.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">portenta</lem>
+							</app>, <gloss>monsters</gloss> (his accomplices).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">loquebantur</lem>
+							</app>, <gloss>talked about</gloss>, comparing Milo with Catiline, and saying he would do likewise.
+
+<milestone n="196.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">miseros . . . civis</lem>
+							</app>, exclamatory accusative.  </p>
+					</div>
+					<div type="textpart" n="64-71" subtype="section">
+						<p>False rumors about Milo. Pompey's fear of him groundless. The time will come when Pompey will know that Milo is his friend. But, in fact, Pompey is not ill disposed to Milo and does not think him guilty: had he thought so, he would have put him to death and not have allowed him this trial. End of the first part of the <foreign xml:lang="lat">Confirmatio</foreign>.
+</p>
+						<p> In sects. <bibl n="Cic. Mil. 64">64</bibl>, <bibl n="Cic. Mil. 65">65</bibl>, Cicero makes a skillful transition from Milo's conduct after the affray to Pompey's feelings with regard to him.  It was all-important for him to show that the acquittal of Milo would not be unfavorably received by Pompey, and hence he does his best to prove that Milo was never Pompey's enemy and that the latter had no wish to secure his conviction. </p>
+					</div>
+					<div type="textpart" n="64" subtype="section">
+						<milestone n="196.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa</lem>
+							</app>, <gloss>these surmises</gloss>.
+
+<milestone n="196.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">perculissent</lem>
+							</app>: the <foreign xml:lang="lat">protasis</foreign> is implied in <app>
+								<lem xml:lang="lat">quemvis . . . conscientia</lem>
+							</app> (i.e. anybody who had such a consciousness).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conscientia</lem>
+							</app>, abl. of means with <foreign xml:lang="lat">perculissent</foreign>.
+
+<milestone n="196.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut</lem>
+							</app> (exclamatory), <gloss>how</gloss>.
+
+<milestone n="196.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">maximo animo</lem>
+							</app>, <gloss>of the greatest hardihood</gloss>.
+
+<milestone n="196.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuisset</lem>
+							</app>: the <foreign xml:lang="lat">protasis</foreign> is implied in the context.
+
+<milestone n="196.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">indicabatur</lem>
+							</app>: § <bibl n="AG 582">582</bibl> (330, b, 1); cf. B. 332; G. 528, H. 611, N.1 (534, I, 11.1); H.-B. 590, I ; use the impers. form in translation,
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">it was shown that</lem>
+							</app>, etc.
+
+<milestone n="196.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vicum</lem>
+							</app>, <gloss>narrow street</gloss> (properly a <gloss>district</gloss> or <gloss>quarter</gloss>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dicebant</lem>
+							</app>
+							<gloss>they would say</gloss> (indicating repeated charges).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Miloni</lem>
+							</app>, dat. of  agent: § <bibl n="AG 374">374</bibl> (232); B. 189, 2; G. 354; H. 431, 2 (388, I); H-B. 373, 2.
+
+<milestone n="197.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">clivo Capitolino</lem>
+							</app>, the street which ran from the upper end of the Forum to the <gloss>Capitolium</gloss>.
+
+<milestone n="197.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">delata</lem>
+							</app>: <foreign xml:lang="lat">deferre ad senatum</foreign> is to lay information before the Senate; <app>
+								<lem xml:lang="lat">referre</lem>
+							</app>, to bring a piece of business before it for action. </p>
+					</div>
+					<div type="textpart" n="65" subtype="section">
+						<milestone n="197.5" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">laudabam</lem>
+							</app>, imperf. because it indicates Cicero's <gloss>state of mind</gloss> at the time.
+
+<milestone n="197.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sed dicam</lem>
+							</app>, etc.: the whole context implies that in this matter Pompey went too far, and for this Cicero excuses him in what follows.
+
+<milestone n="197.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fuit audiendus</lem>
+							</app>, <gloss>he had to listen to</gloss> (not cont. to fact).
+
+<milestone n="197.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">popa</lem>
+							</app>, an inferior priest who slew the sacrifices — hardly more than a butcher: such a person usually (as here) kept <foreign xml:lang="lat">apopina</foreign>, or restaurant and grog-shop; hence <foreign xml:lang="lat">apud se ebrios</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Circo maximo</lem>
+							</app>: the district near the Circus Maximus, the building for the great games, between the Palatine and Aventine hills. <pb n="453"/>
+							<milestone n="197.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in hortos</lem>
+							</app>: § <bibl n="AG 428">428</bibl>, 1, N. (259, g); H. 418 (380, i); wealthy Romans had large grounds (<foreign xml:lang="lat">horti</foreign>) attached to their city houses.  Pompey was at this time staying at home to avoid Milo, as was alleged.
+
+<milestone n="197.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">credi popae</lem>
+							</app>: § <bibl n="AG 372">372</bibl> (230); B. 187, ii, b; G. 346, R.1; H. 426, 3 (384, ii, 5); H.-B. 364, 2. </p>
+					</div>
+					<div type="textpart" n="66" subtype="section">
+						<milestone n="197.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">tam celebri loco</lem>
+							</app>, <gloss>in so thronged a locality</gloss>. Caesar, as Pontifex Maximus, inhabited the <foreign xml:lang="lat">Begia</foreign> (see note on sect. <bibl n="Cic. Mil. 37">37</bibl>, <ref n="pl187.14">p. 187, l. 14</ref>) on the <foreign xml:lang="lat">Sacra Via</foreign>, in the busiest part of Rome.
+
+<milestone n="197.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">audiebatur</lem>
+							</app>, <gloss>the story was told</gloss>.
+
+<milestone n="197.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">senator</lem>
+							</app>, etc.: "Pompey was afraid of Milo, or pretended to be; and he stayed mostly, not at home, but in his gardens — even the upper ones, where a great guard of soldiers camped around.  Pompey, besides, had once adjourned the Senate suddenly, saying that he feared Milo's coming.  Then at the next session, P. Cornificius had said that Milo had a sword under his tunic, fastened to his thigh, and demanded that he should bare his thigh, which Milo did at once, lifting his tunic. Then Cicero called out that all the other charges against Milo were just like that."  (Asconius.) </p>
+					</div>
+					<div type="textpart" n="67" subtype="section">
+						<milestone n="197.31" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum . . . timemus . . . perhorrescimus</lem>
+							</app>: § <bibl n="AG 549">549</bibl>, a (326, a); B. 290, I; G. 582; H. 599 (517, 2); H.-B. 550, a, N.1.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tamen</lem>
+							</app>, i.e. notwithstanding the alleged grounds for fearing Milo have been proved false.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si metuitur</lem>
+							</app>: the <foreign xml:lang="lat">protasis</foreign> is <app>
+								<lem xml:lang="lat">timemus</lem>
+							</app>, <app>
+								<lem xml:lang="lat">perhorrescimus</lem>
+							</app>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">etiam nunc</lem>
+							</app>, opposed to the instances of such fear of Milo mentioned in the preceding chapter.
+
+<milestone n="197.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Clodianum crimen</lem>
+							</app>, <gloss>the charge of murdering Clodius</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">timemus</lem>
+							</app>, <gloss>we</gloss> = Cicero and his client: they have to fear, he says, — in case Milo is still regarded by Pompey with apprehension, — not the charge of murdering Clodius (for Milo is sure of an acquittal if the case is decided on its merits) but Pompey's suspicions of Milo's hostility to <gloss>him</gloss> (for these may well prove prejudicial to Milo's case).  These suspicions Cicero answers by a <foreign xml:lang="lat">reductio ad absurdum,</foreign> — if all these military preparations have been made for fear of Milo, what a great man Milo must be! But everybody knows that they were not made for this reason; hence Pompey has no reason to fear Milo.
+
+<milestone n="198.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exaudire</lem>
+							</app>: Pompey was sitting not in the court but at the Treasury, a considerable distance off.
+
+<milestone n="198.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si times, putas</lem>
+							</app>, etc.: the apod. is <app>
+								<lem xml:lang="lat">magna in hoc</lem>
+							</app>, etc., 1.9. </p>
+					</div>
+					<div type="textpart" n="68" subtype="section">
+						<milestone n="198.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sed quis</lem>
+							</app>, <gloss>but</gloss> [this cannot be, for] <gloss>who</gloss>, etc.
+
+<milestone n="198.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si locus</lem>
+							</app>, etc., i.e. if Milo had had a chance, he would have proved his devotion to Pompey.
+
+<milestone n="198.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa taeterrima peste</lem>
+							</app>, i.e. Clodius.
+
+<milestone n="198.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribunatum</lem>
+							</app>: Milo was tribune <date when="-0057">B.C. 57</date>, and he was active in securing the recall of Cicero from exile.
+
+<milestone n="198.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae si non</lem>
+							</app>, etc., <gloss>if he could not prove this</gloss>.
+
+<milestone n="198.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">armis . . . conquietura</lem>
+							</app>, <gloss>were never likely to rest front arms</gloss>.
+
+<milestone n="198.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne</lem>
+							</app>, <gloss>assuredly</gloss>.
+
+<milestone n="198.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ita natus</lem>
+							</app>, <gloss>born for that very thing</gloss> (i.e. to sacrifice everything for his country).
+
+<milestone n="198.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">te antestaretur</lem>
+							</app>, <gloss>would call you to witness</gloss> (that he yields to the occasion and is really guiltless of any hostilities). </p>
+					</div>
+					<div type="textpart" n="69" subtype="section">
+						<milestone n="198.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">infidelitates</lem>
+							</app>, [acts of] <gloss>ill-faith</gloss>.  This and the following plural abstracts are, as often, best translated by the singular  in English:  § <bibl n="AG 100">100</bibl>, c (75, c) ; B. 551 4, c; G. 204, R5; H. 138, 2 (130, 2); H.-B. 240,5, b.
+
+<milestone n="199.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">motu aliquo</lem>
+							</app>, i.e. there will perhaps be some disturbance of the general welfare of the state (<foreign xml:lang="lat">communium temporum</foreign>). Cicero's apprehensions were more than fulfilled in the great Civil War between Caesar and Pompey.
+
+<milestone n="199.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">experti</lem>
+							</app>: an allusion to Cicero's own misfortunes and exile. </p>
+					</div>
+					<div type="textpart" n="70" subtype="section">
+						<milestone n="199.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quamquam</lem>
+							</app>: corrective, implying that the preceding supposition is unfounded, for Pompey is not really an enemy to Milo; if he had been, he would have executed him summarily and not have allowed him a trial. His action, Cicero argues, virtually acquits the defendant.
+
+<milestone n="199.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">juris publici</lem>
+							</app>, etc., law, customs, politics.
+
+<milestone n="199.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne quid</lem>
+							</app>, etc.: see note, Cat. 1, sect. <bibl n="Cic. Catil. 1.2">2</bibl> (<ref n="pl100.12">p. 100, l. 12</ref>).
+
+<milestone n="199.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hunc</lem>
+							</app> repeats <app>
+								<lem xml:lang="lat">Pompeium</lem>
+							</app> with emphasis after the long parenthesis; <app>
+								<lem xml:lang="lat">ejus qui</lem>
+							</app>, <gloss>of one who</gloss> (on that supposition), i.e. Milo.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dilectu</lem>
+							</app>: Pompey held the consulship in <date when="-0055">B.C. 55</date>, but after its expiration did not go into his province of Spain, but despatched thither his army under the command of <foreign xml:lang="lat">legati</foreign>, while he himself remained in Italy with <foreign xml:lang="lat">proconsular</foreign> power. Immediately after the death of Clodius the Senate gave the <foreign xml:lang="lat">interrex</foreign> (see note, <ref n="pl176.18">p. 176, l. 18</ref>), the tribunes, and the proconsul (Pompey) the extraordinary power <foreign xml:lang="lat">
+								<emph>ne quid</emph>
+							</foreign>, etc., and authorized Pompey to hold a levy of troops.
+
+<milestone n="199.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exspectaturum fuisse</lem>
+							</app>, <gloss>would have</gloss>, etc.: § <bibl n="AG 589">589</bibl>, b, 2 (337, b, 2); B. 322; G. 659; H. 647(527, iii); H.-B. 581, b, I.  The whole passage is a cont. to fact apod. in indir. disc.; the <foreign xml:lang="lat">protasis</foreign> (implied in the context) is the false supposition that Pompey thought Milo dangerous to the state and to himself. <pb n="455"/>
+							<milestone n="199.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ista</lem>
+							</app>, i.e. the imputations referred to in sects. <bibl n="Cic. Mil. 65">65</bibl>, <bibl n="Cic. Mil. 66">66</bibl>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui</lem>
+							</app>, i.e. Pompey.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">legem</lem>
+							</app>, <gloss>the law</gloss> for the present investigation.
+
+<milestone n="199.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">s oporteret</lem>
+							</app>, <gloss>ought, as I think</gloss>; <app>
+								<lem xml:lang="lat">liceret</lem>
+							</app>, <gloss>may well</gloss> (legally), <gloss>as all allow</gloss>. </p>
+					</div>
+					<div type="textpart" n="71" subtype="section">
+						<milestone n="199.16" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">in illo loco</lem>
+							</app>: see note on <foreign xml:lang="lat">exaudire</foreign>, sect. <bibl n="Cic. Mil. 67">67</bibl>, <ref n="pl198.1">p. 198, l. 1</ref>.
+
+<milestone n="199.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">animadvertere in</lem>
+							</app>, <gloss>proceed against</gloss>, i.e. <gloss>punish</gloss>.  The whole turning of Pompey's unfriendly action so as to make it appear in Milo's favor is a stroke of art.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">posset</lem>
+							</app>, subj. of integral part; the imperf. (contrary to the sequence of tenses) stands for <foreign xml:lang="lat">poterat</foreign> and implies that the action did not take place: § <bibl n="AG 522">522</bibl>, a (311, c); B. 304,3, a; G. 254, R.2; H. 525, I (476, 4); 14.-B. 582, 3, a.
+
+<milestone n="199.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hesternam fliam contionem</lem>
+							</app>: Cf. sect. <bibl n="Cic. Mil. 3">3</bibl> (<ref n="pl172.3">p. 172, l. 3</ref>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">esse</lem>
+							</app>, in same constr. as <foreign xml:lang="lat">inferre</foreign> (1.18). </p>
+					</div>
+					<div type="textpart" n="72-75" subtype="section">
+						<p>Second part of <foreign xml:lang="lat">Confirmatio</foreign> begins. The killing of Clodius a service to the state: his crimes enumerated.
+</p>
+						<p> The second part of the <foreign xml:lang="lat">Confirmatio</foreign> comprises sects. <bibl n="Cic. Mil. 72">72</bibl>-<bibl n="Cic. Mil. 75">75</bibl>.  The real case, Cicero says, is now complete, for he has shown that Milo killed Clodius in self-defence.  But, even if Milo had not had this justification, his act would deserve reward rather than punishment, for the killing of Clodius was a service to the state.  If Milo were guilty he would boast of his guilt.  It is impossible, however, to claim this merit for Milo, for the death of Clodius was the work of the gods, who, to save the republic, prompted him to attack Milo. This part of the <foreign xml:lang="lat">Confirmatio</foreign> is managed with great skill.  In effect, it is an appeal to the judges to recognize the relief which the state feels in the death of Clodius and not to punish Milo for what is really a meritorious deed. In form, however, it is an additional argument in support of the main contention, — that Milo acted in self-defence; for it is incredible, Cicero urges, that, if he had really planned to kill Clodius, he should not now admit it and secure the gratitude of the whole country.  By giving the argument this form, Cicero makes two inconsistent theories of the defence tell in favor of his client. </p>
+					</div>
+					<div type="textpart" n="72" subtype="section">
+						<milestone n="199.27" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">palam clamare</lem>
+							</app>: this was the line of defence taken by Cato and other friends of Milo, in opposition to whom Cicero preferred to disprove the charge (<foreign xml:lang="lat">diluere crimen</foreign>).
+
+<milestone n="199.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Sp. Maelium</lem>
+							</app>: see note on Cat. 1, sect. <bibl n="Cic. Catil. 1.3">3</bibl> (<ref n="pl100.19">p. 100, l. 19</ref>).
+
+<milestone n="199.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Ti. Gracchum</lem>
+							</app>: see note on Cat. 1, sect. <bibl n="Cic. Catil. 1.3">3</bibl> (<ref n="pl100.15">p. 100, l. 15</ref>).
+
+<milestone n="199.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conlegae</lem>
+							</app>: Octavius, who resisted Gracchus in his attempts at reform and whom, therefore, Gracchus caused to be deposed by the people.
+
+<milestone n="200.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sed eum</lem>
+							</app>, etc.: not a mere demagogue, as the men just mentioned were (in Cicero's opinion), but a vile and sacrilegious criminal.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">auderet</lem>
+							</app>, <gloss>he would dare</gloss>, etc., i.e. if he were guilty and were taking that line of defence. </p>
+					</div>
+					<div type="textpart" n="73" subtype="section">
+						<milestone n="200.5" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">saepe censuit</lem>
+							</app>: see sect. <bibl n="Cic. Mil. 13">13</bibl>.
+
+<milestone n="200.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quaestionibus habitis</lem>
+							</app>: this relates to the <foreign xml:lang="lat">consilium</foreign> of relatives, held by Lucullus as <foreign xml:lang="lat">paterfamilias</foreign>, or head of the family, in regard to his wife Clodia.
+
+<milestone n="200.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civem quem. . . judicarant</lem>
+							</app>, i.e. Cicero himself.
+
+<milestone n="200.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">regna dedit</lem>
+							</app>: the Galatian Brogitarus, son-in-law of King Deiotarus, was complimented with the title of king by a law of Clodius.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ademit</lem>
+							</app>: another law of Clodius ordered the deposition of King Ptolemy of Cyprus.
+
+<milestone n="200.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">partitus est</lem>
+							</app>: referring to his corrupt bargains for the assignment of provinces.
+
+<milestone n="200.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civem</lem>
+							</app>: this is usually referred to Pompey.  But, though Pompey was attacked by Clodius (see sect. <bibl n="Cic. Mil. 18">18</bibl>), there was no bloodshed: further, <foreign xml:lang="lat">singulari</foreign>
+							<foreign xml:lang="lat">virtute</foreign> et <foreign xml:lang="lat">gloria</foreign> is a mild expression for Cicero to use of Pompey on this occasion; and, though it is rather exaggerated for the tribune Fabricius (see sect. <bibl n="Cic. Mil. 38">38</bibl>), yet the circumstances precisely correspond.
+
+<milestone n="200.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">aedem Nympharum</lem>
+							</app>, containing the censorial registers.  It seems to have been burnt in the disorders preceding Cicero's exile. </p>
+					</div>
+					<div type="textpart" n="74" subtype="section">
+						<milestone n="200.17" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">non calumnia litium</lem>
+							</app>, etc.: referring to fraudulent and malicious proceedings under cover of law, which were too mild and dilatory a method of plunder for Clodius.  A powerful noble, with his slaves and clients, had almost an army at his disposal, so that the disorders of the time actually amounted to private warfare, like that of the feudal nobles.  The following incidents illustrate this further.
+
+<milestone n="200.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sacramentis</lem>
+							</app>: a form of procedure in which a forfeit (<foreign xml:lang="lat">sacramentum</foreign>) was deposited by each party, to abide the result of the suit.
+
+<milestone n="200.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Etruscos</lem>
+							</app>: see note, sect. <bibl n="Cic. Mil. 26">26</bibl> (<ref n="pl182.1">p. 182, l. 1</ref>).
+
+<milestone n="200.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Janiculo et Alpibus</lem>
+							</app>: these boundaries would include all Italy north of the Tiber.
+
+<milestone n="200.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">splendido</lem>
+							</app>: the regular complimentary epithet of an <foreign xml:lang="lat">eques</foreign>. </p>
+					</div>
+					<div type="textpart" n="75" subtype="section">
+						<milestone n="200.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">huic T. Furfanlo</lem>
+							</app>: Furfanius was present, being one of the <foreign xml:lang="lat">judices</foreign>. He was a person of some importance.  He was afterwards governor of Sicily. <pb n="457"/>
+							<milestone n="201.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mortuum</lem>
+							</app>, <gloss>a corpse</gloss>.
+
+<milestone n="201.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qua invidia</lem>
+							</app>, etc., <gloss>by the odium of which</gloss> (the presence of the dead body) <gloss>a flame</gloss> [of calumny] <gloss>would be kindled</gloss>.  <foreign xml:lang="lat">Odium</foreign> is often spoken of as a flame (cf. "inflamed with hate ").
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">huic tali viro</lem>
+							</app>, <gloss>even a man like him</gloss>.
+
+<milestone n="201.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Appium</lem>
+							</app>: Ap. Claudius Pulcher, elder brother of Clodius, but not always on good terms with him.
+
+<milestone n="201.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vestibulum</lem>
+							</app>, <gloss>courtyard</gloss>, or open space in front of the house.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sororis</lem>
+							</app>, probably his second sister, wife of Q. Metellus Celer, who lived next her brother on the Palatine. </p>
+					</div>
+					<div type="textpart" n="76-82" subtype="section">
+						<p>No safety for Rome while Clodius lived: his plans against the state cut short by his death. If Milo were guilty, he would boast of his guilt: for tyrannicide is a virtue.
+</p>
+					</div>
+					<div type="textpart" n="76" subtype="section">
+						<milestone n="201.8" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quidem</lem>
+							</app>, emphasizing <foreign xml:lang="lat">haec</foreign>: Cf. <foreign xml:lang="lat">quae vero</foreign>, 1.12.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tolerabilia</lem>
+							</app>, inevitable, and therefore bearable.
+
+<milestone n="201.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">videbantur</lem>
+							</app>, <gloss>were beginning to seem</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">aequabiliter</lem>
+							</app>, <gloss>without distinction</gloss>.
+
+<milestone n="201.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nescio quo modo</lem>
+							</app>: § <bibl n="AG 575">575</bibl>, d (331, e); B. 253, 6; G. 467, N.; H. 651, 2 (529,5 3); H.-B. 537, e.
+
+<milestone n="201.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vero</lem>
+							</app>, opposed to <foreign xml:lang="lat">quidem</foreign>.
+
+<milestone n="201.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuissetis</lem>
+							</app>, i.e. if they had been realized.
+
+<milestone n="201.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imperium</lem>
+							</app>: all this mischief he had perpetrated in virtue of holding the offices of tribune and aedile.  What would he have done if he had got the <foreign xml:lang="lat">imperium</foreign> by obtaining the praetorship, for which he was candidate at the time?
+
+<milestone n="201.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tetrarchas</lem>
+							</app>, a title of certain petty kings, especially in Galatia.
+
+<milestone n="201.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tenentur</lem>
+							</app>, <gloss>are proved</gloss>. </p>
+					</div>
+					<div type="textpart" n="77" subtype="section">
+						<milestone n="201.23" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">T. Annius</lem>
+							</app>: the name in this form is more dignified than the <foreign xml:lang="lat">cognomen</foreign>
+							<foreign xml:lang="lat">Milo</foreign> alone (which Cicero has hitherto used). He adopts it here in accordance with the more formal tone which he gives to his speech at this point.
+
+<milestone n="201.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">per me unum</lem>
+							</app>: <app>
+								<lem xml:lang="lat">ut</lem>
+							</app> is displaced by the emphasis thrown upon <app>
+								<lem xml:lang="lat">me</lem>
+							</app>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">jus</lem>
+							</app>, <app>
+								<lem xml:lang="lat">aequitas</lem>
+							</app>, <app>
+								<lem xml:lang="lat">leges</lem>
+							</app>: as <foreign xml:lang="lat">praetor</foreign> Clodius would have had judicial as well as military power.
+
+<milestone n="201.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">esset timendum</lem>
+							</app> (ironical), <foreign xml:lang="lat">apodosis</foreign> of <foreign xml:lang="lat">si . . . clamaret</foreign> (l.22).
+
+<milestone n="202.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">gaudia</lem>
+							</app>, such as that for the victory over Hannibal or for the defeat of the Cimbri and Teutones.
+
+<milestone n="202.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">victorias</lem>
+							</app>, such as those of Pompey in the East and Caesar in Gaul. </p>
+					</div>
+					<div type="textpart" n="78" subtype="section">
+						<milestone n="202.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">in eis singulis</lem>
+							</app> [<foreign xml:lang="lat">bonis</foreign>], <gloss>in the case of each one</gloss>.
+
+<milestone n="202.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">judiciis</lem>
+							</app>: Pompey, in this year of his sole consulship, carried several laws intended to secure the better administration of justice.
+
+<milestone n="202.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ea</lem>
+							</app>, subject of <foreign xml:lang="lat">potuissent</foreign>.
+
+<milestone n="202.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod</lem>
+							</app>, interrogative with <app>
+								<lem xml:lang="lat">jus</lem>
+							</app>.
+
+<milestone n="202.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">odlo inimicitiarum</lem>
+							</app>, <gloss>the bitterness of private resentment</gloss>
+							<milestone n="202.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">libentius quam verius</lem>
+							</app>, <gloss>with more alacrity than truth:</gloss> § <bibl n="AG 292">292</bibl>, N. (192); B. 240, 4; G. 299; H. 499, I (444, 2, N.1); H.-B. 242 and a.
+
+<milestone n="202.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">debebat</lem>
+							</app>, Sc. <foreign xml:lang="lat">odisem</foreign> as subject.
+
+<milestone n="202.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">aequaliter versaretur</lem>
+							</app>, <gloss>found its equal</gloss>. </p>
+					</div>
+					<div type="textpart" n="79" subtype="section">
+						<milestone n="202.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quin</lem>
+							</app>, <gloss>nay</gloss>, adds strength to the imperative. "Come now, attend while I present the case in this light."
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nempe haec</lem>
+							</app>, <gloss>this, as you know</gloss>.
+
+<milestone n="202.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fingite</lem>
+							</app>, etc.: in this lively passage Cicero makes his hearers understand how much they really approve of Milo's act by asking them how a proposition to call Clodius back to life would be received.
+
+<milestone n="202.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sic intuentur</lem>
+							</app>, <gloss>view as plainly</gloss>.
+
+<milestone n="202.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cernimus</lem>
+							</app>, <gloss>discern</gloss> (distinguish by eyesight) ; <app>
+								<lem xml:lang="lat">videmus</lem>
+							</app>, <gloss>see</gloss> (the general word).
+
+<milestone n="202.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus condicionis meae</lem>
+							</app>, <gloss>these terms that I offer</gloss>: the supposed terms are expressed in <foreign xml:lang="lat">si possim</foreign>, etc.
+
+<milestone n="202.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ita si</lem>
+							</app>, <gloss>on condition that</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid voltu extimuistis</lem>
+							</app>? <gloss>why that look of terror?</gloss>
+							<milestone n="202.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vivus</lem>
+							</app>, <gloss>alive</gloss>.
+
+<milestone n="202.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">percussit</lem>
+							</app>, <gloss>has stricken you with fear</gloss>.
+
+<milestone n="203.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vellet</lem>
+							</app>, <gloss>had wished</gloss>: for tense, see § <bibl n="AG 517">517</bibl>, a (308, a); B. 304, 2; G. 597, R.1; H. 579, I (510, N.2) ; H.-B. 581.
+
+<milestone n="203.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si putetis, nolitis</lem>
+							</app>, fut. condition, referring to the time of rendering the verdict.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si posset, lata esset</lem>
+							</app>, cont. to fact as referring to circumstances already out of their control.  Notice the different nature of the two conditions as indicated by their form.
+
+<milestone n="203.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus</lem>
+							</app>, referring to the subject of the last sentence, Clodius (as the person last mentioned) ; the subject of <app>
+								<lem xml:lang="lat">esset</lem>
+							</app> is of course Milo. </p>
+					</div>
+					<div type="textpart" n="80" subtype="section">
+						<milestone n="203.8" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">viris</lem>
+							</app>, especially Harmodius and Aristogeiton, who killed Pisistratus.
+
+<milestone n="203.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cantus</lem>
+							</app>, instrumental music; <app>
+								<lem xml:lang="lat">carmina</lem>
+							</app>, <gloss>songs</gloss>. </p>
+					</div>
+					<div type="textpart" n="81" subtype="section">
+						<milestone n="203.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">si non negat</lem>
+							</app>: this is a <foreign xml:lang="lat">protasis</foreign> whose <foreign xml:lang="lat">apodosis</foreign> is the whole clause <app>
+								<lem xml:lang="lat">dubitaret . . . petenda</lem>
+							</app>; § <bibl n="AG 515">515</bibl>(306); B. 302, I G. 595; 14.574 (508); H.-B. 579.  This <foreign xml:lang="lat">apodosis</foreign> is itself a conditional sentence consisting of a cont. to fact apod. (<foreign xml:lang="lat">dubitaret</foreign>) with a prot. "if he had done it" implied.  The argument is as follows: Milo does not deny killing Clodius in <gloss>self-defence</gloss>, which is only an <gloss>excuse</gloss> for the homicide; if, therefore, he had killed him <gloss>deliberately</gloss>, would he not gladly admit it, since he might justly expect such a service to the state as the removal of this desperado to meet with gratitude from all? Hence Milo's denial is worthy of credence, since it would be for his interest to admit the charge.
+
+<milestone n="203.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nisi vero</lem>
+							</app>: § <bibl n="AG 525">525</bibl>, b, N. (315, b, N.) ; Cf. B. 306,5; G. 591, R.4; H.-B. 578, 3,a.  This clause introduces the ironical supposition that Milo thinks it more pleasing to the citizens for him to have defended <gloss>himself</gloss> in killing Clodius than to have defended <gloss>them</gloss>. Only on this absurd hypothesis, Cicero reasons, could Milo refuse to admit the charge brought against him if he were guilty.
+
+<milestone n="203.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">grati</lem>
+							</app>, <gloss>grateful</gloss>.
+
+<milestone n="203.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">probaretur</lem>
+							</app>, <gloss>approve itself</gloss>
+							<milestone n="203.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui</lem>
+							</app>, <gloss>how</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">poterat</lem>
+							</app>: § <bibl n="AG 522">522</bibl>, a (311, c); B. 304, 3, a; G. 597., R.5; 11.583 (511, N.1); H.-B. 582, 3, a.
+
+<milestone n="203.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">minus . . . grata</lem>
+							</app>, <gloss>not so agreeable</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cecidisset</lem>
+							</app>, <gloss>had turned out to be</gloss>.
+
+<milestone n="203.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">propter quem</lem>
+							</app>, <gloss>through whose means</gloss>.
+
+<milestone n="203.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">laetarentur</lem>
+							</app>, subj. as being an "integral part" of the whole supposition. </p>
+					</div>
+					<div type="textpart" n="82" subtype="section">
+						<milestone n="203.31" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribuenda . . . esset</lem>
+							</app>, <gloss>would be due</gloss>.
+
+<milestone n="204.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">arbitrarer</lem>
+							</app>: for tense, see note on <foreign xml:lang="lat">vellet</foreign>, sect. <bibl n="Cic. Mil. 79">79</bibl> (<ref n="pl203.2">p. 203, l. 2</ref>). </p>
+					</div>
+					<div type="textpart" n="83" subtype="section">
+						<milestone n="204.8" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">uteretur</lem>
+							</app>, i.e. <foreign xml:lang="lat">si fecisset</foreign>
+						</p>
+					</div>
+					<div type="textpart" n="83-91" subtype="section">
+						<p>But Milo cannot have the glory of planning this act. The death of Clodius was the work of the gods. To punish his crimes and save the state they urged him on to attack Milo, and Milo killed him in self-defence.
+</p>
+						<p> Since Cicero's main contention is that Milo acted in self-defence, it is necessary for him to revert to this line of argument before he closes the <foreign xml:lang="lat">Confirmatio</foreign>. This he does in the way shown in the analysis above.</p>
+					</div>
+					<div type="textpart" n="83" subtype="section">
+						<milestone n="204.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vestra</lem>
+							</app>, i.e. of the <foreign xml:lang="lat">optimates</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">di immortales</lem>
+							</app>, i.e. the death of Clodius was a special interposition of providence.  For a similar expression of the belief that Rome was specially protected by the gods, see Cat. 3, sect. 21.
+
+<milestone n="204.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">divinum belongs with vim as well as with numem</lem>
+							</app>: § <bibl n="AG 287">287</bibl>, I, 2 (187, a) ; B. 235, b, I ; G. 290; 11.395, I (439, I); H.-B. 323, 2. <pb n="460"/>
+							<milestone n="204.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">maximum</lem>
+							</app>, <gloss>greater than all</gloss>.
+
+<milestone n="204.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sanctissime coluerunt</lem>
+							</app>, <gloss>piously practised</gloss>. </p>
+					</div>
+					<div type="textpart" n="84" subtype="section">
+						<milestone n="204.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa vis</lem>
+							</app>, <gloss>such a power</gloss>.
+
+<milestone n="204.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hac imbecillitate nostra</lem>
+							</app>, <gloss>this frail nature of ours</gloss>.
+
+<milestone n="204.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">et non inest</lem>
+							</app>, coordinate with <foreign xml:lang="lat">neque inest</foreign> (above): in English we should more naturally use a subord. clause, <gloss>while it does not exist</gloss>
+							<milestone n="204.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">naturae. . . motu</lem>
+							</app>, <gloss>movement of the universe</gloss> (as appearing in the heavenly bodies, etc., just spoken of).
+
+<milestone n="204.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">haec ipsa</lem>
+							</app>, <gloss>these very words of mine</gloss>.
+
+<milestone n="204.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">possimus</lem>
+							</app>: for mood and tense, see § <bibl n="AG 524">524</bibl> (312); B. 307, I; G. 602; 11.584, 2 (51 3, ii and N.1); H.-B. 504, 3 and a.
+
+<milestone n="204.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mentem injecit</lem>
+							</app>: "Whom the gods wish to destroy they first make mad," — a very old idea.
+
+<milestone n="204.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">habiturus esset</lem>
+							</app>, <gloss>would be sure to have</gloss>: § <bibl n="AG 517">517</bibl>, c, N.1 (308, C, N.1); B. 304, 3, a, N. ; G. 597, R3, b; cf. 11.582 III, 2); H.-B. 582, 3, a. </p>
+					</div>
+					<div type="textpart" n="85" subtype="section">
+						<milestone n="205.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">mediocri</lem>
+							</app>, <gloss>ordinary</gloss>.
+
+<milestone n="205.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">religiones</lem>
+							</app>, <gloss>sanctuaries</gloss>.
+
+<milestone n="205.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">commosse</lem>
+							</app> (<foreign xml:lang="lat">commavisse</foreign>) <app>
+								<lem xml:lang="lat">se</lem>
+							</app>, <gloss>bestirred themselves</gloss>.
+
+<milestone n="205.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">retinuisse</lem>
+							</app>, <gloss>reasserted</gloss>.
+
+<milestone n="205.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Albani</lem>
+							</app>: Clodius's Alban villa (see sects. <bibl n="Cic. Mil. 46">46</bibl>,<bibl n="Cic. Mil. 51">51</bibl>) must have been in the territory of Alba Longa, the ancient capital of Latium, whose temples were spared and their worship adopted by Rome (as that of the Lanuvian Juno had been, see note, sect. <bibl n="Cic. Mil. 27">27</bibl>) when the city was destroyed.  From what follows it would appear that some of these sanctuaries had been demolished by Clodius in his building schemes (see sect. <bibl n="Cic. Mil. 53">53</bibl>).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tumuli</lem>
+							</app>, <gloss>mounds</gloss>, used for altars.
+
+<milestone n="205.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">viguerunt</lem>
+							</app>, <gloss>revived</gloss>.  Observe the alliteration.
+
+<milestone n="205.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Latiaris</lem>
+							</app>: the temple of Jupiter on the Alban Mount was the religious <foreign xml:lang="lat">centre</foreign> of the Latin confederacy.
+
+<milestone n="205.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">lacus</lem>
+							</app>: there are several little lakes about the Alban Mount, chief of which are those at Alba and Aricia, in the craters of extinct volcanoes.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nemora</lem>
+							</app>: <foreign xml:lang="lat">nemus</foreign> is originally an open grove where cattle can graze; it is applied, as well as <foreign xml:lang="lat">lucus</foreign>, to a consecrated grove.  Of these the most famous in Italy was the sanctuary of Diana on the <foreign xml:lang="lat">Lacus Nemorensis</foreign> (<foreign xml:lang="lat">L. Nemi</foreign>) near Aricia. </p>
+					</div>
+					<div type="textpart" n="86" subtype="section">
+						<milestone n="205.17" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Bonae deae</lem>
+							</app>: an Italian goddess who probably represented the fruitful power of the earth, so that her mysteries, celebrated on December 3 and 4, corresponded to those of Demeter (<gloss>Mother Earth</gloss>) at Eleusis.  It was her mysteries that Clodius had profaned (see note on sect. <bibl n="Cic. Mil. 13">13</bibl>, p.176, 1.14). <pb n="461"/>
+							<milestone n="205.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">taeterrimam</lem>
+							</app>, i.e. as having been slain while engaged in a criminal attempt.
+
+<milestone n="205.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">judicio</lem>
+							</app>: cf. sect. <bibl n="Cic. Mil. 13">13</bibl> (<ref n="pl176.15">p. 176, l. 15</ref>).
+
+<milestone n="205.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nec vero non</lem>
+							</app>, <gloss>nor can it be but that</gloss>
+							<milestone n="205.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imaginibus</lem>
+							</app> (cf. <foreign xml:lang="lat">formas</foreign>, 1.28), waxen <gloss>masks</gloss> of ancestors, worn by persons in the funeral procession, to represent the departed worthies (see note on the <foreign xml:lang="lat">jus imaginum</foreign>, Introduction, p.1, N.1); <app>
+								<lem xml:lang="lat">cantu</lem>
+							</app>, <gloss>music</gloss>; <foreign xml:lang="lat">ludis</foreign>, <gloss>games</gloss>; <app>
+								<lem xml:lang="lat">exsequiis</lem>
+							</app>, <gloss>procession</gloss>; <app>
+								<lem xml:lang="lat">funere</lem>
+							</app>, <gloss>burial rites</gloss>.
+
+<milestone n="205.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">celebritate</lem>
+							</app>, <gloss>throng</gloss> (see sect. <bibl n="Cic. Mil. 33">33</bibl>, and notes).
+
+<milestone n="205.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mortem ejus lacerari</lem>
+							</app>, <gloss>that his dead body should be mangled</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in quo</lem>
+							</app>, <gloss>that in which</gloss>, i.e. the Forum. </p>
+					</div>
+					<div type="textpart" n="87" subtype="section">
+						<milestone n="205.32" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae . . . pateretur</lem>
+							</app>: § <bibl n="AG 535">535</bibl>, e (320, e); B. 283, 2; G. 633; 11.592 (517); H.-B. 523.
+
+<milestone n="206.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">consensu</lem>
+							</app>, modifying <app>
+								<lem xml:lang="lat">gesta</lem>
+							</app>: the acts referred to are those of Cicero's consulship, which Clodius had practically <gloss>annulled</gloss> (<foreign xml:lang="lat">resciderat</foreign>) by procuring his banishment.
+
+<milestone n="206.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">domum incenderat</lem>
+							</app>: this was in <date when="-0057">B.C. 57</date>.
+
+<milestone n="206.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">capere</lem>
+							</app>, <gloss>contain</gloss>.
+
+<milestone n="206.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">incidebantur</lem>
+							</app>: he felt so sure of his power that he was having the laws engraved (on bronze tablets, according to the custom) even before their passage.
+
+<milestone n="206.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nos . . . addicerent</lem>
+							</app>, <gloss>which should bind us over to our own slaves</gloss> (i.e. freedmen).  The suffrage of the freedmen was a standing subject of controversy in Roman politics.  They voted in the four city tribes (see note on sect. <bibl n="Cic. Mil. 25">25</bibl>, <ref n="pl181.26">p. 181, l. 26</ref>), but many efforts were made to get them into the rustic tribes; and Clodus had promised, as praetor, to bring forward a law with this object. </p>
+					</div>
+					<div type="textpart" n="88" subtype="section">
+						<milestone n="206.13" unit="pg_l"/>
+						<p>Cicero emphasizes the providential interposition of the gods by dwelling on the desperate nature of the situation.
+
+<milestone n="206.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illum ipsum</lem>
+							</app>, i.e. Pompey, who returned to Rome from the East just before the Clodian disturbances began.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">reditu</lem>
+							</app>, referring to his reconciliation with Pompey.
+
+<milestone n="206.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hic</lem>
+							</app>, <gloss>at this point</gloss> (in the development of Clodius's plans).—supra: see sect. <bibl n="Cic. Mil. 84">84</bibl> (<ref n="pl204.30">p. 204, l. 30</ref>), and note.
+
+<milestone n="206.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">aliter</lem>
+							</app>, i.e. if he had not laid this plot (fatal to himself) against Milo: virtually the <foreign xml:lang="lat">protasis</foreign> of all the cont. to fact <foreign xml:lang="lat">apodoses</foreign> in this and the following section.
+
+<milestone n="206.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">potuit</lem>
+							</app>, cont. to fact apod.; cf. <foreign xml:lang="lat">esset ulta</foreign> (1.21).
+
+<milestone n="206.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">circumscripsisset</lem>
+							</app>, i.e. <gloss>kept him within the legitimate bounds of his office</gloss> (as <foreign xml:lang="lat">praetor</foreign>): of course ironical. <pb n="462"/>
+							<milestone n="206.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id facere</lem>
+							</app>, i.e. when the Senate used to exercise that power.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in privato</lem>
+							</app>, i.e. when he held no magistracy. </p>
+					</div>
+					<div type="textpart" n="89" subtype="section">
+						<milestone n="206.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">suos</lem>
+							</app>, i.e. just the ones whom he wanted.
+
+<milestone n="206.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">virtutem consularem</lem>
+							</app>, <gloss>the courage of a consul</gloss> (i.e. Cicero).
+
+<milestone n="206.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">libertos suos</lem>
+							</app>: if be freed the slaves of others, they would be his freedmen, and bound to him as clients (see note, Rosc. Am., <ref n="pl6.10">p. 6, l. 10</ref>).
+
+<milestone n="206.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nisi . . . impulissent</lem>
+							</app>, a formal repetition of the <foreign xml:lang="lat">protasis</foreign> implied in <foreign xml:lang="lat">aliter</foreign> (l.19, above). </p>
+					</div>
+					<div type="textpart" n="90" subtype="section">
+						<milestone n="207.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">templum</lem>
+							</app>, etc., <gloss>the sanctuary of public purity, grandeur, wisdom, and counsel</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">templum . . . inflammari</lem>
+							</app>, indir. disc. after the idea of <gloss>seeing</gloss> continued from <foreign xml:lang="lat">vidimus</foreign>.
+
+<milestone n="207.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">aram sociorum</lem>
+							</app>, as being the place to which they looked for protection.
+
+<milestone n="207.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">portum</lem>
+							</app>, <gloss>haven</gloss> or <gloss>refuge</gloss>.
+
+<milestone n="207.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">funestari</lem>
+							</app>, <gloss>defiled</gloss> by the presence of a corpse.
+
+<milestone n="207.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ab uno</lem>
+							</app>, i.e. Sex. Clodius.
+
+<milestone n="207.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ustor</lem>
+							</app>, i.e. in the humble capacity of a mere cremator. A bitter jest on the consequences of Sex. Clodius's act in burning the body. </p>
+					</div>
+					<div type="textpart" n="91" subtype="section">
+						<milestone n="207.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">via Appia</lem>
+							</app>, where the homicide was committed (cf. sect. <bibl n="Cic. Mil. 17">17</bibl>, p. 178,l.13).
+
+<milestone n="207.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ab eo</lem>
+							</app>, <gloss>from</gloss> (i.e. against) <gloss>him</gloss>.
+
+<milestone n="207.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">furias</lem>
+							</app>, virtually = <gloss>madness</gloss>, though with a vague allusion to the Furies, who drove a guilty man on to further crimes.
+
+<milestone n="207.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">falcibus</lem>
+							</app>, <gloss>hooks</gloss> (like firemen's hooks) to tear up the steps and turn the building into a fortress.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad Castoris</lem>
+							</app>: see note, sect. 18 (<ref n="pl178.25">p. 178, l. 25</ref>).
+
+<milestone n="207.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">disturbari</lem>
+							</app>, <gloss>broken up</gloss> (not merely "disturbed").
+
+<milestone n="207.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">silentio</lem>
+							</app>, i.e. the <foreign xml:lang="lat">contio</foreign> was orderly arid well disposed until the attack of the Clodians.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">M. Caelius</lem>
+							</app>: a young man who was esteemed by Cicero as of great promise, and defended by him in a cause of some scandal, but who afterwards turned out to be a wild and desperate demagogue. In the year <date when="-0044">B.C. 44</date>, after Caesar's victory at Pharsalia, both Caelius and Milo, in concert with each other, headed revolts against Caesar, and lost their lives ignominiously in southern Italy. </p>
+					</div>
+				</div>
+				<div type="textpart" n="92-105" subtype="chapter">
+					<head>V. <foreign xml:lang="lat">Peroratio</foreign>
+					</head>
+					<div type="textpart" n="92-98" subtype="section">
+						<p>Milo deserves the compassion of the judges. He bids the ungrateful city an affectionate farewell. Calmly resigned, he appeals to the judgment of posterity.
+</p>
+					</div>
+					<div type="textpart" n="92" subtype="section">
+						<milestone n="208.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">orationem</lem>
+							</app>, <gloss>manner of speech</gloss>.
+
+<milestone n="208.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc</lem>
+							</app>, <gloss>on this account</gloss>: § <bibl n="AG 414">414</bibl>, a, N. (250, N.); B. 223; G. 403; 11.479 (423); Cf. H.-B. 424, a.
+
+<milestone n="208.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">infimi. . . fortuna</lem>
+							</app>, <gloss>in regard to the lot and fortunes of men of the lowest class</gloss> (i.e. the gladiators).
+
+<milestone n="208.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut liceat depends on obsecrantis</lem>
+							</app> (acc. plur.).
+
+<milestone n="208.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cupimus</lem>
+							</app>: in gladiatorial contests, if one combatant bad the other at his mercy, he waited the will of the people, who expressed their wishes by turning their thumbs up or down.  If most thumbs were turned up, he was put to death. </p>
+					</div>
+					<div type="textpart" n="93" subtype="section">
+						<milestone n="208.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">exanimant</lem>
+							</app>, etc., <gloss>these words of Milo dishearten and depress me</gloss>.
+
+<milestone n="208.14" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">valeant</lem>
+							</app>, <foreign xml:lang="lat">valeant</foreign>: translate (to preserve the lit. meaning of the word, which is here played upon) <gloss>good-bye to my fellow-citizens, may heaven bless them!</gloss>
+							<milestone n="208.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">licet</lem>
+							</app>, Sc. <foreign xml:lang="lat">perfrui</foreign>.
+
+<milestone n="208.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">propter me</lem>
+							</app>, <gloss>through my efforts</gloss>. </p>
+					</div>
+					<div type="textpart" n="94" subtype="section">
+						<milestone n="208.23" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">re publica oppressa</lem>
+							</app>, <gloss>when the government was crushed</gloss>.
+
+<milestone n="208.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">acceperam</lem>
+							</app>, had <foreign xml:lang="lat">found</foreign>.
+
+<milestone n="208.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Clodianis armis</lem>
+							</app> (abl. of cause), i.e. on account of the violence of Clodius.
+
+<milestone n="208.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">putarem</lem>
+							</app>, <gloss>should I have thought?</gloss> § <bibl n="AG 444">444</bibl> and N. (268 and R.); B. 227; G. 466; 11.559, 4 (484, v); H.-B. 503.
+
+<milestone n="208.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tui</lem>
+							</app>: Cicero was of an equestrian family and throughout his career favored the interests of the <foreign xml:lang="lat">equites</foreign> and was supported by them in turn (cf. Manil., sect. <bibl n="Cic. Man. 4">4</bibl>). </p>
+					</div>
+					<div type="textpart" n="95" subtype="section">
+						<milestone n="209.4" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quo videtis</lem>
+							</app>, sc. <foreign xml:lang="lat">eum esse</foreign>.
+
+<milestone n="209.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ingratis civibus</lem>
+							</app>, <gloss>that it is for <emph>ungrateful</emph> fellow-citizens that he has</gloss>, etc.: the Latin, from its freedom in the use of emphatic position, is able to say this in a single clause.
+
+<milestone n="209.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">se fecisse ut</lem>
+							</app>, etc., <gloss>that he has succeeded in</gloss>, etc.
+
+<milestone n="209.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribus patrimonus</lem>
+							</app>: Milo was by birth a member of the Papian <foreign xml:lang="lat">gens</foreign>, but was adopted by his maternal grandfather, C. Annius. This accounts for two patrimonies; the third, Asconius thinks, was probably his mother's.  The orator here makes a civic virtue out of Milo's lavish bribery.
+
+<milestone n="209.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne . . . non conciliarit</lem>
+							</app>, <gloss>that he has not won over</gloss>: § <bibl n="AG 564">564</bibl> (331 f); B. 295, 2, a; G. 550, 2; 11.567, 2 (498, iii, N.2); H.-B. 502, 4.
+
+<milestone n="209.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ablaturum</lem>
+							</app>, <gloss>shall tear away</gloss> (i.e. the memory of them). </p>
+					</div>
+					<div type="textpart" n="96" subtype="section">
+						<milestone n="209.16" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vocem praeconis</lem>
+							</app>, etc.: i.e. the election was practically decided when the <foreign xml:lang="lat">comitia</foreign> were broken up by a mob.  The election could not therefore be formally and legally complete, and no announcement could be made by the herald, but the will of the people had been already expressed.
+
+<milestone n="209.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si haec</lem>
+							</app>, etc., <gloss>this case shall go against him</gloss>.
+
+<milestone n="209.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">facinoris suspicionem</lem>
+							</app>, etc., <gloss>the suspicion of a great crime, not the indictment for this act</gloss>  That is, as the last chapters have shown, it was, in Cicero's view, not Clodius's death, but suspicion of designs against Pompey and the state, that decided the case against Milo.
+
+<milestone n="209.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">recte facta</lem>
+							</app>: § <bibl n="AG 32">32</bibl>r, b (207, c); G. 437, R.; H.-B. 250, 2, b, N. </p>
+					</div>
+					<div type="textpart" n="97" subtype="section">
+						<milestone n="209.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui beneficio</lem>
+							</app>, etc., <gloss>who hove surpassed their fellow-citizens in good services</gloss>, i.e. have done more for their fellow-citizens than the latter have repaid by gratitude.
+
+<milestone n="209.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si . . . ratio</lem>
+							</app>, (<gloss>if regard were to be had</gloss> (cont. to fact, implying that it is not a question of rewards at all): to this prot. we should expect an apod. of corresponding form; but this (which would be "we should say," or the like) is supplanted by a simple acc. and inf. of indir. disc. (<foreign xml:lang="lat">amplissimum esse</foreign>, etc.) expressing that which we "should say."
+
+<milestone n="209.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">consolaretur</lem>
+							</app>: this and the following imperfects are due to the change in sequence effected by <foreign xml:lang="lat">esset habenda</foreign> above.  This change of tense, however, is only formal, and the imperfect may be translated by the present. </p>
+					</div>
+					<div type="textpart" n="98" subtype="section">
+						<milestone n="210.3" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">faces</lem>
+							</app>, etc.: for the figure, cf. Cat. 1, sect. <bibl n="Cic. Catil. 1.29">29</bibl>.
+
+<milestone n="210.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Etruriae festos dies</lem>
+							</app>: holidays appointed by the people of Etruria, whom Clodius had cheated and robbed, at the good news of his death.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">et actos et institutos</lem>
+							</app>, agreeing with <foreign xml:lang="lat">festos</foreign> dies: the celebrations that have already taken place, and the anniversaries that have been established.
+
+<milestone n="210.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qua .. . en</lem>
+							</app>, <gloss>wherever. . . there</gloss> (abl. of way by which).
+
+<milestone n="210.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">non laboro</lem>
+							</app>, <gloss>I have no concern</gloss>.
+
+<milestone n="210.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">versatur</lem>
+							</app>, <gloss>abides</gloss>. </p>
+					</div>
+					<div type="textpart" n="99-103" subtype="section">
+						<p>Milo's cause is Cicero's own: Cicero appeals to the judges in his own name. The exile of Milo will be a calamity to the defenders of Rome.
+</p>
+					</div>
+					<div type="textpart" n="99" subtype="section">
+						<milestone n="210.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">his</lem>
+							</app>, i.e. those present at the trial.
+
+<milestone n="210.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum . . . es</lem>
+							</app>: Cf. <foreign xml:lang="lat">cum timemus</foreign>, sect. <bibl n="Cic. Mil. 67">67</bibl> (<ref n="pl197.31">p. 197, l. 31</ref>).
+
+<milestone n="210.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut. . . possim</lem>
+							</app>: § <bibl n="AG 571">571</bibl>, c (332,f); G. 557, a.; 11. 571, 4 (501, iii); cf. H.-B. 521, 3, a, footnote2.
+
+<milestone n="210.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quanti</lem>
+							</app>, pred. gen. of indefinite value.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae oblivio</lem>
+							</app>, <gloss>forgetfulness of this</gloss>. </p>
+					</div>
+					<div type="textpart" n="100" subtype="section">
+						<milestone n="210.27" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">pietatis</lem>
+							</app>, <gloss>gratitude</gloss>.
+
+<milestone n="210.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">inimicitias</lem>
+							</app>, etc.: "Such," says Asconius, "were the constancy and good faith of Cicero, that neither the popular enmity, nor the suspicions of Pompey, nor the fear of coming danger if he should be put on trial before the people, nor the arms openly taken up against Milo, could deter him from his defence, when he might have shunned all danger and popular wrath, and even won back the good will of Pompey, by relaxing a little the zeal of his advocacy." </p>
+					</div>
+					<div type="textpart" n="101" subtype="section">
+						<milestone n="211.10" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">hic ea mente</lem>
+							</app>, etc., i.e. this self-renunciation is in accordance with Milo's character, but (it is implied) the jurors ought not to be so affected by it as to refuse to acquit him.
+
+<milestone n="211.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">excipiat</lem>
+							</app>, after <foreign xml:lang="lat">dignior qui</foreign>: § <bibl n="AG 535">535</bibl>, f (320, f); B. 282, 3; G. 631, I; 11.591, 7 (503, ii 2); H.-B. 513, 3. </p>
+					</div>
+					<div type="textpart" n="102" subtype="section">
+						<milestone n="211.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">hos</lem>
+							</app>, i.e. the Roman citizens present.
+
+<milestone n="211.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">temporum illorum</lem>
+							</app>, i.e. the time of Cicero's distress and banishment.
+
+<milestone n="211.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">mene non potuisse</lem>
+							</app>, sc. <foreign xml:lang="lat">respondebo</foreign>.
+
+<milestone n="211.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">gentibus</lem>
+							</app>: a line must haye dropped out, part of which belongs with <foreign xml:lang="lat">gentibus</foreign>.  The meaning of the rest of the section is therefore not clear. </p>
+					</div>
+					<div type="textpart" n="103" subtype="section">
+						<milestone n="211.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">illa indicia</lem>
+							</app>, i.e. those of Catiline's conspiracy.
+
+<milestone n="212.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fuerit</lem>
+							</app>, subj. of integral part.
+
+<milestone n="212.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">possum</lem>
+							</app>, virtually future, and so used as <foreign xml:lang="lat">apodosis</foreign> to a future <foreign xml:lang="lat">protasis</foreign>.
+
+<milestone n="212.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dixerim</lem>
+							</app>: § <bibl n="AG 446">446</bibl> (311, a); B. 280, I; G. 257; H. 552 (485); H.-B. 519, I, b.
+
+<milestone n="212.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dictator</lem>
+							</app>: in times of great public emergency the Senate could call upon the consuls to create a Dictator, who should possess the undivided power of the old kings, but only for the period of six months.  The laws of appeal and other safeguards of individual liberty had at first no force against this magistrate.  In later times dictators were no longer appointed, but the consuls were invested with dictatorial power by the formula, <foreign xml:lang="lat">videant ne</foreign>, etc. (Cat. 1, sect. <bibl n="Cic. Catil. 1.2">2</bibl>).  Sulla, and afterwards Caesar, revived the name and authority of this magistracy, <pb n="466"/>  but, by holding it for life (<foreign xml:lang="lat">perpetuo</foreign>), completely changed its character, making it equivalent to absolute sovereignty.  The <foreign xml:lang="lat">Magister Equitum</foreign>, appointed by the Dictator, stood next in command to him.
+
+<milestone n="212.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">viderem</lem>
+							</app>: § <bibl n="AG 571">571</bibl>, a(332, b); B. 284,4; G. 298 and N.2; H.  570, I (502, 2); H.-B. 507, 4, d.  </p>
+					</div>
+					<div type="textpart" n="104-105" subtype="section">
+						<p>Happy the country that receives Milo! Closing appeal to the court.
+</p>
+					</div>
+					<div type="textpart" n="104" subtype="section">
+						<milestone n="212.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">in Italia</lem>
+							</app>: since the Social War, the towns of Italy, having received Roman citizenship, had lost the <foreign xml:lang="lat">jus exsilii</foreign>, i.e. had ceased to be foreign territory to which exiles from Rome could retire. </p>
+					</div>
+					<div type="textpart" n="105" subtype="section">
+						<milestone n="212.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">lacrimis defendi</lem>
+							</app>: this was a peculiarly Roman custom.  Many a desperate case was gained in the Roman courts by putting on mourning and bringing out the wife and children of the accused in deep mourning and bathed in tears.
+</p>
+						<p> Not long after this trial, which ended in Milo's conviction, he was tried again in his absence for bribery (<foreign xml:lang="lat">ambitus</foreign>) and illegal combinations (<foreign xml:lang="lat">de sodaliciis</foreign>), and on a second charge of assault (<foreign xml:lang="lat">de vi</foreign>), and was condemned on each count.  Cicero sent him a copy of his labored defence, and received a reply drily thanking him for his effort, but expressing satisfaction that the speech was not delivered; "For then," said he, "I should not now be eating the excellent mullets of Marseilles."
+</p>
+						<p> In the Civil War, Milo perished in South Italy while leading the remnant of his troop of gladiators in resistance to Caesar, - "hit with a stone from the wall" in an assault on the town of Cosa in Lucania (see Caesar, <foreign xml:lang="lat">Bellum Civile</foreign>, iii, 22).</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

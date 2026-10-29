@@ -1,0 +1,1580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title type="work">Select Orations of Cicero, Allen and Greenough's Edition.</title>
+				<author>J. B. Greenough, G. L. Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" cert="medium">2000-08-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Select Orations of <bibl>
+						<author n="Cic.">Cicero</author>
+					</bibl> Allen and Greenough's Edition.
+					Revised by J. B. Greenough and G. L. Kittredge, with a special
+					vocabulary by J. B. Greenough.
+				</p>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+					<p>This pointer extracts speech and chapter and section.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+					<p>This pointer extracts speech and chapter.</p>
+				</cRefPattern>
+				<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer extracts speech.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="eng">English</language>
+				<language ident="lat">Latin</language>
+				<language ident="grc">Greek</language>
+				<language ident="fre">French</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+			</change>
+			<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+			</change>
+			<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+			</change>
+			<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+			</change>
+			<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+			</change>
+			<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+			</change>
+			<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text n="Phil." xml:lang="eng">
+		<body>
+			<div type="commentary" n="14" subtype="speech">
+				<head>The Fourteenth Philippic:  The Struggle against Antony. <date>B.C. 43.</date>
+				</head>
+				<div type="textpart" subtype="chapter" n="Argument">
+					<head>Argument</head>
+					<list type="outline">
+						<item>CHAPS. <bibl n="Cic. Phil. 14.1">1</bibl>, <bibl n="Cic. Phil. 14.2">2</bibl>.  To return to the garb of peace while Brutus is not safe would be a mockery.  His rescue has been the object from the beginning. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.3">3</bibl>-<bibl n="Cic. Phil. 14.5">5</bibl>. Antony and his troops should be held as public enemies: their cruelties at Parma, etc.: the city itself has been allotted among them. Cicero would extend the time of rejoicing, and salute the commanders as <foreign xml:lang="lat">imperatores</foreign>, to which their deeds entitle them. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.6">6</bibl>, <bibl n="Cic. Phil. 14.7">7</bibl>. Absurd charge against Cicero of aiming at power. The career of honors is open and the people rate men according to their deserts. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.8">8</bibl>. His former counsel, that Antony be declared a public enemy.  This is implied in the proposed <foreign xml:lang="lat">supplicatio</foreign>. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.9">9</bibl>, <bibl n="Cic. Phil. 14.10">10</bibl>. Exploits and eulogy of Pansa, Hirtius, and Octavianus. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.11">11</bibl>, <bibl n="Cic. Phil. 14.12">12</bibl>.  A <foreign xml:lang="lat">supplicatio</foreign> of fifty days is recommended for the three commanders. Eulogy of the soldiers, the living and the dead.  Special tribute to the Martian Legion. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.13">13</bibl>. Let us console the relatives of the slain and pay the promised reward to the families of the dead. </item>
+						<item>
+							<bibl n="Cic. Phil. 14.14">14</bibl>. Resolution of thanks and honor. </item>
+					</list>
+					<p> The Fourteenth Philippic consists of two parts, one argumentative and the other eulogistic.  There is no lack of connection, however, for the argument is necessary as a basis for the eulogy.  The substance of the speech may be stated in one sentence: "Antony is an enemy to the state (<foreign xml:lang="lat">hostis</foreign>) ; hence the victory of the consuls should receive the honors regularly awarded only to successes in foreign wars."  The opening passage (sects. <bibl n="Cic. Phil. 14 0">0</bibl>
+						<bibl n="Cic. Phil. 14.1">1</bibl>-<bibl n="Cic. Phil. 14.5">5</bibl>) is in form an objection to the proposed vote to lay aside the military garb; but it is in effect an <foreign xml:lang="lat">exordium</foreign>, since it serves to introduce Cicero's first proposition, — that Antony is a public enemy.  This proposition is established in sects. <bibl n="Cic. Phil. 14 0">0</bibl>
+						<bibl n="Cic. Phil. 14.6">6</bibl>-<bibl n="Cic. Phil. 14.25">25</bibl>, and the rest of the oration is a tribute of honor to the generals and their soldiers. The <foreign xml:lang="lat">sententia</foreign> with which the address concludes (sects. <bibl n="Cic. Phil. 14.36">36</bibl>-<bibl n="Cic. Phil. 14.38">38</bibl>) sums up all that Cicero has said, and takes the place of the usual <foreign xml:lang="lat">peroratio</foreign>.
+</p>
+					<p> Sects. <bibl n="Cic. Phil. 14.13">13</bibl>-<bibl n="Cic. Phil. 14.20">20</bibl> form a digression in which Cicero defends himself from certain attacks on the purity of his intentions.  But this digression is closely connected on the one hand with the rejoicings over the victory and on the other with the necessity of declaring Antony a <foreign xml:lang="lat">hostis</foreign>. </p>
+				</div>
+				<div type="textpart" n="1" subtype="chapter">
+					<p>Julius Caesar was assassinated on the Ides of March (March 15), <date>B.C. 44</date>,
+						by a band of conspirators, headed by Marcus Junius Brutus and Caius Cassius
+						Longinus. The conspirators fancied that if the dictator were out of the way
+						the old constitution could be restored. But Caesar's victory had made a
+						republic forever impossible. Nor had the conspirators made any arrangements
+						for a permanent government, or even for their own safety. The sole question
+						was, who should succeed to the supreme power of the murdered dictator. And
+						the only persons who had any real claims were Caesar's surviving colleague
+						in the consulship, Mark Antony, and the young Octavianus, Caesar's
+						grand-nephew, adopted son, and heir (afterwards the emperor Augustus). </p>
+					<p>Antony, who had come into possession of Caesar's papers and estates, caused
+						his "acts" to be legally confirmed, seized the public funds, abolished the
+						office of dictator, and secured as large a share of authority as he could.
+						He was a man of inordinate ambition, controlled only by an equally unbounded
+						self-indulgence, utterly without principle or scruple, and (if we may trust
+						the character of him drawn by Cicero) a monster of profligacy and crime. He
+						had married for his third wife Fulvia, widow of Publius Clodius, and shared,
+						with her, that tribune's vindictive hate of Cicero. His colleague was P.
+						Cornelius Dolabella, Cicero's son-in-law, who had assumed the consulship at
+						Caesar's death, on the ground that the latter had appointed him his
+						successor in that office. Dolabella dallied with the conspirators,
+						suppressed the violence of the mob that threatened them, and might have had
+						some pretensions to the power, with the support of the aristocracy, but was
+						easily out-generalled or bought off by Antony. Lepidus, who had a military
+						command, and in whom the aristocracy had some hope, was also gained over by
+						him. Octavianus, now twenty years old, hastened from Epirus to claim his
+						inheritance and take part in the conflict which he saw approaching. He was a
+						young man of precocious talent, of cool and wary temper, of ambition equal
+						to Antony's, and of a political sagacity which, through his long life, seems
+						never to have been at fault.
+</p>
+					<p>Neither of the two chief claimants was strong enough alone to be quite
+						independent of the other. At first, however, they stood in the attitude of
+						rivals, and in their antagonism there seemed still some hope for the
+						republic. Each endeavored to secure the countenance of the Senate and to
+						gain control over the public armies; and each succeeded in attaching to
+						himself a considerable force, though neither was strong enough to hold the
+						capital against the other.
+</p>
+					<p>Meanwhile Cicero, who at first hailed the death of Caesar as the restoration
+						of the republic, lost courage, and set out in July for Greece. Detained,
+						however, by contrary winds, and receiving more favorable news from Rome, he
+						returned to the city at the end of August, to find that all his hopes were
+						idle. Still, he made an effort at conciliation, in a speech in the Senate,
+						on the 2d of September. In this he replied severely to an attack made upon
+						him by Antony the day before, but still took pains to leave the door open
+						for a restoration of good-will. It was to no purpose. Antony replied,
+						September 19, with such bitterness —directly charging Cicero with the murder
+						of Clodius and of Caesar — that it was clear he meant there should be no
+						alternative but civil war. Cicero did not venture to answer him in the
+						Senate; but replied, ten weeks later, in a pamphlet — by many regarded as
+						his masterpiece — as bitter and uncompromising as the consul's attack. From
+						its likeness in tone to the famous invectives of Demosthenes against Philip
+						of Macedon, this was called a "Phiippic"; and the term has been extended to
+						the entire series of fourteen orations against Antony, commencing with that
+						of September 2, and ending with the triumphant speech (given below) with
+						which Cicero's political career closed.
+</p>
+					<p>The winter was spent in attempts at negotiation, every stage illustrated by
+						the running commentary of Cicero's Philippics. At last, in the spring of <date>B.C.
+						43</date>, diplomacy was at an end. Actual hostilities broke out first in
+						Cisalpine Gaul, where Decimus Brutus—who had taken command of that province,
+						according to Caesar's last will—held the town of Mutina (Modena) against
+						Antony. Octavianus, with his independent force, had also ranged himself on
+						the side of the Senate. The consuls of that year, Aulus Hirtius and C.
+						Vibius Pansa, had, after some hesitation, vigorously taken up the same
+						cause. In April the consuls met Antony in two battles, — on the 15th at
+						Bononia (Bologna), on the 27th near Mutina. In both he was defeated; but in
+						the first Pansa was mortally wounded, and in the second Hirtius was killed.
+						It was on the reception of the news of the victory at Bononia, while Pansa's
+						fate was unknown, that Cicero, in the Senate, delivered his fourteenth and
+						last Philippic (April 22). </p>
+					<p>The rejoicings were soon at an end. Octavianus found that his own interests
+						were best served by uniting with Antony against the Senate. These two — with
+						Lepidus as a third triumvir — came easily into possession of supreme power.
+						A remorseless proscription followed, in which the most illustrious victim
+						was Cicero, sacrificed to Antony's resentment, the vindictive hate of
+						Fulvia, and the cold ingratitude of Octavianus.
+</p>
+					<p>Of the fourteen Philippics, the Second is by far the most famous. It is a
+						long and elaborate invective, — in some parts exceedingly bitter and coarse,
+						— reviewing the domestic and political career of Mark Antony, and charging
+						him with every personal vice and almost every public crime. In its allusions
+						to the acts of Caesar, its hostility is uncompromising, vindictive, often
+						scornful. The revival of the title "perpetual dictator" seems to have
+						inspired Cicero with hatred, horror, and fear; and his real enmity was no
+						longer disguised after Caesar's death.
+</p>
+					<p>The Fourteenth Philippic has a unique interest as the last free voice of the
+						Roman Senate, and from its ill-timed confidence in the future emperor. It is
+						also interesting as an example of labored and stately panegyric, after the
+						manner of the Greeks, on patriots fallen in battle, and from the formal
+						resolution of thanks and honor with which it closes. Its immediate occasion
+						was a resolution of P. Servilius, that the citizens should lay aside the
+						military garb and that a public thanksgiving should be celebrated in honor
+						of the victory of Hirtius and Pansa at Bononia.
+
+					</p>
+					<div type="textpart" n="1-5" subtype="section">
+						<milestone n="1" unit="chapter"/>
+						<p>If D. Brutus were safe, we might well lay aside the military garb. But until his safety is assured such rejoicing would be a mockery. The war is not ended until he is relieved from siege.
+</p>
+					</div>
+					<div type="textpart" n="1" subtype="section">
+						<milestone n="242.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">si</lem>
+							</app>, with <foreign xml:lang="lat">cognovissem</foreign> (1.5), prot. cont. to fact, with <foreign xml:lang="lat">censerem</foreign> (1.7) as its apod.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut</lem>
+							</app>, correl. with <app>
+								<lem xml:lang="lat">sic</lem>
+							</app> (1.3).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ex litteris</lem>
+							</app>, i.e. despatches from the seat of war.
+
+<milestone n="242.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hostium</lem>
+							</app>, i.e. Antony's forces.
+
+<milestone n="242.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id quod</lem>
+							</app>, namely <app>
+								<lem xml:lang="lat">D. Brutum egressum . . . esse</lem>
+							</app> (1.4).
+
+<milestone n="242.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Brutum</lem>
+							</app>: D. Brutus, one of Caesar's murderers, had been assigned by him to the government of Cisalpine Gaul, and took possession of the province after Caesar's death.  In the summer, Antony procured the passage of a law transferring this province to himself.  Brutus, supported by the Senate, refused to give it up, and upon this issue hostilities broke out. Brutus was at this time besieged in Mutina (Modena), and the consuls, Hirtius and Pansa, had moved to raise the siege.
+
+<milestone n="242.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad saga</lem>
+							</app>, etc., as we should say figuratively "to arms."  The <foreign xml:lang="lat">sagum</foreign> (Fig. 51) was a simple woollen cloak, fastened over one shoulder with a clasp or buckle (<foreign xml:lang="lat">fibula</foreign>), while the <foreign xml:lang="lat">toga</foreign> had no fastening but was wound in elaborate folds about the body.  It was put on instead of the <foreign xml:lang="lat">toga</foreign> (the garment of peace: see note on <ref n="pl125.17">p. 125, l. 17</ref>) in the city when there was war near home, as a sign that the citizens were called to arms.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">issemus</lem>
+							</app>, subj. of subord. clause in indir. disc.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">redeundum</lem>
+							</app>, etc.: to return to the ordinary garb of peace, the <foreign xml:lang="lat">toga</foreign>, would, under the circumstances, be a sign of rejoicing.
+
+<milestone n="242.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ea res</lem>
+							</app>, i.e. the liberation of D. Brutus from siege.
+
+<milestone n="242.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">pugnae</lem>
+							</app>: the victory of Hirtius and Pansa at Bononia (see Introd., p.241 of text). </p>
+					</div>
+					<div type="textpart" n="2" subtype="section">
+						<milestone n="242.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ista sententia</lem>
+							</app>, <gloss>that proposition</gloss> (one proposed by the Senator P. Servilius, and opposed by Cicero in this oration).
+
+<milestone n="242.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id agamus ut</lem>
+							</app>, etc., <gloss>let us do so with the intention to retain it</gloss>.
+
+<milestone n="242.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc</lem>
+							</app>, referring to <foreign xml:lang="lat">discedere</foreign> (1.18).  The point is that it would not be pleasing to the gods for the citizens to assume the garb of rejoicing merely for a day, and then, since their main prayer had not been granted, to return <foreign xml:lang="lat">ad saga</foreign>. </p>
+					</div>
+					<div type="textpart" n="3" subtype="section">
+						<milestone n="242.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">redierimus</lem>
+							</app>, sc. <foreign xml:lang="lat">ad vestitum</foreign>.
+
+<milestone n="242.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne . . . prodatur</lem>
+							</app>, i.e. if they change their attire for this one day, it will appear that it was not on account of Brutus that the change was made, for he is not yet safe.
+
+<milestone n="243.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tollite hanc</lem>
+							</app>, <gloss>set aside this motive</gloss>: a kind of <foreign xml:lang="lat">protasis</foreign>; § <bibl n="AG 521">521</bibl>, b (310, b); B. 305, 2; G. 593, 4; H. 560, 4, N. (487, 3); H.-B. 497, 2.
+
+<milestone n="243.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conservate</lem>
+							</app>, etc., <gloss>maintain your dignity</gloss> (by sustaining Brutus). 
+<milestone n="2" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="4" subtype="section">
+						<milestone n="243.7" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">legati</lem>
+							</app>: this was in January.  At the head of the embassy was the distinguished jurist, Ser. Sulpicius Galba, who died on the journey.
+
+<milestone n="243.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hosti</lem>
+							</app>, i.e. Antony.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">denuntiarent</lem>
+							</app>, <gloss>order</gloss> (with threats).
+
+<milestone n="243.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Hirtius</lem>
+							</app>, the consul (see Introd., p.241 of text).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imbecillitatem</lem>
+							</app>, <gloss>infirm condition</gloss>.  Cicero had said of him before: "How feeble and worn he was!  But the infirmity of his body did not check the vigor of his soul."
+
+<milestone n="243.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Caesar</lem>
+							</app>, i.e. Octavianus.
+
+<milestone n="243.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">liberasset</lem>
+							</app>: Octavianus had taken an active part in the autumn in thwarting Antony's plans.
+
+<milestone n="243.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dolorem aliquem domesticum</lem>
+							</app>, <gloss>some private grief</gloss> i.e. for the death of Julius Caesar, his adoptive father.  It should be remembered that D. Brutus was one of the assassins of Caesar. </p>
+					</div>
+					<div type="textpart" n="5" subtype="section">
+						<milestone n="243.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">quid . . . egit</lem>
+							</app>, <gloss>what abject had Pansa?</gloss> He had set out for Mutina some weeks after his colleague Hirtius.
+
+<milestone n="243.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">faciendis</lem>
+							</app>, <gloss>procuring</gloss> (i.e. as presiding officer of the Senate).
+
+<milestone n="243.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">necessitati victus</lem>
+							</app>, implying that the war brought distress in the provision market.
+
+<milestone n="243.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod</lem>
+							</app>, i.e. the liberation of Brutus from siege.
+
+<milestone n="243.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">et</lem>
+							</app> connects <app>
+								<lem xml:lang="lat">rei</lem>
+							</app> and <app>
+								<lem xml:lang="lat">evento</lem>
+							</app>.
+
+<milestone n="243.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">praeripuisse</lem>
+							</app>, <gloss>seized prematurely</gloss>, if the news proved true; <app>
+								<lem xml:lang="lat">contempsisse</lem>
+							</app>, <gloss>scorned</gloss>, if it proved false. </p>
+					</div>
+					<div type="textpart" n="6-12" subtype="section">
+						<p>Antony should be declared a public enemy. His war against the state. His brother's cruelties at Parma. Honors should be voted to the generals who have defeated the enemies of the nation.
+</p>
+					</div>
+					<div type="textpart" n="6" subtype="section">
+						<milestone n="243.27" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">significatio vestra</lem>
+							</app>, <gloss>the indication you have giver'</gloss> (i.e. by signs of approval).
+
+<milestone n="243.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">propraetore</lem>
+							</app>: Octavianus, upon whom the Senate had specially conferred this rank early in January.  He was left in sole command after the death of Hirtius and Pansa. -51... ante, <gloss>as soon as</gloss>.
+
+<milestone n="243.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">pertineant</lem>
+							</app>: § <bibl n="AG 592">592</bibl>, 3 (341, d); B. 323; G. 508, 3; H. 649, (528, I); H.-B. 535, I, a.
+
+<milestone n="3" unit="chapter"/>
+							<milestone n="243.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exercituumque</lem>
+							</app>: this term is added because the legions contained only Romans, while the consular armies had also auxiliaries.
+
+<milestone n="243.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">duobus</lem>
+							</app>, Sc. <foreign xml:lang="lat">proeliis</foreign>.  The battle was begun by Pansa, who was routed and mortally wounded, although the fatal character of his wound was not yet known at Rome; then the fortune of the day was retrieved by reinforcements led by Hirtius.  Octavianus took no part in this engagement, but repulsed an attack upon the camp.
+
+<milestone n="244.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hostium</lem>
+							</app>, <foreign xml:lang="lat">civium</foreign>: Cicero's great point in the Philippics is to make out that Antony — like Catiline — is no citizen, but a public enemy.  In the argument that follows he shows that the proposition of a <foreign xml:lang="lat">supplicatio</foreign> (see note, Cat. 3, sect. <bibl n="Cic. Catil. 3.15">15</bibl>, <ref n="pl133.19">p. 133, l. 19</ref>), which had never been decreed except for a victory over foreign enemies, endorses this view by treating Antony as a <foreign xml:lang="lat">hostis</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hostium</lem>
+							</app>, <app>
+								<lem xml:lang="lat">summa pietas</lem>
+							</app>; <app>
+								<lem xml:lang="lat">nefarium scelus</lem>
+							</app>, <app>
+								<lem xml:lang="lat">civium</lem>
+							</app>: observe the chiastic order. </p>
+					</div>
+					<div type="textpart" n="7" subtype="section">
+						<milestone n="244.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">hostem</lem>
+							</app>: the proposition seems to have studiously omitted calling Antony's troops <gloss>enemies</gloss>: this Cicero objects to.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vero</lem>
+							</app>, <gloss>forsooth</gloss>, marks the irony.
+
+<milestone n="244.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">civium</lem>
+							</app>: if not <foreign xml:lang="lat">hostes</foreign>, they were, of course, <foreign xml:lang="lat">cives</foreign>, whom it would be impious to kill.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">improbis</lem>
+							</app> (sc. <foreign xml:lang="lat">civibus</foreign>), <gloss>criminals</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">inquit</lem>
+							</app>: the mover of the proposition which Cicero is combating is supposed to retort that, though citizens, these are criminals, and that Cicero's sarcasm therefore misses fire.
+
+<milestone n="244.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">clarissimus vir</lem>
+							</app>: P. Servilius Vatia, the proposer of the <foreign xml:lang="lat">supplicatio</foreign>, Caesar's colleague in his second consulship, <date when="-0048">B.C. 48</date>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae</lem>
+							</app>, etc.: i.e. these words are appropriate not to soldiers in arms against the state but to civil offenders. </p>
+					</div>
+					<div type="textpart" n="8" subtype="section">
+						<milestone n="244.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">bellum</lem>
+							</app>, etc.: this is Cicero's statement of the real facts as opposed to his ironical suggestion in the preceding sentence.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">infert</lem>
+							</app>, used of offensive war.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quattuor consulibus</lem>
+							</app>, i.e. besides the consuls, the two consuls elect, Plancus and D. Brutus.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">unus</lem>
+							</app>, i.e. Antony.
+
+<milestone n="244.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">gent</lem>
+							</app>, <gloss>is actually carrying on</gloss>.
+
+<milestone n="244.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">suis cladibus</lem>
+							</app>, <gloss>the evils he himself threatens</gloss>.
+
+<milestone n="244.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Dolabellae facinus</lem>
+							</app>: Dolabella, Antony's colleague in the consulship, when on his way to the province of Syria, in February, 43, assaulted Smyrna by treachery, captured the <foreign xml:lang="lat">propraetor</foreign> of Asia, C. Trebonius (one of the conspirators against Caesar), and put him to death with indignities and torture.
+
+<milestone n="244.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc templo</lem>
+							</app>, i.e. that of Jupiter Capitolinus, where the Senate was now met (cf. Cat. 1, sect. 1 and note).
+
+<milestone n="244.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Parmensium</lem>
+							</app>: Parma had been captured by L. Antonius, and treated in the manner here described.
+
+<milestone n="245.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">L. Antonius</lem>
+							</app>, the youngest brother of Mark Antony (cos. <date when="-0041">B.C. 41</date>). </p>
+					</div>
+					<div type="textpart" n="9" subtype="section">
+						<milestone n="245.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">oblita</lem>
+							</app>, from <foreign xml:lang="lat">oblino</foreign>.
+
+<milestone n="245.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">crudelitatem</lem>
+							</app>: the cruelty of the Carthaginians was proverbial—at least among their enemies the Romans.
+
+<milestone n="4" unit="chapter"/>
+							<milestone n="245.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">capta</lem>
+							</app>, <foreign xml:lang="lat">surrepta</foreign>: observe the antithesis.  Violence which was excusable in the case of a city taken by storm was, Cicero implies, disgraceful in the case of one taken by treachery. </p>
+					</div>
+					<div type="textpart" n="10" subtype="section">
+						<milestone n="245.16" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">hujus urbis</lem>
+							</app>, Sc. <foreign xml:lang="lat">eum esse</foreign>: <app>
+								<lem xml:lang="lat">urbis</lem>
+							</app> limits <app>
+								<lem xml:lang="lat">quid</lem>
+							</app> in the same sense in which <foreign xml:lang="lat">coloniarum</foreign> limits <foreign xml:lang="lat">hostis</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">explendas</lem>
+							</app>, <gloss>replenishing.</gloss>
+							<milestone n="245.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">latrocini</lem>
+							</app>, <gloss>gang of robbers</gloss>.
+
+<milestone n="245.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Saxa</lem>
+							</app>, L. Decidius: a Celtiberian by birth, originally a land surveyor, a creature of Caesar's and now of Antony's.  The reference here is to a law of Antony, passed in the June preceding, for the establishment of colonies of veterans.  In <app>
+								<lem xml:lang="lat">peritus . . . decempeda</lem>
+							</app> Cicero alludes to Saxa's humble origin and also implies that, in laying out confiscated territory, he habitually appropriated more than the forfeited area.
+
+<milestone n="245.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">rumoribus</lem>
+							</app>, i.e. of the success of Antony's arms.
+
+<milestone n="245.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">larem</lem>
+							</app>: the <foreign xml:lang="lat">lar familiaris</foreign> was the protector of the family, and especially of the hearth.
+
+<milestone n="245.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">a quibus</lem>
+							</app>, <gloss>from whom</gloss> (not <gloss>by whom</gloss>). </p>
+					</div>
+					<div type="textpart" n="11" subtype="section">
+						<milestone n="245.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">decreverit</lem>
+							</app>, <gloss>has moved</gloss>.
+
+<milestone n="245.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">omnino numerum</lem>
+							</app>, <gloss>the total number</gloss>.
+
+<milestone n="246.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cui</lem>
+							</app>, interrogative.
+
+<milestone n="246.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut non</lem>
+							</app>, etc., <gloss>without his being called</gloss>. <pb n="488"/>
+							<milestone n="5" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="12" subtype="section">
+						<milestone n="246.9" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">an si quis</lem>
+							</app>, etc., equiv. to <gloss>or, when, if any one had</gloss>, etc., <gloss>the Senate would have called hint <foreign xml:lang="lat">imperator</foreign>, shall we take away</gloss>, etc.?  The Latin expresses the thought by two coordinate interrogative sentences: <app>
+								<lem xml:lang="lat">appellaret senatus</lem>
+							</app> (with its <foreign xml:lang="lat">protasis si quis occidisset</foreign>) and <foreign xml:lang="lat">adimemus</foreign> (with its modifiers).  In English it is more natural to make the first of these sentences subordinate.  Cf. a similar construction in Manil. Law, sect. <bibl n="Cic. Man. 58">58</bibl>.
+
+<milestone n="246.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae increbuit</lem>
+							</app>: in the later days of the republic the title of <foreign xml:lang="lat">imperator</foreign> and the honor of a triumph were granted on much slighter grounds than in earlier times.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">appellaret</lem>
+							</app>, <gloss>would have styled</gloss> (imperf. because of repeated action).
+
+<milestone n="246.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">isti hostes domestici</lem>
+							</app>, i.e. the partisans of Antony remaining in Rome.
+
+<milestone n="246.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ovantem</lem>
+							</app>: evidently some informal demonstration of joy on the part of the citizens is referred to, in which Cicero, as a well-known champion of the Senate, was escorted to the Capitol to give thanks to the gods.  Strictly the <foreign xml:lang="lat">ovatio</foreign> was an inferior triumph, sometimes granted by the Senate in cases when the proportions or circumstances of the victory, or the rank of the commander, did not warrant the supreme honor of a triumph (see note on <ref n="pl70.17">p. 70, l. 17</ref>).  The general did not wear the purple embroidered robe or the laurel crown, but the ordinary <foreign xml:lang="lat">toga praetexta</foreign> and a wreath of myrtle. Moreover, he walked, or (in later times) rode on horseback, instead of riding in a chariot. </p>
+					</div>
+					<div type="textpart" n="13-21" subtype="section">
+						<p>Digression: Cicero defends himself against false charges and gives a history of the rumors circulated to his discredit. His tribute to his generous rivals of former days. The people know the purity of his sentiments. He has always opposed Antony.
+</p>
+					</div>
+					<div type="textpart" n="13" subtype="section">
+						<milestone n="246.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">meritis</lem>
+							</app>, masculine gender.
+
+<milestone n="246.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tu igitur</lem>
+							</app>, Sc. <foreign xml:lang="lat">gloriaris</foreign>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">dixerit</lem>
+							</app>, potential subjunctive.
+
+<milestone n="246.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">gratiam non referri</lem>
+							</app>, <gloss>that a favor should not be returned</gloss>.
+
+<milestone n="246.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">impietatis</lem>
+							</app>: the stories told charged Cicero with intended treason (see l.10), which would be <foreign xml:lang="lat">impietas</foreign> against his <foreign xml:lang="lat">patria</foreign>. </p>
+					</div>
+					<div type="textpart" n="14" subtype="section">
+						<milestone n="246.32" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">Parilibus</lem>
+							</app>: the <foreign xml:lang="lat">Parilia</foreign> or <foreign xml:lang="lat">Palilia</foreign> (April 21) was one of the most ancient Roman festivals, in honor of Pales, a goddess of flocks.  This day was regarded as the anniversary of the founding of the city.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">qui dies</lem>
+							</app>, etc., <gloss>which occur this very day</gloss>.
+
+<milestone n="247.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum fascibus descensurum</lem>
+							</app>, i.e. was coming down to the Forum with the insignia of usurped power, as if to assume the throne.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc esse conlatum</lem>
+							</app>, <gloss>that this</gloss> [intention] <gloss>was attributed</gloss>. <pb n="489"/>
+							<milestone n="247.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ne quid</lem>
+							</app>: § <bibl n="AG 537">537</bibl>, a, N. (319, a, N.); G. 553; cf. H.-B. 502, 3, a, footnote I
+
+<milestone n="247.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut</lem>
+							</app>: if this word is retained, the expression is subj. of exclam.; § <bibl n="AG 462">462</bibl>, a (332, c); G. 558; H. 559, 5(486, ii, N.); H.-B. 503, a; if omitted, a rhetorical question, § <bibl n="AG 444">444</bibl> (268); B. 277; G. 259; H. 557 (486, ii); H.-B. 503.
+
+<milestone n="247.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exsisterem</lem>
+							</app>, etc., <gloss>should turn out of a sudden another Catiline:</gloss> imperf., as referring back to the time when his enemies said <foreign xml:lang="lat">"descendet"</foreign>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quibus auspiciis</lem>
+							</app>: the whole Roman polity was based on the assumed approval of the gods, secured in every case by auspices (<foreign xml:lang="lat">auspicia</foreign>), taken by the proper authority.  Only magistrates had the right to take the auspices (see note, Cat. 4, sect., <ref n="pl142.4">p. 142, l. 4</ref>).  The augur was not in any sense a magistrate, though he had the power of interpreting the auspices.  Hence Cicero, though an augur, would be unable to take the first step to any usurpation of power. A technical obstacle like this would not stand long in the way of a modern usurper; but the stress here laid upon it illustrates the degree to which the peculiar formalism of the Roman religion had become worked into the Roman mind, and, further, the power that lay in this formalism to protect the institutions of the state.
+
+<milestone n="247.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">augur</lem>
+							</app>, I, <gloss>an augur</gloss> (emphatic): i.e. an augur would know his science too well for such an attempt.  This was the latest of Cicero's official honors received ten years before, and he fully appreciated the dignity of the priestly craft.
+
+<milestone n="247.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cui traderem</lem>
+							</app>: as the usurped authority would be illegal in its inception, so it could not be legally transferred to any successon
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quemquamne fuisse</lem>
+							</app>: § <bibl n="AG 462">462</bibl> (274); B. 334; G. 534; H. 616, iii (539, iii); H.-B. 596. 
+<milestone n="6" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="15" subtype="section">
+						<milestone n="247.10" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">fama</lem>
+							</app>, i.e. of Antony's success at Mutina.
+
+<milestone n="247.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illam curiam</lem>
+							</app>, i.e. the Pompeian: this was to the north of the Capitoline, and was the scene of Caesar's death (hence the term <foreign xml:lang="lat">infelicem</foreign>). Fig. 52 shows the famous coin struck in commemoration of the murder of Caesar.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">furiis suis</lem>
+							</app>, <gloss>their own madmen</gloss>. The MSS. have <foreign xml:lang="lat">viribus</foreign> or <foreign xml:lang="lat">juris:</foreign> Klotz's conjecture <foreign xml:lang="lat">partibus</foreign> is adopted by Halm.
+
+<milestone n="247.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad me</lem>
+							</app>, as being now the leading man in the state. <pb n="490"/>
+							<milestone n="247.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quasi</lem>
+							</app>, i.e. on the pretence that.
+
+<milestone n="247.20" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tyrannum</lem>
+							</app>: to the Romans <foreign xml:lang="lat">rex</foreign> and its Greek synonym <foreign xml:lang="lat">tyrannus</foreign> (<foreign xml:lang="grc">tu/rannos</foreign>) meant a usurper or unconstitutional monarch against whom violence would be a virtue.  A dictator, though his power was practically absolute, was not a <foreign xml:lang="lat">tyrannus</foreign>, since his office was held in accordance with the ancient laws of the commonwealth.
+
+<milestone n="247.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quae</lem>
+							</app> is object and <app>
+								<lem xml:lang="lat">res</lem>
+							</app> is subject of <app>
+								<lem xml:lang="lat">patefecit</lem>
+							</app>. </p>
+					</div>
+					<div type="textpart" n="16" subtype="section">
+						<milestone n="247.25" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">jam inde</lem>
+							</app>, <gloss>ever since</gloss>.
+
+<milestone n="247.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">contionem</lem>
+							</app>: see Introd. to notes on Manil. Law.
+
+<milestone n="247.30" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">declaravit</lem>
+							</app>, not by a formal vote, of course, but by spontaneous cries.
+
+<milestone n="247.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">optatissimi nuntii</lem>
+							</app>, etc., i.e. of Pansa's victory at Bononia.
+
+<milestone n="248.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">auxerit</lem>
+							</app>, <gloss>added to my dignity</gloss>. </p>
+					</div>
+					<div type="textpart" n="17" subtype="section">
+						<milestone n="248.5" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">male mecum ageretur</lem>
+							</app> (a common Latin idiom),! <gloss>should fare hard</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">parum . . . purgatus</lem>
+							</app>, i.e. if I needed any defence against so monstrous a charge.
+
+<milestone n="248.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">jejuno animo et angusto</lem>
+							</app>, i.e. mean and small-souled.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">id fecissem</lem>
+							</app>: § <bibl n="AG 592">592</bibl>,3(341, d); B. 323; G. 628; H. 649, i (528, I); H.-B. 535, I, a; translate, <gloss>to do as I had always done</gloss>, [namely to] <gloss>think</gloss>, etc.
+
+<milestone n="248.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">campus</lem>
+							</app>, etc.: observe this ancient use of a figure still familiar to us.
+
+<milestone n="248.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Crassus</lem>
+							</app>, the great orator, who died  <date when="-0091">B.C. 91</date> (Introd., p. xxxvii).
+
+<milestone n="7" unit="chapter"/>
+							<milestone n="248.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">utinam</lem>
+							</app>, etc.: Cicero by this wish expresses his own sentiments of generous rivalry towards some of his great contemporaries, now dead, and in the same breath characterizes their feeling towards him as in like manner generous and noble.  He is thinking of such great citizens as Lucullus, Hortensius, and Catulus.
+
+<milestone n="248.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum . . . cederem</lem>
+							</app>, <gloss>when I myself was ready to yield to them</gloss>.
+
+<milestone n="248.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">principem</lem>
+							</app>, <gloss>the first man in the state</gloss>.  When a Roman had held the consulship there was no higher political office in his reach, but as a member of the Senate he retained a dignified and authoritative position in the public counsels.  The emulation here referred to by Cicero (<foreign xml:lang="lat">contentione principatus</foreign>, l.19) was for the first place among such men (hence <foreign xml:lang="lat">consularium</foreign> in 1.14).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">hoc vero tempore</lem>
+							</app> , i.e. now, in the dearth of strong leading men like those just referred to.
+
+<milestone n="248.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quo . . . dolore</lem>
+							</app>, interrogative.
+
+<milestone n="248.17" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">sententiam moderari</lem>
+							</app>, <gloss>govern their views</gloss>. </p>
+					</div>
+					<div type="textpart" n="18" subtype="section">
+						<milestone n="248.21" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">cursus</lem>
+							</app>, <gloss>speed</gloss>. <pb n="491"/>
+							<milestone n="248.22" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tu</lem>
+							</app>, though emphatic, does not here refer to a particular person: it merely addresses the whole opposing party as if it were a single individual.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">optime sentiam</lem>
+							</app>: cf. <app>
+								<lem xml:lang="lat">male sentire</lem>
+							</app> (1.15).
+
+<milestone n="248.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ad me . . . fieri</lem>
+							</app>, etc.: best rendered by changing the construction, <gloss>all good citizens gathering about me</gloss>.  This refers to such occasions as that of the <foreign xml:lang="lat">gratulatio</foreign> above (<ref n="pl246.16">p. 246, l. 16</ref>).
+
+<milestone n="248.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">nollem</lem>
+							</app>, <gloss>I should regret that</gloss> (i.e. I should be sorry if that were so): Cf. § <bibl n="AG 442">442</bibl>, b (267, c) ; B. 280, 2, a; G. 26[, R.; H.-B. 519, 1, C.
+
+<milestone n="248.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">optatius</lem>
+							</app>, i.e. than such a course of conduct on the part of the other side. </p>
+					</div>
+					<div type="textpart" n="19" subtype="section">
+						<milestone n="248.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">haec</lem>
+							</app>, i.e. —that <gloss>I</gloss> am the true champion of the people, and not those demagogues who are jealous of me.  In this section Cicero makes an easy transition hack to the subject which he was discussing when he began to digress (at sect. <bibl n="Cic. Phil. 14 13">13</bibl>), — the necessity of declaring Antony a public enemy and of honoring the generals for defeating him.
+
+<milestone n="249.1" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">maxime</lem>
+							</app>, Sc. <foreign xml:lang="lat">de nobis</foreign>.
+
+<milestone n="249.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">XIII Kalendas Januarias</lem>
+							</app> (December 20), the day when the third and fourth Philippics were spoken, — one in the Senate and one in the Forum, -declaring Antony a public enemy.
+
+<milestone n="249.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ex Kalendis Januarus</lem>
+							</app>, when, in the fifth Philippic, he urged that no negotiations should be had with Antony.  The campaign against Antony may be said to have begun December 20 (see preceding note); but no active measures were taken until the new consuls entered upon their office on the first of January. </p>
+					</div>
+					<div type="textpart" n="20" subtype="section">
+						<milestone n="249.10" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">meis sententus</lem>
+							</app>, i.e. it was in consequence of Cicero's expressed opinion in the Senate that negotiations with Antony were broken off.  It was on the question of sending an embassy (see note, sect. <bibl n="Cic. Phil. 14 4">4</bibl>, <ref n="pl243.7">p. 243, l. 7</ref>) to him that Cicero delivered the fifth Philippic. The embassy was sent on January I, but came to nothing, and the Senate then declared war.
+
+<milestone n="249.11" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">illum</lem>
+							</app>, Sc. <foreign xml:lang="lat">esse</foreign>.
+
+<milestone n="249.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ut ego</lem>
+							</app>, <gloss>just as I</gloss> [thought].
+
+<milestone n="249.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">huic</lem>
+							</app>, etc. [but] <gloss>to this mere name</gloss>, etc. </p>
+					</div>
+					<div type="textpart" n="21" subtype="section">
+						<milestone n="249.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">P. Ventidium</lem>
+							</app>, an officer of Antony's army.  He afterwards gained some important successes over the Parthians, <date when="-0038">B.C. 38</date>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">†volusenum</lem>
+							</app>:  the manuscripts here are hopelessly corrupt.
+
+<milestone n="249.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">discessionem</lem>
+							</app>, <gloss>"division"</gloss> (as in the English House of Commons); see general Introd., p. lvii.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">voluissent</lem>
+							</app>: the presiding consuls could put a question to vote in the Senate—or not—at their discretion, <pb n="492"/>  since they alone were regarded as having the initiative in deliberations (see general Introd., p. lvii).
+
+<milestone n="8" unit="chapter"/>
+							<milestone n="249.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">licuit</lem>
+							</app>, i.e. by the consuls (see last note).
+
+<milestone n="249.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">verbis notari</lem>
+							</app>: spurious, and to be disregarded in translation. </p>
+					</div>
+					<div type="textpart" n="22-25" subtype="section">
+						<p>It is no longer possible to refuse to declare Antony an enemy: this is implied in the honors proposed for the generals.
+</p>
+					</div>
+					<div type="textpart" n="22" subtype="section">
+						<milestone n="249.23" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sustulerunt</lem>
+							</app>, i.e. refused to put that question.
+
+<milestone n="249.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">imprudens</lem>
+							</app>, <gloss>without knowing it</gloss>. </p>
+					</div>
+					<div type="textpart" n="23" subtype="section">
+						<milestone n="249.30" unit="pg_l"/>
+						<p>This and the following section give examples to prove Cicero's assertion that a <foreign xml:lang="lat">supplicatio</foreign> had never been decreed for victory in a civil war, that is, for victory over persons who were not <foreign xml:lang="lat">hostes</foreign>.
+
+<milestone n="249.32" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">bellum Octavianum</lem>
+							</app>: see Cat. 3, sect. <bibl n="Cic. Catil. 3.24">24</bibl> (<ref n="pl137.26">p. 137, l. 26</ref>) and note.
+
+<milestone n="250.3" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Servili</lem>
+							</app>: see note on <ref n="pl244.9">p. 244, l. 9</ref>.
+
+<milestone n="250.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conlega</lem>
+							</app>, i.e. Julius Caesar.
+
+<milestone n="250.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">de Alexandria</lem>
+							</app>: for a victory over the Egyptians; <app>
+								<lem xml:lang="lat">de</lem>
+							</app> Pharnace, son of Mithridates, King of Pontus (both victories, <date when="-0047">B.C. 47</date>). </p>
+					</div>
+					<div type="textpart" n="24" subtype="section">
+						<milestone n="250.12" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">ob conservationem</lem>
+							</app>: see Cat. 3, sect. <bibl n="Cic. Catil. 3.15">15</bibl>.
+
+<milestone n="250.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Gabinium</lem>
+							</app>: he had claimed a <foreign xml:lang="lat">supplicatio</foreign>, which the Senate steadily refused, for some successes against Arab marauders in Syria.
+
+<milestone n="9" unit="chapter"/>
+							<milestone n="250.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">re</lem>
+							</app>, <gloss>in effect</gloss>; <app>
+								<lem xml:lang="lat">verbo</lem>
+							</app>, <gloss>in so many words</gloss>. </p>
+					</div>
+					<div type="textpart" n="25" subtype="section">
+						<milestone n="250.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">honoris amplissimi</lem>
+							</app>, i.e. the consulship.
+
+<milestone n="250.23" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">alterum</lem>
+							</app>, i.e. consul; <app>
+								<lem xml:lang="lat">alterum</lem>
+							</app>, i.e. <foreign xml:lang="lat">imperator</foreign>.
+
+<milestone n="250.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">a membris</lem>
+							</app>, etc.: Antony would not only cut their throats but treat their bodies with indignity, — as was, in fact, afterwards done in the case of Cicero. </p>
+					</div>
+					<div type="textpart" n="26-28" subtype="section">
+						<p>Exploits of Pansa, Hirtius, and Octavianus.
+</p>
+					</div>
+					<div type="textpart" n="26" subtype="section">
+						<milestone n="250.30" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">With this section the formal eulogy begins. Sect</lem>
+							</app>, 25 is a transition from the argumentative part of the oration to the laudatory portion.
+
+<milestone n="250.31" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">legione Martia</lem>
+							</app>: this was one of two legions that had gone over from Antony to the Senate the November previous.  The other was the <foreign xml:lang="lat">quarta</foreign>, mentioned below (<ref n="pl251.11">p. 251, l. 11</ref>).
+
+<milestone n="251.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">alterum</lem>
+							</app>, referring to the second alternative (<foreign xml:lang="lat">victoria se</foreign>, etc.), according to the favorite Latin chiastic order. 
+<milestone n="10" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="27" subtype="section">
+						<milestone n="251.14" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">beneficia</lem>
+							</app>, i.e. grants of money and assignments of land to Julius Caesar's veterans.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">servassent</lem>
+							</app>, <gloss>hod saved</gloss>, i.e. had  <pb n="493"/>  not, like some others, wasted their property and become reprobates (cf. Cat. 2, sect. <bibl n="Cic. Catil. 2.20">20</bibl>).
+
+<milestone n="251.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">viginti cohortibus</lem>
+							</app>, i.e. two legions.
+
+<milestone n="251.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">tribus</lem>
+							</app>: in point of fact, Antony had only two legions engaged; but full particulars had not yet reached Rome, and Cicero appears to have thought that a third legion, the <foreign xml:lang="lat">Alauda</foreign>, which he had with him, took part in the fight.
+
+<milestone n="251.19" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">huic</lem>
+							</app>, etc., dep. on <foreign xml:lang="lat">imminentis</foreign> (1.21). </p>
+					</div>
+					<div type="textpart" n="28" subtype="section">
+						<milestone n="252.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">aetas</lem>
+							</app>: Octavianus was now twenty years old, an age at which no person could regularly hold the <foreign xml:lang="lat">imperium</foreign>.
+
+<milestone n="252.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">ejus nominis</lem>
+							</app>, <gloss>that title (<foreign xml:lang="lat">imperator</foreign>
+							</gloss>).  This, though connected with the <foreign xml:lang="lat">imperium</foreign>, was not conferred with that power, but followed some important success in the field, being given by acclamation of the soldiers.
+
+<milestone n="252.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">castra</lem>
+							</app>, i.e. the camp of Hirtius.  </p>
+					</div>
+					<div type="textpart" n="29-35" subtype="section">
+						<p>Devotion of the soldiers. Special tribute to the Martian Legion.
+
+<milestone n="11" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="29" subtype="section">
+						<milestone n="252.13" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">decerno</lem>
+							</app>, <gloss>I propose</gloss>: note that this word often does not mean <gloss>decree</gloss>, but is used of a single Senator, —<gloss>vote</gloss> or <gloss>propose</gloss>.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quinquaginta</lem>
+							</app>, an unprecedented number. A ten days' <foreign xml:lang="lat">supplicatio</foreign> had been decreed for Pompey's victories in Africa, and fifteen for Caesar's defeat of the Belgians.
+
+<milestone n="252.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">est</lem>
+							</app>, <gloss>it is due</gloss> to.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">fidei . . . declarare</lem>
+							</app>: § <bibl n="AG 343">343</bibl>, c (214, d); B. 198, 3; G. 366, R.2; H. 447 (403); cf. H.-B. 340.
+
+<milestone n="252.18" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">bello confecto</lem>
+							</app>: § <bibl n="AG 420">420</bibl> (255, d); B. 237, 2; G. 410; H. 489, I (43 I, I); H.-B. 421, 3; notice (he reference to future time.
+
+<milestone n="252.21" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">conjungi</lem>
+							</app>, Sc. <foreign xml:lang="lat">cum honore imperatorum</foreign>. </p>
+					</div>
+					<div type="textpart" n="30" subtype="section">
+						<milestone n="252.22" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">omnibus</lem>
+							</app>, i.e. to all, both living and dead.  To the living the full reward is due only on the completion of the war; to the dead, however, it can be paid at once by being given to their heirs (see the end of the decree, sect. <bibl n="Cic. Phil. 14 36">36</bibl>).
+
+<milestone n="252.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">victoribus</lem>
+							</app>, i.e. at the end of the campaign.
+
+<milestone n="252.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quam . . . secuti sunt</lem>
+							</app>, i.e. relying on which (the pledge of the Senate), they followed the cause.
+
+<milestone n="252.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">consili sui</lem>
+							</app>, <gloss>their course</gloss> (i.e. their espousal of the cause of good order).
+
+<milestone n="252.27" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quibus</lem>
+							</app>, i.e. the living, whose silent presence is a reminder.
+
+<milestone n="252.29" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">senatus sapientis</lem>
+							</app>: the Senate, as composed of the wisest citizens, would best appreciate the importance of encouraging patriotism. <pb n="494"/>
+						</p>
+					</div>
+					<div type="textpart" n="31" subtype="section">
+						<milestone n="253.2" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">occurrunt</lem>
+							</app>, <gloss>suggest themselves</gloss>.
+
+<milestone n="12" unit="chapter"/>
+							<milestone n="253.6" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">placet . . . mihi</lem>
+							</app>, <gloss>my proposition is</gloss> (an almost technical use of the phrase: see Vocab.).
+
+<milestone n="253.9" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">se abrupit</lem>
+							</app>: Cf. sect. <bibl n="Cic. Phil. 14 26">26</bibl>.
+
+<milestone n="253.10" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">Albam</lem>
+							</app>, sc. <foreign xml:lang="lat">Fucensem</foreign>: a town among the mountains, in the territory of the Marsi, which the Martian Legion took and held after revolting from Antony.
+
+<milestone n="253.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">desiderat</lem>
+							</app>, <gloss>has lost</gloss>
+							<milestone n="253.13" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">in ipsa victoria</lem>
+							</app>, <gloss>at the moment of victory</gloss>. </p>
+					</div>
+					<div type="textpart" n="32" subtype="section">
+						<milestone n="253.15" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">vos</lem>
+							</app>: here he addresses the Martian Legion.
+
+<milestone n="253.16" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">idem deus</lem>
+							</app>: Mars was not only the special patron god of Rome, but, being the father of Romulus, was regarded as the ancestor of the Roman race (hence <foreign xml:lang="lat">urbem genuisse</foreign>). 
+<milestone n="13" unit="chapter"/>
+						</p>
+					</div>
+					<div type="textpart" n="34" subtype="section">
+						<milestone n="254.18" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">publice</lem>
+							</app>, i.e. by way of public eulogy.
+
+<milestone n="254.24" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">bustis</lem>
+							</app>, <gloss>burial-mounds</gloss>.  The <foreign xml:lang="lat">bustum</foreign> was properly the heap of ashes left after the body had been consumed with the <foreign xml:lang="lat">rogris</foreign> ; but the term was also applied to the mound erected on the spot where the body was burned.  For an elaborate <foreign xml:lang="lat">bustum</foreign>, see the round tomb of Caecilia Metella in the view of the Appian Way (text, p.169).  </p>
+					</div>
+					<div type="textpart" n="36-38" subtype="section">
+						<head>Formal resolution of thanks and honor.</head>
+						<milestone n="14" unit="chapter"/>
+					</div>
+					<div type="textpart" n="36" subtype="section">
+						<milestone n="255.6" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">sententia</lem>
+							</app>, i.e. a formal proposition for a decree (analogous to "a motion reduced to writing " in a modern deliberative assembly).  In the Roman Senate questions were proposed only by a magistrate; and this was done not in the form of a set motion, as with us, but the whole question was presented (<foreign xml:lang="lat">de re referre</foreign>) for discussion. The result of the deliberation might be several formal propositions for a decree, all, any, or none of which might be formally put to vote by the presiding officer. If one of these was carried, it would stand as the <foreign xml:lang="lat">senatus consultum</foreign>.  (Cf. Introd., p. lvii, above).
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">complectar</lem>
+							</app>, i.e. <gloss>my views on the whole question</gloss>.
+
+<milestone n="255.5" unit="pg_l"/>
+						</p>
+						<p>What follows is a somewhat rare example of a regular resolution of the Senate.  The stately and formal character of the language is noteworthy.
+</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum</lem>
+							</app>, <gloss>whereas</gloss>.
+
+<milestone n="255.15" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">occidione occident</lem>
+							</app>: notice the set phrase, not used in ordinary language.  Translate, <gloss>cut to pieces with great slaughter</gloss>. </p>
+					</div>
+					<div type="textpart" n="37" subtype="section">
+						<milestone n="255.20" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">senatum. . . judicare</lem>
+							</app>, indir. disc. depending on <foreign xml:lang="lat">censeo</foreign> (l. 7); in the decree it would be <foreign xml:lang="lat">senatus . . . judicat</foreign>
+							<milestone n="255.25" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">uti . . . constituat</lem>
+							</app>: in the decree this would depend on some word of commanding (like <foreign xml:lang="lat">decernit</foreign>) in the heading; hence it stands unchanged in Cicero's indirect statement.
+
+<milestone n="255.26" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">alter ambove</lem>
+							</app>: the <foreign xml:lang="lat">imperium</foreign> of the two consuls was absolutely equal, and the power of neither was impaired by the special assignment of any duty to the other. Any such special assignment of functions was only made by mutual consent, and either had a legal right to interfere in the other's province.  Of course, however, any such interference was regarded as unwarranted, and in practice the two colleagues either took turns in the administration or agreed upon a division of functions between them.
+
+<milestone n="255.28" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">pulvinaria</lem>
+							</app>: see note on Cat. 3, sect. <bibl n="Cic. Catil. 3.23">23</bibl> (<ref n="pl137.14">p. 137, l. 14</ref>). A <foreign xml:lang="lat">supplicatio</foreign> was one of the few religious rites of the Romans in which the whole people took part.  The proper temples were opened and the gods symbolically served with a feast The citizens repaired to these temples and paid their individual devotions to the gods in peculiar forms of humiliation not ordinarily observed in the public sacrifices. </p>
+					</div>
+					<div type="textpart" n="38" subtype="section">
+						<milestone n="255.29" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">senatum . . . soluturum</lem>
+							</app>: here the statement returns to the form of the indir. disc., — in the decree, <foreign xml:lang="lat">senatus . . solvet</foreign>.
+
+<milestone n="255.33" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">cum . . . caederent</lem>
+							</app>, concessive.
+
+<milestone n="256.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">locandum. . . curent</lem>
+							</app>: see note on Cat. 3, sect. <bibl n="Cic. Catil. 3.20">20</bibl> (<ref n="pl136.8">p. 136, l. 8</ref>).
+
+<milestone n="256.12" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">si vivi vicissent</lem>
+							</app>, if <gloss>they had survived their victory</gloss>. </p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

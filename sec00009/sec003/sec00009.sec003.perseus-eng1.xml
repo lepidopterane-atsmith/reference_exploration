@@ -1,0 +1,4422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title type="work">Select Orations of Cicero, Allen and Greenough's Edition.</title>
+				<author>J. B. Greenough, G. L. Kittredge</author>
+				<sponsor>Perseus Project, Tufts University</sponsor>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<resp>Prepared under the supervision of</resp>
+					<name>Lisa Cerrato</name>
+					<name>Anne Mahoney</name>
+					<name>David Smith</name>
+				</respStmt>
+				<funder n="org:NEH">The National Endowment for the Humanities</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+				<date type="release" cert="medium">2000-08-01</date>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Select Orations of <bibl>
+					<author n="Cic.">Cicero</author>
+				</bibl> Allen and Greenough's Edition.
+					Revised by J. B. Greenough and G. L. Kittredge, with a special
+					vocabulary by J. B. Greenough.
+			</p>
+		</sourceDesc>
+	</fileDesc>
+	<encodingDesc>
+		<refsDecl n="CTS">
+			<cRefPattern matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+				<p>This pointer extracts speech and chapter and section.</p>
+			</cRefPattern>
+			<cRefPattern matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+				<p>This pointer extracts speech and chapter.</p>
+			</cRefPattern>
+			<cRefPattern matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+				<p>This pointer extracts speech.</p>
+			</cRefPattern>
+		</refsDecl>
+	</encodingDesc>
+	<profileDesc>
+		<langUsage>
+			<language ident="eng">English</language>
+			<language ident="lat">Latin</language>
+			<language ident="grc">Greek</language>
+			<language ident="fre">French</language>
+		</langUsage>
+	</profileDesc>
+	<revisionDesc>
+		<change when="2009-10-09" who="rsing04">
+				more reorganizing of texts module by collection
+		</change>
+		<change when="2009-09-22" who="rsingh04">
+				fixed references to Cic. Ver.
+		</change>
+		<change when="2009-08-25" who="rsingh04">
+				changed bibls with Perseus:abo to corresponding abbreviation
+		</change>
+		<change when="2009-07-30" who="rsingh04">
+				fixed allen and greenough refs
+		</change>
+		<change when="2009-07-29" who="student">
+				fixed bibl errors - zr
+				fixed bibl errors through speech 3 of Catiline - zr
+		</change>
+		<change when="2009-06-05" who="Lisa Cerrato">
+				fixed bad bibls
+		</change>
+		<change when="2009-06-03" who="Lisa Cerrato">
+				fixed bad bibls
+		</change>
+		<change when="2009-05-27" who="rsingh04">
+				added/fixed cvs log keyword
+		</change>
+	</revisionDesc>
+</teiHeader>
+<text n="Ver." xml:lang="eng">
+	<body>
+		<div type="commentary" n="1" subtype="speech">
+			<head>Impeachment of Verres. (<title xml:lang="lat">In C. Verrem</title>)				<date>B.C. 70.</date>
+			</head>
+			<div type="textpart" subtype="chapter" n="Argument">
+				<head>Argument</head>
+				<list type="outline">
+					<item>CHAP <bibl n="Cic. Ver. 1.1.1">1</bibl>. The jurors are congratulated on the opportunity of restoring the good name of the senatorial courts by convicting Verres. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.2">2</bibl>,						<bibl n="Cic. Ver. 1.1.3">3</bibl> Attempts of Verres to avoid the trial: placing all his hope in bribery, he is intriguing for the postponement of the case. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.4">4</bibl>,						<bibl n="Cic. Ver. 1.1.5">5</bibl>. His crimes in administration, of pillage, extortion, and cruelty, are flagrant and notorious. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.6">6</bibl>. Hence bribery is his only resource: his attempt to contract in advance for acquittal. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.7">7</bibl>,						<bibl n="Cic. Ver. 1.1.8">8</bibl>. His hopes in the election of Hortensius as consul and Metellus as praetor for the following year. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.9">9</bibl>,						<bibl n="Cic. Ver. 1.1.10">10</bibl>. Cicero's anxiety. The great effort to have the case tried before Metellus, which was to be effected by delaying the trial till after the holidays. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.11">11</bibl>. Cicero proposes to display his case at once,without argument, and so prevent its being laid over. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.12">12</bibl>,						<bibl n="Cic. Ver. 1.1.13">13</bibl>. The domination of Hortensius is dangerous to the state and must be met by proofs of corruption in the senatorial courts. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.14">14</bibl>,						<bibl n="Cic. Ver. 1.1.15">15</bibl>. The acquittal of Verres will be subversive of the whole judicial system: the jurors are urged to vindicate the courts by convicting him. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.16">16</bibl>. All Rome is on the watch: the court itself is on trial: acquittal can have but one meaning. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.17">17</bibl>. Glabrio is urged to stand firm. </item>
+					<item>
+						<bibl n="Cic. Ver. 1.1.18">18</bibl>. The Sicilians must not be baffled. Cicero, by despatch, will prevent the case from going over to the next year: he will introduce his witnesses at once, without previous argument. Brief statement of the charges, including the plunder of 4,000,000 sesterces from the Sicilians.</item>
+				</list>
+			</div>
+			<div type="textpart" subtype="chapter" n="1" corresp="urn:cts:latinLit:phi0474.phi005:1-31">
+				<p>Caius Verres, a man of noble birth, but notorious for his crimes and
+						exactions in the civil war and in the offices he had held since, was city
+						praetor (<foreign xml:lang="lat">praetor urbanus</foreign>)					<date>B.C. 74</date>.
+						At the close of his term of office, he went, in accordance with the law, as
+						propraetor, to govern the province of Sicily. By reason of the disturbed
+						condition of Italy, from the revolt of Spartacus, he was not relieved at the
+						end of a year, as the law required, but continued two years longer in the
+						government of the province, when he was succeeded by Lucius Caecilius
+						Metellus. During these three years he was guilty of the most abominable
+						oppressions and exactions; and the Sicilians, as soon as they were relieved
+						of his presence, brought suit against him in the court of Repetundae (that
+						for the trial of cases of Extortion), then presided over by the praetor
+						Manius Acilius Glabrio. To conduct the prosecution they had recourse to
+						Cicero, who already stood high among Roman advocates, and who was personally
+						known and trusted by the Sicilians on account of his honorable
+						administration of the quaestorship in their island in <date>B.C. 77</date>.
+						Cicero willingly took charge of the case, the more so as the counsel for
+						Verres was Hortensius, the leading lawyer of the time, against whom he was
+						eager to measure his strength. </p>
+				<p>Although the cruelty and rapacity of Verres were notorious, yet his relations
+						to the Roman nobility insured him the same kind of support at home which
+						recently, under somewhat similar circumstances, was afforded to Governor
+						Eyre in England, on his return from Jamaica: not only Hortensius, but Curio,
+						a man of excellent reputation, with members of the eminent families of
+						Scipio and Metellus, stood firmly by him. The only hope of Verres lay in
+						preventing a fair and speedy trial. First he tried to obtain a prosecutor
+						who should be in collusion with him, and would not push him too hard. For
+						this purpose one Caecilius was put forward, an insignificant person, but a
+						native of Sicily. Cicero's first speech in the case (<title xml:lang="lat">In
+						Q. Caecilium</title>) was therefore a preliminary argument before the
+						praetor Glabrio in person, to show that he, rather than Caecilius, should be
+						allowed to conduct the case. This it was not hard to do, and he set out at
+						once for Sicily to collect evidence, for which purpose he was allowed one
+						hundred and ten days. </p>
+				<p>To consume time the opposition had planned to bring before the same court a
+						trumped-up action against another provincial governor which should have
+						precedence of the trial of Verres. To this end they had procured for the
+						prosecutor in the rival suit an allowance of one hundred and eight days for
+						collecting evidence in Achaia — or two days less than the time which Cicero
+						was expected to need. This intrigue was foiled by Cicero's industry and
+						skill. He used not quite half of the time allowed him, arriving in Rome,
+						with ample evidence, not only before the prosecutor in the rival case was
+						ready, but even before the latter had left Italy on his pretended tour of
+						investigation. The trial of Verres was now fixed for Aug. 5, <date>B.C. 70</date>
+						(consulship of Pompey and Crassus). </p>
+				<p>Meantime (in the latter part of July) the elections were held for the next
+						year. As was the custom in Rome, these occurred several months before the
+						newly elected magistrates were to enter upon their offices. The successful
+						candidates, under the title of <foreign xml:lang="lat">designati</foreign>,
+						enjoyed a dignity almost equal to that of the actual magistrates, although
+						with no real power (see <bibl n="Cic. Ver. 1.1.9">ch. ix</bibl>.). In these
+						elections Cicero was designated aedile; but his rival Hortensius was chosen
+						consul, with Quintus Metellus Creticus, Verres' fast friend, as his
+						colleague. More than this, Marcus Metellus, brother of Quintus, was chosen
+						praetor, and the lot fell to him to preside the next year in the court of
+						Repetundae. If now the trial could be put over till the next year, when
+						Hortensius and the two Metelli would be in the three most influential
+						positions in the State, Verres felt quite sure of getting clear. Neither did
+						it seem as if this would be very hard to bring about; for the last six
+						months of the Roman year were so full of festivals and other days on which
+						the court could not sit, that the case would be liable to constant
+						interruptions and delays. The postponement would have disappointed Cicero
+						sorely, for, by good luck in drawing the names, and sagacity in challenging,
+						he had a jury that he could trust, and he was not willing to run the risk of
+						a change. </p>
+				<p>Under these circumstances Cicero made the second speech of the Verrine group
+						— that which is known as the Actio Prima (included in the present edition,
+						pp. 28-47 below). In this oration he declared his intention of departing
+						from the usual course of procedure in order to push the trial through before
+						the New Year. It was customary for the prosecutor, after opening the case
+						(as in the present speech), to present his proofs and arguments in a long
+						connected oration (or a series of orations); there followed a reply from the
+						defendant's counsel, and then the witnesses were introduced. Cicero,
+						omitting the long statement just described, proceeded to bring forward his
+						witnesses immediately. Since the only hope of the defence lay in putting off
+						the trial, Cicero's promptitude was decisive: Hortensius soon threw up his
+						case, and Verres went into exile, with a name forever associated with
+						extortion and misgovernment. Full restitution of the plunder was, however,
+						not obtained: a compromise was made, by which a less sum was paid in
+						satisfaction of the claims. The five speeches known as the "Accusation"
+						proper (<title xml:lang="lat">Actio Secunda</title>) were never delivered,
+						but were written out and published in order to put on record the facts which
+						Cicero had gathered with so much pains, and to give a specimen of his powers
+						in the way of forensic composition. </p>
+				<p>With the trial of Verres the student may compare the impeachment of Warren
+						Hastings in the eighteenth century, probably the most famous modern instance
+						of the arraignment of a provincial governor for alleged misgovernment,
+						extortion, and cruelty. The prosecution in this case (and in particular
+						Burke) seem to have modelled their speeches on the Verrine orations of
+						Cicero, and many parallels may easily be discovered A few of these are
+						quoted in these notes. That the similarity of the two situations was clearly
+						felt at the time may be seen from Lord Erskine's Defence of Stockdale
+						(December, 1789) on a charge connected with the impeachment of Hastings:
+						“When Cicero impeached Verres before the great tribunal of Rome, of similar
+						cruelties and depredations in her provinces, the Roman people were not left
+						to such inquiries. All Sicily surrounded the Forum, demanding justice upon
+						her plunderer and spoiler, with tears and imprecations. It was not by the
+						eloquence of the orator, but by the cries and tears of the miserable, that
+						Cicero prevailed in that illustrious case. Verres fled from the oaths of his
+						accusers and their witnesses, and not from the voice of Tully.”</p>
+				<div type="textpart" n="1" subtype="section">
+					<p>The trial of Verres gives the senatorial order an opportunity to redeem the reputation of the courts. Verres had no defence, but had expected to escape by bribing the jury in case he should be prosecuted. His guilt was notorious, so that the chief question now to be determined was that of the integrity of the jury. Cicero accordingly makes this the main point of the present oration: it is the court, he insists, that is on trial rather than Verres.
+
+						<milestone n="1" unit="chapter"/>
+					</p>
+					<div type="textpart" n="1" subtype="section">
+						<milestone n="28.1" unit="pg_l"/>
+						<p>
+							<app>
+								<lem xml:lang="lat">erat optandum,</lem>
+							</app>
+							<gloss>what was chiefly to be wished:</gloss> not implying a protasis contrary to fact. See § <bibl n="AG 522">522</bibl>, a (311, c); B. 304, 3; G. 254, R.1; H. 583 (511, 1, N.8); H.-B. 582, 3, a.
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">quod . . .pertinebat,</lem>
+							</app>
+							<gloss>the one thing which most tended</gloss> (or, <gloss>was of chief importance).</gloss>
+							<milestone n="28.2" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">invidiam . . .  infamiamque,</lem>
+							</app>
+							<gloss>odium and ill repute</gloss>, from the partisan use of the courts by the Senators.
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">vestri ordinis</lem>
+							</app>, i.e. the senatorial order. The word <foreign xml:lang="lat">ordo</foreign> signified, loosely, any recognized body of citizens—as freedmen, publicans, clerks; but it was more especially used of the two powerful classes of the Roman aristocracy, the Senatorial and the Equestrian, which struggled with each other for power during the last century of the Republic. The Senators, from whom the jurors were at this time taken (see note on Rosc. Am., p. 2,1. l), formed a limited (300 to 600) order of nobility which virtually controlled the government. The <foreign xml:lang="lat">equites</foreign> constituted a moneyed aristocracy. Naturally these two orders had opposing interests, as the Senators were excluded from trade and the <foreign xml:lang="lat">equites</foreign> practically from political power. Their antagonism showed itself more especially in the matter of the provinces, which the Senators wished to oppress by official plunder and the <foreign xml:lang="lat">equites</foreign> by commercial extortion.
+
+							<milestone n="28.4" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">summo . . . tempore</lem>
+							</app>, most <gloss>critical time</gloss> (more lit. <gloss>extreme</gloss> crisis): the year of the consulship of Pompey and Crassus (<date when="-0070">B.C. 70</date>).
+
+							<milestone n="28.5" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">inveteravit</lem>
+							</app> (emphatic position), <gloss>there has come to be deeply rooted</gloss> (observe that the figure is quite different in the Latin).
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">opinio</lem>
+							</app>,							<gloss>notion</gloss> or <gloss>idea</gloss> (not so strong as our <gloss>opinion</gloss>, which should be <foreign xml:lang="lat">sententia</foreign>).
+
+							<milestone n="28.7" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">exteras nationes:</lem>
+							</app>the reference is, of course, to the peoples subject to Rome, who were aggrieved by the rapacity of the provincial governors.
+
+							<milestone n="28.8" unit="pg_l"/>
+						</p>
+						<p>
+							<app>
+								<lem xml:lang="lat">his iudiciis</lem>
+							</app>: in consequence of the situation described above (note on <app>
+							<lem xml:lang="lat">ordinis</lem>
+						</app>, l. 2) it became all important for one class or the other to control the courts, before which any misdoings of either party were likely to come for trial. For years these two orders had struggled for such control. At this particular time the courts were in the hands of the Senators, who were bound together by a common cause to shield any one of their number who might be charged with misconduct as a provincial governor.
+
+						<milestone n="29.2" unit="pg_l"/>
+					</p>
+					<p>
+						<app>
+							<lem xml:lang="lat">neminem</lem>
+						</app> (more emphatic than <foreign xml:lang="lat">nullum</foreign>)						<app>
+							<lem xml:lang="lat">:</lem>
+						</app>translate, <gloss>never.</gloss>
+					</p>
+				</div>
+				<div type="textpart" n="2" subtype="section">
+					<milestone n="29.3" unit="pg_l"/>
+					<p>
+						<app>
+							<lem xml:lang="lat">cum</lem>
+						</app> (causal) <app>
+						<lem xml:lang="lat">sint</lem>
+					</app>,					<gloss>when men are ready.—</gloss>
+					<app>
+						<lem xml:lang="lat">contionibus et legibus,</lem>
+					</app>
+					<gloss>harangues and bills</gloss> (proposed laws). The proposition of a law which took the exclusive control of the courts from the Senators was even now pending, and the law (<foreign xml:lang="lat">Lex Aurelia</foreign>) was passed before the case of Verres was decided.
+
+					<milestone n="29.5" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">conentur</lem>
+					</app>, purpose clause.
+
+					<milestone n="2.9 7" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">magnitudine</lem>
+					</app>, abl. of means.
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">spe</lem>
+					</app>, abl. of specification.
+
+					<milestone n="29.9" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">actor</lem>
+					</app>,					<gloss>complainant</gloss>, i.e. agent or <gloss>attorney</gloss> for conducting the suit in personal processes (<gloss>in personam</gloss>).
+
+					<milestone n="29.11" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">adduxi enim hominem,</lem>
+					</app>etc.: cf. Burke, Impeachment of Warren Hastings: "We have brought before your Lordships the first man in property and power; we have brought before you the head, the chief, the captain-general in iniquity,—one in whom all the frauds, all the peculations, all the tyranny in India are embodied, disciplined, and arrayed. Then, if we have brought before you such a person, if you strike at him, you will not have need of a great many more examples,— you strike at the whole corps if you strike at the head:"
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">in quo</lem>
+					</app>,					<gloss>in whose case</gloss>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">reconciliare,</lem>
+					</app>etc.,  <gloss>win back the lost repute.</gloss>
+					<milestone n="29.13" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">possetis</lem>
+					</app>, purpose.
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">depeculatorem,</lem>
+					</app>etc.: for a more complete statement of these charges, see chs. <bibl n="Cic. Ver. 1.1.4">iv</bibl>,					<bibl n="Cic. Ver. 1.1.5">v</bibl>.
+
+					<milestone n="29.14" unit="pg_l"/>
+				</p>
+				<p>
+					<app>
+						<lem xml:lang="lat">juris urbani,</lem>
+					</app>i.e. <gloss>as praetor urbanus</gloss> (see sect. <bibl n="Cic. Ver. 1.1.12">12</bibl>). 
+				</p>
+			</div>
+			<div type="textpart" n="3" subtype="section">
+				<milestone n="29.16" unit="pg_l"/>
+				<p>
+					<app>
+						<lem xml:lang="lat">vos</lem>
+					</app>, opposed to <app>
+					<lem xml:lang="lat">ego</lem>
+				</app> below.
+			</p>
+			<p>
+				<app>
+					<lem xml:lang="lat">religiose,</lem>
+				</app>
+				<gloss>according to your oath.</gloss>
+				<milestone n="29.18" unit="pg_l"/>
+			</p>
+			<p>
+				<app>
+					<lem xml:lang="lat">religionem veritatemque:</lem>
+				</app>here, <gloss>feeling of obligation and regard for the truth.</gloss>Notice that the Latin, having a  comparatively poor vocabulary, is obliged to use one word for all the phrases or sides of an idea; hence such a word as <foreign xml:lang="lat">veritas</foreign> may mean <gloss>truth</gloss> (abstractly), <gloss>a truth</gloss> (concretely), the <gloss>truth</gloss> (generally), <gloss>regard for truth</gloss>, or <gloss>truthful conduct.</gloss>
+				<milestone n="29.19" unit="pg_l"/>
+			</p>
+			<p>
+				<app>
+					<lem xml:lang="lat">judicium</lem>
+				</app>, etc., i.e. the <gloss>court</gloss> will be found wanting,—not a suitable defendant or a zealous prosecutor. </p>
+		</div>
+	</div>
+	<div type="textpart" n="2-3" subtype="section">
+		<milestone n="2" unit="chapter"/>
+		<p>Verres had already relied on bribing the courts. His vain attempt to delay his trial by the trumped-up Achaian case. His present effort to procure a postponement by corrupt means.
+		</p>
+		<div type="textpart" n="3" subtype="section">
+			<milestone n="29.21" unit="pg_l"/>
+			<p>
+				<app>
+					<lem xml:lang="lat">equidem</lem>
+				</app>, i.e. for my own part.
+
+				<milestone n="29.22" unit="pg_l"/>
+			</p>
+			<p>
+				<app>
+					<lem xml:lang="lat">quas partim,</lem>
+				</app>
+				<gloss>some of which.</gloss>
+				<milestone n="29.23" unit="pg_l"/>
+			</p>
+			<p>
+				<app>
+					<lem xml:lang="lat">devitarim,</lem>
+				</app>subj. as a part of the concession contained in <app>
+				<lem xml:lang="lat">cum . . .sint</lem>
+			</app>:  §			<bibl n="AG 593">593</bibl> (342); B. 324, I; G. 663, I; H. 652 (529, ii); H-B. 539.
+
+			<milestone n="29.24" unit="pg_l"/>
+		</p>
+		<p>
+			<app>
+				<lem xml:lang="lat">neque . . . neque</lem>
+			</app>, following <app>
+			<lem xml:lang="lat">numquam,</lem>
+		</app> does not destroy the negative, but is more emphatic than <foreign xml:lang="lat">aut . . . aut</foreign>. 
+	</p>
+</div>
+<div type="textpart" n="4" subtype="section">
+	<milestone n="29.29" unit="pg_l"/>
+	<p>
+		<app>
+			<lem xml:lang="lat">istius</lem>
+		</app>: see note on Rosc. Am., <ref n="pl4.16">p. 4, l. 16</ref>.
+
+		<milestone n="29.30" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">Glabrioni</lem>
+		</app>: the praetor presiding.
+
+		<milestone n="29.31" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">ordini . . . senatorio,</lem>
+		</app>
+		<gloss>the senatorial order, nay, the very name of Senator.</gloss>
+		<milestone n="29.32" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">dictitat,</lem>
+		</app>
+		<gloss>constantly repeats:</gloss> §		<bibl n="AG 263">263</bibl>, 2 (167, b); B. 155, 2, a; G. 191, I; H. 364 (336); H.-B. 212, I.
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">esse metuendum</lem>
+		</app>: for <foreign xml:lang="lat">erat met.</foreign> in dir. disc.; hence followed by the secondary sequence, i.e. <gloss>those would have to fear</gloss> (if the case were theirs), but  <gloss>he,</gloss> etc. § <bibl n="AG 584">584</bibl>, a and N. (336 A, N.l); H.-B. 581, b, I.
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">quod</lem>
+		</app>, i.e. only what.
+
+		<milestone n="30.1" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">multis,</lem>
+		</app>i.e. not only for himself but also for his counsel and for those whom he may wish to bribe,—in particular, the jurors (see sect. <bibl n="Cic. Ver. 1.1.40">40</bibl>).
+
+		<milestone n="30.3" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">pecunia</lem>
+		</app>belongs to both clauses, as is shown by their parallelism.
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">possit:</lem>
+		</app>for tense, see § <bibl n="AG 485">485</bibl>, c (287, c); B. 268, 7; G. 513; H. 550 (495, vi); cf. H.-B. 478. </p>
+</div>
+<div type="textpart" n="5" subtype="section">
+	<milestone n="30.4" unit="pg_l"/>
+	<p>
+		<app>
+			<lem xml:lang="lat">esset:</lem>
+		</app>imperf. subj. in protasis of a <gloss>continued</gloss> condition lasting till now; § <bibl n="AG 517">517</bibl>, a (308, a); B. 304, 2; G. 597, R.l; H. 579, I (510, N.2); H.-B. 581.
+
+		<milestone n="30.6" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">fefellisset,</lem>
+		</app>
+		<gloss>he would have eluded us.</gloss>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">cadit:</lem>
+		</app>pres. tense, of an action lasting till now; § <bibl n="AG 466">466</bibl> (276, a); B. 259, 4; G. 230; H. 533 (467, 2); H.-B. 485.
+
+		<milestone n="30.9" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">corrumpendi judici</lem>
+		</app>,		<gloss>of bribing the court</gloss> (cf. our phrase "bribery and corruption").
+
+		<milestone n="30.11" unit="pg_l"/>
+	</p>
+	<p>
+		<app>
+			<lem xml:lang="lat">factus sit:</lem>
+		</app>for sequence, see § <bibl n="AG 485">485</bibl>, c, N.2 (287, C, N.); B. 268, 6; G. 513; H. 550 (495, vi); cf. H.-B. 478; notice that the perf. would necessarily be used in the dir. disc. with <app>
+		<lem xml:lang="lat">cum primum</lem>
+	</app>.
+
+	<milestone n="30.13" unit="pg_l"/>
+</p>
+<p>
+	<app>
+		<lem xml:lang="lat">tempus . . . offenderet,</lem>
+	</app>
+	<gloss>he hit an unfavorable time;</gloss> because popular sentiment was already so exasperated in regard to the corruption of the courts. </p>
+</div>
+<div type="textpart" n="6" subtype="section">
+<milestone n="30.14" unit="pg_l"/>
+<p>
+	<app>
+		<lem xml:lang="lat">in Siciliam inquirendi,</lem>
+	</app>i.e. <gloss>for going into Sicily to make an investigation</gloss> (hence the acc.).
+
+	<milestone n="30.15" unit="pg_l"/>
+</p>
+<p>
+	<app>
+		<lem xml:lang="lat">invenit . . . qui,</lem>
+	</app>
+	<gloss>he found some one who.</gloss>
+	<milestone n="30.16" unit="pg_l"/>
+</p>
+<p>
+	<app>
+		<lem xml:lang="lat">in Achaiam</lem>
+	</app>, sc.<app>
+	<lem xml:lang="lat">inquirendi:</lem>
+</app>on this trumped-up case, which was intended to have the precedence of the trial of Verres, see Introd. to this Oration (p. 27).
+</p>
+<p>
+<app>
+	<lem xml:lang="lat">ut . . . conficeret,</lem>
+</app>purp. clause dependent on <app>
+<lem xml:lang="lat">invenit.</lem>
+</app>
+<milestone n="30.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Brundisium,</lem>
+</app>
+<gloss>Brindisi</gloss>,the port whence the greater part of Italian travel, now as then, embarks for the East.
+
+<milestone n="30.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">obii</lem>
+</app>,<gloss>went throughout</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">populorum</lem>
+</app>,<gloss>commmunities:</gloss> the word <foreign xml:lang="lat">populus,  </foreign>meaning originally <gloss>multitude</gloss>, is a semi-abstract noun often used to denote the community in its official capacity Our use of the word <gloss>people</gloss> in some later meanings frequently produces confusion in the minds of beginners. The political system of the ancients was composed of an indefinite number of petty communities, all possessing a certain degree of independence. Hence the plur. is used here to indicate several such communities.
+
+<milestone n="30.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . posset</lem>
+</app> (clause of result), imperf by seq. of tenses: translate, however, <gloss>can.</gloss>
+<milestone n="30.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">qui . . . obsideret</lem>
+</app> (purpose), <gloss>to block my chance</gloss> (of bringing Verres to trial). 
+<milestone n="3" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="7" subtype="section">
+<milestone n="30.25" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nunc:</lem>
+</app>i.e. now that his former scheme has failed.
+
+<milestone n="30.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">hoc</lem>
+</app>,<gloss>this new idea.</gloss> What the idea is is detailed in sects. <bibl n="Cic. Ver. 1.1.7">7</bibl>,<bibl n="Cic. Ver. 1.1.8">8</bibl>: viz. the reasons for desiring a postponement together with grounds for hoping for it.
+
+<milestone n="30.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">civis</lem>
+</app>,<gloss>citizens</gloss>, i.e. Romans travelling or doing business in the provinces, or provincials who had received the citizenship.
+
+<milestone n="30.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">socios,</lem>
+</app>
+<gloss>allies:</gloss> citizens of communities which, although embraced within the boundaries of Roman provinces, had, for special reasons, been allowed to retain a nominal independence, with their own laws and magistrates.
+
+<milestone n="31.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">auctoritatibus,</lem>
+</app>
+<gloss>documents</gloss>, i.e. official testimony ("resolutions," etc.) relating to the acts of Verres. </p>
+</div>
+<div type="textpart" n="8" subtype="section">
+<milestone n="31.3" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">bonis</lem>
+</app>,<gloss>good citizens:</gloss> here, as generally in Cicero, used in a partisan sense for the aristocracy.
+
+<milestone n="31.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">experiatur:</lem>
+</app>this violates the sequence of tenses in order to make the meaning clear; the imperf. would refer to the time of getting the money, not to the present moment; cf. § <bibl n="AG 481">481</bibl>, N. (287, h, N.); B. 268, 7; G. 509, 1, N.; H.-B. 478.
+
+<milestone n="31.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fuerit</lem>
+</app>: the subj. shows that this is the thought of Verres, and not merely something thrown in by Cicero.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tempus</lem>
+</app>: the present scheme of the defence is by corrupt means to stave off the trial to a more advantageous time (see chs. vi-viii).
+
+<milestone n="31.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">posses:</lem>
+</app>imperf. to express his purpose at the time of the purchase.
+
+<milestone n="31.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">criminum vim</lem>
+</app>,<gloss>the force of the charges.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">poterat</lem>
+</app>:indic., the reason being Cicero's. (The whole passage is an instructive example of the freedom of a living language from its own trammels. Rules are made for language, not language for rules.) </p>
+</div>
+<div type="textpart" n="9" subtype="section">
+<milestone n="31.12" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">eloquentia, gratia:</lem>
+</app>even mere rhetorical skill or personal influence would be, to a criminal who had no case <app>
+<lem xml:lang="lat">(causa),</lem>
+</app> a respectable (<app>
+<lem xml:lang="lat">honesto</lem>
+</app>) means of escape compared with these attempts at corruption.
+
+<milestone n="31 l3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">profecto</lem>
+</app>,<gloss>I am sure</gloss>.
+
+<milestone n="31.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">aucuparetur,</lem>
+</app>
+<gloss>be fishing for</gloss> (lit. <gloss>set nets for birds</gloss>).
+
+<milestone n="31.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . fieret,</lem>
+</app>
+<gloss>as to have some one chosen to be put on trial</gloss> ; the Senate itself was insulted by the selection of one of its members to be set up as a man of straw, that Verres might get clear. The reference is to the trumped-up case with regard to abuses in Achaia (see sect. <bibl n="Cic. Ver. 1.1.6">6</bibl>).
+
+<milestone n="31.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">hic</lem>
+</app>, i.e. Verres.
+
+<milestone n="31.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">causam . . . diceret,</lem>
+</app>
+<gloss>stand trial</gloss>. 
+</p>
+</div>
+<div type="textpart" n="10" subtype="section">
+<milestone n="31.17" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quibus . . . rebus</lem>
+</app>,<gloss>from this</gloss> (abl. of means with <app>
+<lem xml:lang="lat">perspicio</lem>
+</app>).
+
+<milestone n="31.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">consilio</lem>
+</app>,<gloss>panel</gloss>, i.e. the body of jurors (cf. Rosc. Am., p. 24, I. 2). An obvious, and apparently a deserved, compliment. Whatever the general character of the courts, Cicero had in this instance secured a jury on whom he could rely.
+
+<milestone n="31.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in rejectione . . . judicavit,</lem>
+</app>
+<gloss>decided at the challenging</gloss> ("throwing out ") <gloss>of the jury</gloss>, i.e. on seeing  the kind of men challenged by the two sides respectively.
+
+<milestone n="31.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . constitueret . . . arbitraretur:</lem>
+</app>subst. clauses of result (justified by the introductory <app>
+<lem xml:lang="lat">ea</lem>
+</app>) instead of the more regular acc. and inf. of ind. disc.; § <bibl n="AG 571">571</bibl>, c (332,f); <gloss>G. 557</gloss>, R. and N1; cf. H. 571,4 (501, iii). </p>
+</div>
+</div>
+<div type="textpart" n="4-5" subtype="section">
+<p>Crimes of Verres from his youth up. His quaestorships. His city-praetorship. His career in Sicily. His guilt is notorious.
+
+<milestone n="4" unit="chapter"/>
+</p>
+<div type="textpart" n="10" subtype="section">
+<milestone n="31.95" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">etenim,</lem>
+</app>introducing the reason of <app>
+<lem xml:lang="lat">nullam sibi rem</lem>
+</app>, etc., above. </p>
+</div>
+<div type="textpart" n="11" subtype="section">
+<milestone n="31.29" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">adulescentiae,</lem>
+</app>i.e. before he entered public life.
+
+<milestone n="31.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quaestura,</lem>
+</app>
+<gloss>quaestorship</gloss>, the first grade of political honor.
+
+<milestone n="32.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Carbonem:</lem>
+</app>Carbo was the leader of the Marian faction after the death of Marius and Cinna. He was consul <date when="-0082">B.C. 82</date>, the year of Sulla's return and victory. Verres was his quaestor (or paymaster), and went over to the enemy with the money-chest when he saw which side was likely to prevail.
+
+<milestone n="32.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">necessitudinem religionemque:</lem>
+</app>the quaestor was originally nominated specially by the consul; and the peculiarly close and sacred relation (<foreign xml:lang="lat">necessitudo</foreign>) existing between them was known as <foreign xml:lang="lat">pietas</foreign>,—a sentiment akin to filial affection. The designation by lot (<foreign xml:lang="lat">sors</foreign>) was also held to be a token of divine will, and therefore sacred (<foreign xml:lang="lat">religio</foreign>). In betraying his consul, then, Verres was guilty of more than an ordinary breach of trust,—he committed an act of impiety.
+
+<milestone n="32.4 " unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">legatio:</lem>
+</app>Verres was in <date from="-0080" to="-0079">
+<date when="-0080">B.C. 80</date>-79</date>
+<foreign xml:lang="lat">legatus</foreign> and acting quaestor (<app>
+<lem xml:lang="lat">pro quaestore</lem>
+</app>) of Dolabella, whose province was Cilicia. The extortions of the two were practiced in the adjoining regions of Pamphylia, Pisidia, and parts of Asia (i.e. of the Roman province of Asia, the old kingdom of Pergamus, embracing the western part of Asia Minor); <app>
+<lem xml:lang="lat">totius</lem>
+</app> is a rhetorical exaggeration.
+
+<milestone n="32.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">scelus . . . quaestorium:</lem>
+</app>Verres treated Dolabella much as he had treated Carbo. Neither of these infamous commanders deserved better treatment; but this does not excuse the perfidy of Verres.
+
+<milestone n="32.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">pro quaestore,</lem>
+</app>
+<gloss>acting quaestor:</gloss>when there was a vacancy in a provincial quaestorship, the commander might appoint any person to perform the duties of the office.
+
+<milestone n="32.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">adduxit:</lem>
+</app>Dolabella, in addition to the odium of his own crimes, had to bear the infamy of the outrageous acts of Verres; and after all Verres saved himself by turning against him (<app>
+<lem xml:lang="lat">oppugnavit</lem>
+</app>) and appearing as a witness in his trial for extortion. </p>
+</div>
+<div type="textpart" n="12" subtype="section">
+<milestone n="32.12" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">aedium,</lem>
+</app>etc. The public buildings were regularly under the charge of the aedile, not of the praetor; the cases referred to here were certain flagrant instances of corruption and extortion arising out of contracts for public buildings, in which the praetor had it exceptionally in his power to interfere for his own advantage.
+
+<milestone n="32.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in jure dicundo: jus dicere</lem>
+</app> (<foreign xml:lang="lat">jurisdictio</foreign>),<gloss>declaring the law</gloss>, was the primary function of the praetor. <app>
+<lem xml:lang="lat">bonorum . . . addictio</lem>
+</app>is the adjudging of property to a claimant; <app>
+<lem xml:lang="lat">condonatio</lem>
+</app> (<gloss>grant</gloss>) is the act of giving it up to a defendant: no matter which way the decision of Verres went in a case, his action was sure to be unlawful and for his own corrupt ends.
+
+<milestone n="32.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">instituta</lem>
+</app>,<gloss>precedents</gloss>. The edicts of the praetors made up a body of common law, not absolutely binding, however, on their successors.
+
+<milestone n="32.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">jam vero,</lem>
+</app>
+<gloss>but finally</gloss>, introducing the climax of the list of crimes.
+
+<milestone n="32.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">possit:</lem>
+</app>for tense, see § <bibl n="AG 485">485</bibl>, c (287, c); B. 268, 7; G. 513; H. 550 (495, vi); cf. H.-B. 478. </p>
+</div>
+<div type="textpart" n="13" subtype="section">
+<milestone n="32.21" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">communia jura,</lem>
+</app> the same as <foreign xml:lang="lat">jus gentium</foreign>, those laws common to all mankind (see note on <app>
+<lem xml:lang="lat">jure gentium</lem>
+</app>, Rosc. Am., <ref n="pl21.3">p. 21, l. 3</ref>). The terms <foreign xml:lang="lat">leges, senatus-consulta, jura</foreign> include the three sources of provincial law.
+
+<milestone n="32.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tantum,</lem>
+</app>[only] <gloss>so much.</gloss>
+<milestone n="32.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">imprudentiam subterfugit,</lem>
+</app>
+<gloss>escaped his vigilance</gloss> (lit. <gloss>want of vigilance).</gloss>
+<milestone n="32.25" unit="pg_l"/>
+<milestone n="5" unit="chapter"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">res,</lem>
+</app>
+<gloss>case;</gloss>
+<app>
+<lem xml:lang="lat">res</lem>
+</app> (next line), <gloss>property.</gloss>
+<milestone n="32.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ab eo</lem>
+</app>,<gloss>away from him</gloss>, i.e. the possessor.
+
+<milestone n="32.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">aratorum,</lem>
+</app>
+<gloss>cultivators</gloss> (whether tenants or proprietors), who paid tithes (<foreign xml:lang="lat">decumae</foreign>) to the state.
+
+<milestone n="32.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">socii</lem>
+</app>: see note on <ref n="pl30.31">p. 30, l. 31</ref>.
+
+<milestone n="32.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cruciati et necati:</lem>
+</app>a Roman citizen could not legally receive any punishment touching life or limb, except by judgment of his peers in Rome. Thus, Jesus was crucified by the Roman governor Pilate under the ordinary provincial law applying to Jews; while Paul, a Roman citizen of the free city Tarsus, appealed to Caesar, and was sent to Rome for trial. (See extract from Verr. v, and pp. 59-65: "Crucifixion of a Roman Citizen.")
+
+<milestone n="32.32" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rei facti</lem>
+</app>,<gloss>accused</gloss> (<app>
+<lem xml:lang="lat">rei</lem>
+</app> from <foreign xml:lang="lat">reus</foreign>). The details of these charges are given in the five orations of the <foreign xml:lang="lat">Accusatio</foreign>; it would require too much space to repeat them here.
+
+<milestone n="33.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ejecti,</lem>
+</app>
+<gloss>expelled</gloss> from the country.
+
+<milestone n="33.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">optimae</lem>
+</app>,<gloss>best</gloss> in themselves;<app>
+<lem xml:lang="lat">opportunissimae,</lem>
+</app>
+<gloss>most valuable</gloss> under the circumstances. </p>
+</div>
+<div type="textpart" n="14" subtype="section">
+<milestone n="33.6" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">regum</lem>
+</app>: the famous kings of Syracuse,— Hiero, Agathocles, etc.
+
+<milestone n="33.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">imperatorum:</lem>
+</app>Marcellus, who conquered Syracuse, and Scipio Africanus the elder, who had Sicily as his province and crossed over from there for the conquest of Carthage.
+
+<milestone n="33.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">deum</lem>
+</app>, i.e. statue of a god (see pp. 55, 56).
+
+<milestone n="33.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">videretur:</lem>
+</app>subj. of characteristic.
+
+<milestone n="33.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commemorare:</lem>
+</app>complem. infin. for subj. with <foreign xml:lang="lat">ne</foreign> or <foreign xml:lang="lat">quominus</foreign>; §<bibl n="AG 558">558</bibl>, b, N. (331, e, 2); B. 295, 3 and N.; G. 548, N.2; H. 596, ii (505, ii); H.-B. 587 and a. </p>
+</div>
+<div type="textpart" n="15" subtype="section">
+<milestone n="33.19" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">at enim</lem>
+</app> (a supposed objection), <gloss>but,you may say.</gloss>
+<milestone n="33.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quin . . . possit:</lem>
+</app>§<bibl n="AG 559">559</bibl> (319, d ); B. 284, 3; G.556; H 595, I (504, I); H.-B 521, I.
+
+<milestone n="33.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . timendum sit:</lem>
+</app>clause of result.
+
+<milestone n="33.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">multitudo:</lem>
+</app>including a large number of Sicilians, present at Rome for the purpose of prosecuting Verres, and of course personally cognizant of his crimes.   </p>
+</div>
+</div>
+<div type="textpart" n="6-7" subtype="section">
+<milestone n="6" unit="chapter"/>
+<p>Verres attempted to buy up the court in advance, but, on the selection of the present jury, lost heart (sects. <bibl n="Cic. Ver. 1.1.16">16</bibl>,<bibl n="Cic. Ver. 1.1.17">17</bibl>). The election of Hortensius to the consulship gave him fresh courage (sect. <bibl n="Cic. Ver. 1.1.17">17</bibl>). A significant incident on election day (sects. <bibl n="Cic. Ver. 1.1.18">18</bibl>-<bibl n="Cic. Ver. 1.1.20">20</bibl>).
+</p>
+<p>Cicero here returns to the subject of bribery. He has already asserted (sects. <bibl n="Cic. Ver. 1.1.3">3</bibl>-<bibl n="Cic. Ver. 1.1.10">10</bibl>) that this had always been the sole hope of Verres; he has pointed out that Verres need not expect to corrupt the present tribunal (sect. <bibl n="Cic. Ver. 1.1.10">10</bibl>), and that his guilt is so enormous and so notorious that no honest jury could fail to convict him (sects. <bibl n="Cic. Ver. 1.1.10">10</bibl>-<bibl n="Cic. Ver. 1.1.14">14</bibl>). He now goes on to show that in endeavoring to postpone the trial Verres is, as heretofore, trying to defeat justice by corrupt means. In establishing this point, the orator reviews the several schemes of bribery, thus leading up to the matter immediately before the court and bringing out the fact that it is like the devices that had preceded it.</p>
+<div type="textpart" n="15" subtype="section">
+<milestone n="33.28" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">eloquentiam,</lem>
+</app>etc.: see note on <ref n="pl31.12">p. 31, l. 12</ref>.
+
+<milestone n="33.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">potentia,</lem>
+</app>
+<gloss>control of the courts:</gloss> a stronger word than <app>
+<lem xml:lang="lat">gratia</lem>
+</app> ("personal influence") or <app>
+<lem xml:lang="lat">auctoritate</lem>
+</app> ("official influence") and indicating a kind of <gloss>domination</gloss> over the courts.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">simulat, proponit:</lem>
+</app>notice the emphatic position of these verbs, as opposed to what Verres is really<gloss>doing.</gloss>
+<milestone n="33.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">proponit,</lem>
+</app>
+<gloss>puts forward</gloss> (i.e. as his backers).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">inania</lem>
+</app>,<gloss>idle</gloss>: i.e. mere names, because Verres does not really rely upon these men, but upon a scheme which Cicero details in the following sections.
+
+<milestone n="34.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">noti</lem>
+</app>,<gloss>notorious</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">simulat:</lem>
+</app>cf. note on <app>
+<lem xml:lang="lat">simulat,</lem>
+</app>l. 30, above. </p>
+</div>
+<div type="textpart" n="16" subtype="section">
+<milestone n="34.8" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">redemptio:</lem>
+</app>a contract with another party for buying up the court.
+
+<milestone n="34.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">mansit . . . pacto,</lem>
+</app>
+<gloss>held on to the terms of the bargain</gloss> (hendiadys): until the jury was actually made up, the bargain could not be absolutely concluded; when the character of the jury was known, the contract was annulled.
+
+<milestone n="34.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rejectio:</lem>
+</app>after Cicero's careful challenging, the lot had fortunately given a trustworthy jury.
+
+<milestone n="34.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">istorum,</lem>
+</app>i.e. the partisans of Verres. </p>
+</div>
+<div type="textpart" n="17" subtype="section">
+<milestone n="34.14" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">praeclare,</lem>
+</app>
+<gloss>admirably</gloss> well for the cause of justice.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">libelli,</lem>
+</app>
+<gloss>lists</gloss>.
+
+<milestone n="34.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">color:</lem>
+</app>a covert allusion to a former case, in which Hortensius had been counsel, and in which colored ballots were given to the bribed jurors in order to make sure that they voted as they had agreed (see sect. <bibl n="Cic. Ver. 1.1.40">40</bibl>).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sententiis:</lem>
+</app>this is the word regularly used for a formal and official expression of opinion in the Senate (<gloss>vote</gloss>) or in a court of justice (<gloss>verdict</gloss>).
+
+<milestone n="34.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cum</lem>
+</app>,<gloss>whereupon</gloss> (inversion): § <bibl n="AG 546">546</bibl>, a (325, b); B. 288, 2; G. 581; H. 600, i, I (521, ii, I); H.-B. 566, a.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex alacri</lem>
+</app>,<gloss>from being</gloss>, etc.; cf. the Latinism in Milton, <gloss>Par. Lost</gloss>, ix, 563: "How cam'st thou speakable of mute?"
+
+<milestone n="34.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">his diebus paucis</lem>
+</app>,<gloss>a few days ago:</gloss> the consular and other elections were held this year, as usual, toward the end of July.
+
+<milestone n="34.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">famae fortunis,</lem>
+</app>dat. after <app>
+<lem xml:lang="lat">insidiae comparantur.</lem>
+</app>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">per eosdem homines,</lem>
+</app>i.e. the same professional  bribers (the <gloss>redemptor</gloss>, etc., referred to in sect. <bibl n="Cic. Ver. 1.1.16">16</bibl>).
+
+<milestone n="34.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">aperto</lem>
+</app>, etc., <gloss>when the door to suspicion had once been opened.</gloss>
+<milestone n="7" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="18" subtype="section">
+<milestone n="34.27" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nam:</lem>
+</app>introducing Cicero's account of the significant incident referred to above in the words <app>
+<lem xml:lang="lat">pertenui argumento</lem>
+</app> (l.24).
+
+<milestone n="34.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">reducebatur:</lem>
+</app>the successful candidate was escorted home by his friends after the election.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Campo:</lem>
+</app> see note on <ref n="pl104.7">p. 104, l. 7</ref>.
+
+<milestone n="34.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Curio</lem>
+</app>: C. Scribonius Curio, one of the leaders of the aristocratic party, was always a good friend of Cicero's. Curio, like Horten sius and Metellus, was a man of excellent reputation. His support of Verres was due to political and social ties.
+
+<milestone n="34.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">honoris causa</lem>
+</app>: see note on Rosc. Am., <ref n="pl3.28">p. 3, l. 28</ref>. The words in brackets are probably not genuine.
+
+<milestone n="35.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tamen,</lem>
+</app>i.e. in spite of Curio's open way of speaking.
+
+<milestone n="35.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ratio</lem>
+</app>,<gloss>consideration.</gloss>
+</p>
+</div>
+<div type="textpart" n="19" subtype="section">
+<milestone n="35.5" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">videt</lem>
+</app>, etc.: observe the hist. pres., marking a change to lively narrative.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fornicem Fabianum,</lem>
+</app>the<gloss> Fabian Arch</gloss>, erected <date when="-0109">B.C. 109</date> by Q. Fabius Maximus Allobrogicus,—one of the earliest triumphal arches in Rome. It stood at the southern end of the Forum, and served as an entrance to it. Fig. 3 (Arch of Gallienus) shows the situation of such structures with respect to streets.
+
+<milestone n="35.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">defertur</lem>
+</app>signifies a formal announcement by some one person; <app>
+<lem xml:lang="lat">narrabat</lem>
+</app>means <gloss>told</gloss>, casually, as a piece of news. The use of tenses in <app>
+<lem xml:lang="lat">viderat . . . narrabat</lem>
+</app>is like that in the general condition in past time: § <bibl n="AG 518">518</bibl>, b (309, c); cf. B. 302, 3; G. 594, N.I; cf. H.-B 579.
+
+<milestone n="35.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">criminum ratione,</lem>
+</app>
+<gloss>the nature of the charges.</gloss>
+<milestone n="35.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">positam,</lem>
+</app>
+<gloss>resting on.</gloss>
+<milestone n="35.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">altius</lem>
+</app>,<gloss>deeper.</gloss>
+</p>
+</div>
+<div type="textpart" n="20" subtype="section">
+<milestone n="35.18" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">ratiocinabantur,</lem>
+</app>
+<gloss>reasoned</gloss> (the imperf. describing a state of mind, and one existing in different persons).
+
+<milestone n="35.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ipse</lem>
+</app>, etc.: cf. sect. <bibl n="Cic. Ver. 1.1.17">17</bibl>, ll. 17-19.
+
+<milestone n="35.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quod</lem>
+</app>,<gloss>the fact that.</gloss>
+<milestone n="35.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">negotiatores,</lem>
+</app>Roman citizens doing business in Sicily.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">omnes . . . litterae,</lem>
+</app>
+<gloss>all kinds of</gloss>, etc.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">publicae,</lem>
+</app>
+<gloss>official</gloss>, from  cities of Sicily (as <app>
+<lem xml:lang="lat">auctoritates,</lem>
+</app>above).
+
+<milestone n="35.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">existimationem,</lem>
+</app>
+<gloss>opinion</gloss>, i.e. their estimate of the  character of Verres.
+
+<milestone n="35.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">unius,</lem>
+</app>i.e. Hortensius.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">moderatione,</lem>
+</app>
+<gloss>control.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">vertentur,</lem>
+</app>
+<gloss>are to turn on.</gloss>
+</p>
+</div>
+</div>
+<div type="textpart" n="8-9" subtype="section">
+<p>sect. <bibl n="Cic. Ver. 1.1.25">25</bibl>. Metellus is chosen (by lot) to preside over the Court of Extortion for the next year. Joy of Verres. His attempts to defeat by bribery Cicero's election to the aedileship revealed to Cicero. Cicero made anxious, but finally elected.
+<milestone n="8" unit="chapter"/>
+</p>
+<div type="textpart" n="20" subtype="section">
+<milestone n="35.30" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quidem</lem>
+</app> (concessive), <gloss>it is true:</gloss> this criminal may be rescued, but such a thing will not be allowed to happen again; the judicial power will be given into other hands (i.e. those of the <gloss>equites</gloss>); cf. <app>
+<lem xml:lang="lat">de transferendis judiciis,</lem>
+</app>below.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nos,</lem>
+</app>i.e. we Senators. </p>
+</div>
+<div type="textpart" n="21" subtype="section">
+<milestone n="36.1" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">hominis amplissimi,</lem>
+</app>i.e. Curio: the congratulations of so honored a man showed the expected effect of the election on this trial.
+
+<milestone n="36.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nova</lem>
+</app>,<gloss>strange</gloss> (surprising).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">dissimulare</lem>
+</app>,<gloss>to  conceal the fact that</gloss>, etc.
+
+<milestone n="36.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sortirentur</lem>
+</app>,<gloss>were drawing their lots:</gloss> the particular posts or duties of coordinate magistrates (like the several praetors) were assigned by lot.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Metello:</lem>
+</app>a brother of Q. Metellus Creticus, consul elect, and of L. Metellus, praetor in Sicily.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">obtigisset,</lem>
+</app>
+<gloss>had fallen to</gloss> (the regular word for this kind of assignment).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . quaereret</lem>
+</app>, to <gloss>have charge of the Court of Extortion:</gloss> subst. clause of result; § <bibl n="AG 569">569</bibl>, 2 (332, a, 2); B. 297, 2; G. 553, 3; H. 571,1 (501, i, I); H.-B. 521, 3, <gloss>a.</gloss>
+<milestone n="36.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">de pecuniis repetundis,</lem>
+</app>
+<gloss>of extortion</gloss> (lit. <gloss>concerning demanding back the</gloss> [extorted] <gloss>property).</gloss>
+<milestone n="36.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">factam,</lem>
+</app>
+<gloss>offered.—</gloss>
+<app>
+<lem xml:lang="lat">pueros,</lem>
+</app>
+<gloss>slaves.</gloss>
+</p>
+</div>
+<div type="textpart" n="22" subtype="section">
+<milestone n="36.9" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">sane,</lem>
+</app>you <gloss>may be sure.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ne haec quidem,</lem>
+</app>etc., <gloss>this incident did not please me either.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">neque . . . intellegebam,</lem>
+</app>i.e. his confidence in the integrity of Metellus was so great that he did not even yet see through the tricks of the defence.
+
+<milestone n="36.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tanto opere</lem>
+</app>,<gloss>so very well</gloss> (with <app>
+<lem xml:lang="lat">intellegebam</lem>
+</app>).
+
+<milestone n="36.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">reperiebam</lem>
+</app>: the imperf. denotes a succession of items of information.
+
+<milestone n="36.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">senatore</lem>
+</app>, etc.: the Senator, a man of the same class as Verres, put the money to be used in the elections and trial into the hands of an <gloss>eques</gloss>,one of the class that had the management of all such financial operations. He retained, however, say (<app>
+<lem xml:lang="lat">quasi</lem>
+</app>) ten baskets, to be used directly to defeat Cicero's election as aedile.
+
+<milestone n="36.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nomine</lem>
+</app>, on <gloss>account of.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">divisores</lem>
+</app>,<gloss>managers.</gloss> The money to be used at elections was put into the hands of <foreign xml:lang="lat">sequestres</foreign> (election agents), who themselves made use of <foreign xml:lang="lat">divisores</foreign> to approach the voters personally. On this occasion, the exigency was so great that Verres (<app>
+<lem xml:lang="lat">istum</lem>
+</app>) summoned the <foreign xml:lang="lat">divisores</foreign> to his own house, without the mediation of <foreign xml:lang="lat">sequestres</foreign>. 
+</p>
+</div>
+<div type="textpart" n="23" subtype="section">
+<milestone n="36.16" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">omnia debere,</lem>
+</app>
+<gloss>was bound to do anything for me.</gloss>
+<milestone n="36.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">proximis,</lem>
+</app>
+<gloss>the last.</gloss>
+<milestone n="36.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">negasse audere</lem>
+</app>,<gloss>said they did not dare.</gloss>
+<milestone n="36.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fortem,</lem>
+</app>
+<gloss>stanch</gloss> (ironical), in allusion to <app>
+<lem xml:lang="lat">audere</lem>
+</app> (l.23).
+
+<milestone n="36.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Romilia</lem>
+</app>, without <app>
+<lem xml:lang="lat">tribu</lem>
+</app> expressed,—the regular way of giving the name of a man's tribe.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex optima . . . disciplina,</lem>
+</app>
+<gloss>from the best school</gloss> (ironical), i.e. that of Verres' father.
+
+<milestone n="36.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">HS</lem>
+</app>: the defeat of Cicero would, therefore, cost nearly $25,000; See § <bibl n="AG 632">632</bibl>-635(377-380); G. 493; H.757,2(647); H.-B.675
+
+<milestone n="36.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">se unâ facturos esse</lem>
+</app>,<gloss>that they would act with him</gloss>
+<milestone n="9" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="24" subtype="section">
+<milestone n="37.1" unit="pg_l"/>
+<p>A lively description of the embarrassment in which Cicero was placed at the end of July by the election and the trial, both coming on together.
+
+<milestone n="37.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in his ipsis,</lem>
+</app>
+<gloss>in that too</gloss> (as well as the trial).
+
+<milestone n="37.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">agere . . . deterrebar</lem>
+</app>,<gloss>from doing freely what</gloss>, etc., <gloss>I was deterred by</gloss>, etc.: § <bibl n="AG 558">558</bibl>, b (331, e, 2); B. 295, N.; G. 423, 2, N.2; H. 596, 2 (505, ii); H.-B. 587 and a.
+
+<milestone n="37.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">petitioni,</lem>
+</app>
+<gloss>canvass.</gloss>
+<milestone n="37.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ratio</lem>
+</app>
+<gloss>, good policy.</gloss>
+</p>
+</div>
+<div type="textpart" n="25" subtype="section">
+<milestone n="37.9" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">denuntiatum esse,</lem>
+</app>
+<gloss>that a message was sent.</gloss> This compound implies a peremptory and threatening message.
+
+<milestone n="37.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">primum</lem>
+</app> corresponds to <app>
+<lem xml:lang="lat">arcessit alter</lem>
+</app>, etc., <ref n="pl38.4">p. 38, l. 4</ref>, below.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut venirent</lem>
+</app>: subj. of purpose, since <app>
+<lem xml:lang="lat">denuntiatum est</lem>
+</app> expresses a command; § <bibl n="AG 580">580</bibl>, a (332, <gloss>h</gloss>); cf. B. 295, 1; G. 546, N.I; H. 564 (540, iii); H.-B. 502, 3, a.
+
+<milestone n="37.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sane liberos,</lem>
+</app>
+<gloss>pretty independent</gloss>, i.e. in refusing to come. If he had been consul, instead of merely consul elect, they would have had to come.
+
+<milestone n="37.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">venisse</lem>
+</app>: the subj. acc. is <app>
+<lem xml:lang="lat">eos</lem>
+</app>, the implied antecedent of <app>
+<lem xml:lang="lat">qui</lem>
+</app>.
+
+<milestone n="37.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ceterorum,</lem>
+</app>i.e. those for consuls and praetors, which had lately been held.
+
+<milestone n="37.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cursare</lem>
+</app> (historical infinitive), <gloss>ran hither and thither.</gloss>
+<milestone n="37.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">paternos amicos:</lem>
+</app>see <ref n="pl36.26">p. 36, l. 26</ref>.
+
+<milestone n="37.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">appellare . . . et convenire,</lem>
+</app>
+<gloss>accosted and conferred with.</gloss>
+<milestone n="37.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cuius</lem>
+</app>: the antecedent is <app>
+<lem xml:lang="lat">eiusdem</lem>
+</app> (l.19).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">de fide</lem>
+</app>, i.e. <gloss>his good faith</gloss> to the Sicilians: probably a hint that Cicero himself had been approached with a bribe. </p>
+</div>
+</div>
+<div type="textpart" n="26-31" subtype="section">
+<p>Cicero learns of the efforts made to have the trial postponed to the next year in order that it might be brought before Metellus. The Sicilians are threatened by one of the consuls elect (Q. Metellus Creticus) (sects. <bibl n="Cic. Ver. 1.1.26">26</bibl>-<bibl n="Cic. Ver. 1.1.28">28</bibl>). By that time not only would there be a favorably disposed presiding judge, but most of the jury would have been changed. It seemed easy to get the trial put off, for many holidays intervened (sects. <bibl n="Cic. Ver. 1.1.29">29</bibl>-<bibl n="Cic. Ver. 1.1.31">31</bibl>).
+</p>
+<div type="textpart" n="26" subtype="section">
+<milestone n="37.26" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">eo</lem>
+</app>,<gloss>in this course</gloss>, i.e. postponing the trial.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">esse:</lem>
+</app>indir. disc.
+
+<milestone n="37.27" unit="pg_l"/>
+</p>
+<p>The asterisk marks a defect in the text.
+
+<milestone n="37.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">praerogativam</lem>
+</app>,<gloss>an earnest</gloss>. In the <gloss>comitia centuriata</gloss>, it was determined by lot which century should first cast its vote. The vote of this century, called <gloss>praerogativa</gloss> (<foreign xml:lang="lat">praerogo</foreign>), was superstitiously regarded as an omen or <gloss>earnest</gloss> of the result which it was likely to decide. Hence the word is here used of the effective support given to Metellus at the polls by Verres. The <foreign xml:lang="lat">praerogativa</foreign> which Q. Metellus gave to Verres, in return for the <foreign xml:lang="lat">praerogativae</foreign> of the comitia, is described in the next section. </p>
+</div>
+<div type="textpart" n="27" subtype="section">
+<milestone n="38.3" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">cuiquam</lem>
+</app>,<gloss>for anything.</gloss>
+<milestone n="38.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">alter consul designatus</lem>
+</app>: Q. Caecilius Metellus Creticus (see sect. <bibl n="Cic. Ver. 1.1.21">21</bibl>). The three brothers, fast friends of Verres, were so situated as to promise the greatest help the next year, when Quintus would be consul, and Marcus praetor, presiding over the court of <foreign xml:lang="lat">Repetundae</foreign>, while Lucius was already pro-praetor in Sicily. Some of the Sicilians, therefore, obeyed the summons of Metellus, although they had disregarded that of Hortensius (sect. <bibl n="Cic. Ver. 1.1.25">25</bibl>). The object of Metellus was to induce the Sicilians to withdraw the suit, or at any rate to refrain from appearing as witnesses.
+
+<milestone n="38.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quaesiturum</lem>
+</app> (technical term), <gloss>was to preside over the court.</gloss>
+<milestone n="10" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="28" subtype="section">
+<milestone n="38.13" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quid faceres:</lem>
+</app>apodosis of cont. to fact construction, with protasis implied in <app>
+<lem xml:lang="lat">innocente.</lem>
+</app>
+<milestone n="38.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">alienissimum</lem>
+</app>,<gloss>no kin whatever of yours.</gloss>
+<milestone n="38.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">dictitat,</lem>
+</app>
+<gloss>says incessantly</gloss> (see next section).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">alicui</lem>
+</app>depends upon<app>
+<lem xml:lang="lat">videatur.</lem>
+</app>
+<milestone n="38.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ignoret,</lem>
+</app>subj. of characteristic. </p>
+</div>
+<div type="textpart" n="29" subtype="section">
+<milestone n="38.18" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">fato, ut ceteros,</lem>
+</app>etc.: the Metelli seemed born to hold office. Cicero here alludes to a verse written by the poet Naevius, a hundred and fifty years before: <foreign xml:lang="lat">"Fato Metelli Romae fiunt consules."</foreign>
+<milestone n="38.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">populi existimationi,</lem>
+</app>
+<gloss>reputation with the people.—</gloss>
+<app>
+<lem xml:lang="lat">M'. Glabrionem:</lem>
+</app>observe the skill with which this compliment to the praetor before whom Cicero is now arguing the case, and the following compliments to the <foreign xml:lang="lat">judices</foreign>, are put into the mouth of Verres.
+
+<milestone n="38.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illud</lem>
+</app>: referring to what follows. Cicero makes Verres point out the changes in the jury which must follow from changes in the government that is to come in with the new year.
+
+<milestone n="38.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">conlega</lem>
+</app>: both Caesonius and Cicero were <foreign xml:lang="lat">aediles designati</foreign>.
+
+<milestone n="38.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">expediat</lem>
+</app>: fut. apodosis with <app>
+<lem xml:lang="lat">conemur</lem>
+</app>as its<app>
+<lem xml:lang="lat"></lem>
+</app>protasis, but hardly to be distinguished from subj. of characteristic; cf. § <bibl n="AG 534">534</bibl> (319, headnote).
+
+<milestone n="38.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Juniano consilio:</lem>
+</app> referring to a case four years before, in which wholesale bribery had been proved, so that the presiding praetor, Junius, as well as almost the entire <foreign xml:lang="lat">consilium</foreign> (body of jurors), had been stamped with infamy. Caesonius, a member of the jury, had been proof against corruption, and had disclosed the whole affair (<app>
+<lem xml:lang="lat">in medium protulit</lem>
+</app>).
+
+<milestone n="38.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">hunc judicem,</lem>
+</app>
+<gloss>him as juryman.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex Kal. Jan.:</lem>
+</app>after the New Year; for at that time he would be excluded from the panel by his  aedileship. </p>
+</div>
+<div type="textpart" n="30" subtype="section">
+<milestone n="38.32" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">P. Sulpicius</lem>
+</app>: he had probably just been elected quaestor.
+
+<milestone n="39.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Non. Dec</lem>
+</app>. (Dec. 5): on this day the new quaestors entered on their office.
+
+<milestone n="39.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">L. Cassius</lem>
+</app>: the family characteristic here stated was proverbial (<foreign xml:lang="lat">Cassiani judices</foreign>)
+
+<milestone n="39.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tribuni militares:</lem>
+</app>at this time legion-commanders.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">non judicabunt</lem>
+</app>,<gloss>will not serve as jurors.</gloss>
+<milestone n="39.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">subsortiemur,</lem>
+</app>i.e. we shall draw another <gloss>to fill his place.</gloss> This is the regular use of <app>
+<lem xml:lang="lat">sub</lem>
+</app> in similar compounds: as <gloss>suffectus, subrogatus</gloss> etc.
+
+<milestone n="39.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">prope toto</lem>
+</app>: the jury, therefore, apparently consisted of about twelve or fifteen. </p>
+</div>
+<div type="textpart" n="31" subtype="section">
+<milestone n="39.13" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Nonae</lem>
+</app>, etc.: it was, therefore, about 3 P.M. of the 5th of August.
+
+<milestone n="39.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">votivos</lem>
+</app>: these games were in celebration of Pompey's victory over the Marian party in Spain (<date when="-0072">B.C. 72</date>). The votive games would occupy from Aug. 16 to Sept. I (August had at this time only 29 days); On Sept. 4 began the <foreign xml:lang="lat">Ludi Romani</foreign>, continuing till the 19th. The intervening days (Sept. 2, 3) were of no account for the trial, so that it could not be resumed before Sept. 20, a suspension of 34 days (<foreign xml:lang="lat">prope quadraginta</foreign>). The <foreign xml:lang="lat">Ludi Victoriae</foreign> (established by Sulla in honor of his victory) would continue from Oct. 27 to Nov. I, and the <foreign xml:lang="lat">Ludi Plebeii</foreign>, from Nov. 4 to Nov. 17. All these games were sacred festivals, during which business was suspended: the time was occupied with religious observances, accompanied by races and dramatic entertainments.
+
+<milestone n="39.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tum denique</lem>
+</app>,<gloss>not till then.</gloss>
+<milestone n="39.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Victoriae:</lem>
+</app>see Fig. 4 (from the Column of Trajan).
+
+<milestone n="39.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">perpauci:</lem>
+</app>for the month of December was full of festivals.
+
+<milestone n="39.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rem integram,</lem>
+</app>i.e. from the beginning. The zeal of the prosecution would have flagged, the public interest would have cooled down, and the jury would be almost wholly new. The case would therefore have to be taken up <foreign xml:lang="lat">de novo</foreign>.
+
+<milestone n="39.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">non retinuissem</lem>
+</app>, i.e. I should have challenged him. Metellus was now one of the jurors. </p>
+</div>
+<div type="textpart" n="32" subtype="section">
+<milestone n="39.25" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nunc,</lem>
+</app>opposed to <app>
+<lem xml:lang="lat">si diffisus essem,</lem>
+</app>above.
+
+<milestone n="39.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">eo</lem>
+</app>, etc. (abl. abs.), <gloss>with him as juryman.</gloss>
+<milestone n="39.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">jurato,</lem>
+</app>
+<gloss>on oath.</gloss> The <foreign xml:lang="lat">judices</foreign> were sworn; the praetor was not. Metellus might therefore be trusted to vote honestly as a juror, though he might, when praetor, connive at the corruption of the jury men. Cicero ran less risk of offending Metellus by thus accusing him of extreme partisanship than if he had accused him of perjury. </p>
+</div>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="2" corresp="urn:cts:latinLit:phi0474.phi005:32-50">
+<head>To prevent postponement, Cicero will push the trial, dispensing with the usual long opening argument. He is forced to this by the tactics of Hortensius (sects. <bibl n="Cic. Ver. 1.1.32">32</bibl>,<bibl n="Cic. Ver. 1.1.33">33</bibl>). Cicero will oppose the arrogance of Hortensius and offers himself as the opponent of any who shall hereafter attempt to bribe the courts. The illegal domination of Hortensius is dangerous to justice. It must be met by proofs of judicial corruption, which are abundant (sects. <bibl n="Cic. Ver. 1.1.34">34</bibl>-<bibl n="Cic. Ver. 1.1.39">39</bibl>). The acquittal of Verres will be subversive of the whole judicial system (sects. <bibl n="Cic. Ver. 1.1.40">40</bibl>-<bibl n="Cic. Ver. 1.1.42">42</bibl>). The jurors are urged to vindicate the courts (sects <bibl n="Cic. Ver. 1.1.43">43</bibl>,<bibl n="Cic. Ver. 1.1.45">45</bibl>). All Rome is on the watch, and bribery is sure to be detected. Not Verres, but the senatorial courts are on trial (sects. <bibl n="Cic. Ver. 1.1.46">46</bibl>-<bibl n="Cic. Ver. 1.1.50">50</bibl>).
+</head>
+<milestone n="11" unit="chapter"/>
+<p>The skill of the argument in sects. <bibl n="Cic. Ver. 1.1.32">32</bibl>-<bibl n="Cic. Ver. 1.1.50">50</bibl>  is remarkable. Cicero contrives, without directly asserting that Hortensius is guilty of judicial corruption, to suggest that he is in a measure responsible for its prevalence. He declares his intention of devoting his aedileship to exposing such practices, and adds that he expects to be opposed by Hortensius. He calls attention to several notorious cases of bribery which he means to use as illustrations in pressing his reforms. Then, in a moment, he makes it clear, by a sudden turn, that he has not been digressing, but simply accumulating force for his main point: "How shall I feel," he asks suddenly (sect. <bibl n="Cic. Ver. 1.1.40">40</bibl>), "if I find this present case of Verres added to the long list of instances of corruption? His guilt is clear: <emph>it is the court that is on trial!</emph>" In this way what appears at the outset to be a personal attack on the opposing counsel is made a most effective means for the introduction of the central point of the whole oration.</p>
+<div type="textpart" n="32-40" subtype="section"/>
+<div type="textpart" n="32" subtype="section">
+<milestone n="39.31" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">legitimo tempore</lem>
+</app>: he had a right to use twenty days for developing the points of the prosecution.
+
+<milestone n="40.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">capiam,</lem>
+</app>i.e. by showing, in a long speech, how carefully he had prepared his case.
+
+<milestone n="40.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ne elabatur</lem>
+</app>, with<app>
+<lem xml:lang="lat">periculum est,</lem>
+</app>which takes the constr. of a verb of fearing.
+
+<milestone n="40.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">possit:</lem>
+</app>see § <bibl n="AG 535">535</bibl>, a (320, a); B. 283, 2; G. 631, 2; H. 591 (503, i); H.-B 521, I. </p>
+</div>
+<div type="textpart" n="33" subtype="section">
+<milestone n="40.7" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">perpetua oratione,</lem>
+</app>
+<gloss>a continuous argument</gloss>, before bringing up the witnesses. This is what we possess in the five speeches of the <foreign xml:lang="lat">Accusatio</foreign>, which, in the usual order of proceeding, would have been delivered before bringing up the witnesses, but which were in fact never spoken at all (see Introd. to the oration, page 28).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">percipi,</lem>
+</app>
+<gloss>reaped:</gloss> the regular term for gathering crops.
+
+<milestone n="40.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">potuit</lem>
+</app>,<gloss>might have been:</gloss> §<bibl n="AG 517">517</bibl>, c (308, c); B. 304, 3, a; G. 597, R.3; H. 583 (511, 1, N.3); H.-B. 582, 3,a.
+
+<milestone n="40.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">publicis:</lem>
+</app>see note on <ref n="pl35.23">p. 35, l. 23</ref>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tabulis,</lem>
+</app>
+<gloss>records.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">auctoritatibus</lem>
+</app>,<gloss>documents.</gloss>
+<milestone n="40.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">res omnis:</lem>
+</app>here, after stating his plan briefly, Cicero goes off into a seeming digression against Hortensius. In this he shows clearly one of his principal motives in undertaking the prosecution, namely, to overthrow the latter's excessive control of the courts. The attack is skillfully introduced. His sole reason, he says, for departing from the ordinary course of procedure is that Hortensius does not wish to meet him in fair legal fight. The sally against Hortensius, again, serves as a transition to Cicero's final appeal to the sense of shame and the prudence of the court.
+
+<milestone n="40.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">diluendis, explicandis:</lem>
+</app>technical terms in argument (see Vocab.).
+
+<milestone n="40.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex tua nature:</lem>
+</app>Hortensius, like M. Metullus, was personally an amiable and honorable man, though pledged to a bad cause.
+
+<milestone n="40.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rationi,</lem>
+</app>
+<gloss>scheme, course</gloss>, looking to the method; <app>
+<lem xml:lang="lat">consilio,</lem>
+</app>
+<gloss>plan of action</gloss>, looking to the end. Cicero contrasts them more than once. </p>
+</div>
+<div type="textpart" n="34" subtype="section">
+<milestone n="40.17" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">binos ludos,</lem>
+</app>i.e. Pompey's and the Roman games.
+
+<milestone n="40.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">comperendinem,</lem>
+</app>
+<gloss>close my case</gloss> (lit. <gloss>adjourn over</gloss>). After the testimony was all in, it was customary to adjourn over to the next day but one (<app>
+<lem xml:lang="lat">comperendinare</lem>
+</app>), in order to give opportunity for a rehearing (usually a brief one). When this stage had been reached, there was no chance for further postponement. Cicero's determination to bring about a <foreign xml:lang="lat">comperendinatio</foreign> before Pompey's games—i.e. within ten days settled the case in his favor; for, as has been shown, the only hope of the defence lay in putting off the trial, Hortensius having absolutely nothing to say in behalf of his client's innocence.
+
+<milestone n="40.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">necessarium</lem>
+</app>,<gloss>unavoidable</gloss> (not a mere shrewd trick like that of Hortensius).
+
+<milestone n="12" unit="chapter"/>
+<milestone n="40.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">id</lem>
+</app>: refers forward to <app>
+<lem xml:lang="lat">eos velle</lem>
+</app>, etc. (l. 24).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">amplum et praeclarum,</lem>
+</app>
+<gloss>an honor and distinction</gloss> (translating as nouns).
+
+<milestone n="40.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">innocentiae</lem>
+</app> (an almost technical term), <gloss>purity of administration</gloss> in Sicily (see Introd. to the oration).
+
+<milestone n="40.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">majus quiddam</lem>
+</app>: what this was is explained in sect. <bibl n="Cic. Ver. 1.1.35">35</bibl>. 
+</p>
+</div>
+<div type="textpart" n="35" subtype="section">
+<milestone n="40.28" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">illud</lem>
+</app>: refers to <app>
+<lem xml:lang="lat">istum . . . vocari</lem>
+</app> (l. 29).
+
+<milestone n="40.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">potentia,</lem>
+</app>
+<gloss>domineering</gloss>(i.e. his illegal control of the courts); <app>
+<lem xml:lang="lat">cupiditas</lem>
+</app> (in a bad sense), <gloss>unscrupulous eagerness</gloss> (for gaining your case).
+
+<milestone n="40.33" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">interponeretur:</lem>
+</app>for fut. ind. of the dir. disc.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nunc:</lem>
+</app>opposed to the time of <app>
+<lem xml:lang="lat">videbatur.</lem>
+</app>
+<milestone n="41.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">regnum judiciorum,</lem>
+</app>
+<gloss>lording it over the courts.</gloss>
+<milestone n="41.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">homines,</lem>
+</app>i.e. the corrupt senatorial jurors.
+
+<milestone n="41.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">inruere</lem>
+</app>, etc., <gloss>to be bent on making themselves hateful and offensive.</gloss> —hoc, i.e. to break down Hortensius's control, and the corruption of a few Senators.
+
+<milestone n="41.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nervos aetatis:</lem>
+</app>Cicero was now 36. </p>
+</div>
+<div type="textpart" n="36" subtype="section">
+<milestone n="41.8" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">ordo</lem>
+</app>, i.e. the Senate.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">paucorum</lem>
+</app>, artfully put so as not to offend the whole body.
+
+<milestone n="41.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">loco</lem>
+</app>:<gloss>the Rostra</gloss> (see Vocab., under <foreign xml:lang="lat">rostrum</foreign>).
+
+<milestone n="41.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">secum agere:</lem>
+</app>the technical expression for transacting business in the <foreign xml:lang="lat">comitia</foreign> was <foreign xml:lang="lat">agere cum populo</foreign> (or <foreign xml:lang="lat">plebe</foreign>). Cicero refers to the office of curule aedile, upon which he was to enter January 1. One of the most important functions of this magistrate was the administration of criminal justice (<app>
+<lem xml:lang="lat">de hominibus improbis</lem>
+</app>) in cases where there had been an appeal from the sentence of a court to the judgment of the public assembly.
+
+<milestone n="41.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">munus,</lem>
+</app>
+<gloss>service.</gloss> The word also means the <gloss>public games</gloss>, which were given to the people by the aediles especially; hence there is a kind of pun here.
+
+<milestone n="41.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">moneo</lem>
+</app>, etc.: observe the climax.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">deponere</lem>
+</app>,<gloss>deposit</gloss> with the <foreign xml:lang="lat">sequestres</foreign> (see note on <ref n="pl36.15">p. 36, l. 15</ref>).
+
+<milestone n="41.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">accipere</lem>
+</app>,<gloss>take</gloss> (money); <app>
+<lem xml:lang="lat">recipere,</lem>
+</app>
+<gloss>undertake</gloss> to do anything (upon request or the like).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">polliceri</lem>
+</app>,<gloss>offer.</gloss>
+<milestone n="41.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">interpretes,</lem>
+</app>
+<gloss>go-betweens:</gloss> the <gloss>divisores</gloss> are probably meant.
+
+<milestone n="41.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">potentiam</lem>
+</app>: it is hardly accidental that this is the same word used above (sect. <bibl n="Cic. Ver. 1.1.35">35</bibl>, l. 31) of the influence of Hortensius. In the next section Cicero expressly asserts that he expects to meet with all possible opposition from the latter. 
+<milestone n="13" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="37" subtype="section">
+<milestone n="41.22" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">erit,</lem>
+</app>
+<gloss>will be</gloss> (it is true): notice the<app>
+<lem xml:lang="lat"></lem>
+</app>emphatic position, opposing it to the clause with<app>
+<lem xml:lang="lat">tamen</lem>
+</app> (l. 24).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">imperio et potestate,</lem>
+</app>
+<gloss>military and civil power.</gloss> Of the regular magistrates, all possessed <foreign xml:lang="lat">potestas</foreign>, i.e. power in general (including military power); but only consuls and praetors possessed the <foreign xml:lang="lat">imperium,</foreign>—i.e. sovereign power, as of a general in the field, somewhat limited, however, in the  city by special privileges of Roman citizens.
+
+<milestone n="41.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commemorabuntur,</lem>
+</app>
+<gloss>shall be mentioned</gloss> (by me).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">certis rebus,</lem>
+</app>
+<gloss>well-ascertained facts.</gloss>
+<milestone n="41.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">agentur,</lem>
+</app>
+<gloss>made ground of action.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">inter decem annos,</lem>
+</app>i.e since Sulla's <foreign xml:lang="lat">lex judiciaria</foreign>, transferring the courts to the senatorial order (see note on Rosc. Am., <ref n="pl2.1">p. 2, l. 1</ref>). 
+</p>
+</div>
+<div type="textpart" n="38" subtype="section">
+<milestone n="42.1" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quinquaginta,</lem>
+</app>i.e. from the law of Caius Gracchus, <date when="-0123">B.C. 123</date>, to that of Sulla, <date when="-0080">B.C. 80</date>.
+
+<milestone n="42.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ne tenuissima quidem suspicio:</lem>
+</app>one of the exaggerations of the advocate. If the courts were really worse in <date when="-0070">B.C. 70</date> than they had been in 90, it was simply because the times were worse.
+
+<milestone n="42.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sublata,</lem>
+</app>
+<gloss>taken away.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">populi Romani,</lem>
+</app>etc., i.e. the ability of the people to hold in check the senatorial order by means of the tribunician power suspended by Sulla (see note on <ref n="pl43.32">p. 43, l. 32</ref>).
+
+<milestone n="42.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Q. Calidius:</lem>
+</app>praetor <date when="-0079">B.C. 79</date>; condemned for extortion in Spain. It seems that Calidius, being condemned <foreign xml:lang="lat">de repetundis</foreign>, with bitter irony assailed the bribed jurors on account of the smallness of the bribe for which he was condemned, saying that it was not respectable (<app>
+<lem xml:lang="lat">honestum</lem>
+</app>)  to condemn an ex-praetor for so small a sum. The allusion shows that the corruption was notorious and universal.
+
+<milestone n="42.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">HS triciens:</lem>
+</app>
+<gloss>3,000,000 sestertii</gloss> = $150,000 (nearly); § <bibl n="AG 634">634</bibl> (379); G. p. 493; H. 757 (647, iv, I); H.-B. 675, 2.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">praetorium:</lem>
+</app>an ex-magistrate kept the rank of the highest office he had held,—as <gloss>consularis, praetorius, aedilicius.</gloss>
+<milestone n="42.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">P. Septimio</lem>
+</app> (Scaevola), condemned <date when="-0072">B.C. 72</date>; the damages were increased because of his connection with the odious <foreign xml:lang="lat">consilium Junianum</foreign> (sect. <bibl n="Cic. Ver. 1.1.29">29</bibl>). The amount extorted was estimated in a separate process (<foreign xml:lang="lat">litis aestimatio</foreign>), and in this case the money taken in bribery was included in the reckoning. </p>
+</div>
+<div type="textpart" n="39" subtype="section">
+<milestone n="42.14" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">inventi sint</lem>
+</app>represents an hist. perf., and hence takes the secondary sequence (<app>
+<lem xml:lang="lat">exirent</lem>
+</app>): see § <bibl n="AG 485">485</bibl>, j (287, i); cf. B. 268, 7, b; G. 517, R.l; H.-B. 479, a.
+
+<milestone n="42.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sortiente:</lem>
+</app>the jurymen were drawn by lot by the presiding officer; in the case mentioned there was collusion between Verres and the persons drawn, so that the lot was a mere form.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">qui . . . exirent</lem>
+</app> (purp. clause), <gloss>to be drawn for</gloss> [the case of] <gloss>a defendant to condemn him without a hearing</gloss> (through a corrupt bargain between Verres and the packed jury). </p>
+</div>
+<div type="textpart" n="40" subtype="section">
+<milestone n="42.19" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">jam vero</lem>
+</app>,<gloss>and finally</gloss> (introducing the climax of all).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illam</lem>
+</app>, i.e. the one described in the passage <app>
+<lem xml:lang="lat">hoc factum esse</lem>
+</app>, etc.
+
+<milestone n="42.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">discoloribus signis:</lem>
+</app>see note on <app>
+<lem xml:lang="lat">color,</lem>
+</app>
+<ref n="pl34.16">p. 34, l. 16</ref>. The case referred to was one in which Hortensius was counsel.
+
+<milestone n="42.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">acturum esse,</lem>
+</app>
+<gloss>will attend to</gloss> (i.e. officially, as aedile: cf. the use of<app>
+<lem xml:lang="lat">agere,</lem>
+</app>above). </p>
+</div>
+<div type="textpart" n="15" subtype="section">
+<p>In this chapter Cicero reaches the climax of his accusations and insinuations against Hortensius, and at the same time makes a clever transition to the case in hand (l.28), having worked up to his main point, which he proceeds to state with great force,—that it is not Verres that is on trial, but the court itself.
+<milestone n="14" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="39" subtype="section">
+<milestone n="42.28" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">hominem</lem>
+</app>, i.e. Hortensius.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cujus</lem>
+</app>: obj. gen.
+
+<milestone n="42.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">secum . . . agi,</lem>
+</app>
+<gloss>he was doing very well</gloss> (see Vocab., under <app>
+<lem xml:lang="lat">ago</lem>
+</app>).
+
+<milestone n="42.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in rem suam,</lem>
+</app>
+<gloss>into his own pocket.</gloss>
+<milestone n="42.32" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">patronis:</lem>
+</app>see note, Rosc. Am., sect. <bibl n="Cic. S. Rosc. 1 4">4</bibl>,<ref n="pl3.17">p. 3, l. 17</ref>. 
+</p>
+</div>
+<div type="textpart" n="41" subtype="section">
+<milestone n="43.3" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quod,</lem>
+</app>
+<gloss>at which</gloss> (with <app>
+<lem xml:lang="lat">commoveri,</lem>
+</app>l.6): cf. § <bibl n="AG 390">390</bibl>, c (238, b); B. 176, 2; G. 333, 1; H. 416, 2 (378, 2); H.-B. 396, 2.
+
+<milestone n="43.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">apud Glabrionem,</lem>
+</app>i.e in the preliminary proceedings.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">reiciundis judicibus</lem>
+</app> (local. abl.), <gloss>at the time of challenging</gloss> (making up the jury).
+
+<milestone n="43.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fore uti</lem>
+</app>,<gloss>that the result would be.</gloss>
+<milestone n="43.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tolleretur,</lem>
+</app>
+<gloss>should be abolished</gloss> (purp. clause with <app>
+<lem xml:lang="lat">legatos mitterent,</lem>
+</app>which is equivalent to a verb of requesting).
+
+<milestone n="43.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">victoriae,</lem>
+</app>i.e. in the courts. They could endure it if a man stole only enough to satisfy his own avarice (<app>
+<lem xml:lang="lat">sibi ac liberis suis</lem>
+</app>), but they cannot afford to be robbed of enough besides to secure him an acquittal by bribery, if guilty (<app>
+<lem xml:lang="lat">nocentissimi victoriae</lem>
+</app>). Cf. the similar argument in Burke's Opening Speech on the Impeachment of Warren Hastings: "If, from any appearance of chicane in the court, justice should fail, all men will say, 'Better there were no courts at all.'" </p>
+</div>
+<div type="textpart" n="42" subtype="section">
+<milestone n="43.20" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">animo</lem>
+</app>: abl. of means.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">majore . . . odio</lem>
+</app>: abl. of quality.  </p>
+</div>
+<div type="textpart" n="43-50" subtype="section">
+<p>Sudden and powerful appeal to the jurors to save the senatorial courts from present infamy and threatened destruction.
+
+<milestone n="15" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="43" subtype="section">
+<milestone n="43.24" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">loco</lem>
+</app>,<gloss>point</gloss> (raised in his argument).
+
+<milestone n="43.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">contemnimur</lem>
+</app>: Cicero uses the first person to include himself as a member of the Senate. </p>
+</div>
+<div type="textpart" n="44" subtype="section">
+<milestone n="43.32" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">tribuniciam potestatem</lem>
+</app>: referring chiefly to the power of the tribunes to try criminal cases before the <gloss>comitia tributa;</gloss> this power, greatly abridged by Sulla, had been restored by a law of Pompey early in this year, <date when="-0070">B.C. 70</date>.
+
+<milestone n="43.33" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">verbo</lem>
+</app>,<gloss>in name.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">re vera</lem>
+</app>,<gloss>in fact.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illam,</lem>
+</app>the tribunician power (because this was a check on the power of the Senators).
+
+<milestone n="44.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Catulum</lem>
+</app>: Q. Lutatius Catulus was the best and most eminent man of the aristocracy.
+
+<milestone n="44.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fugit</lem>
+</app>,<gloss>has escaped.</gloss>
+<milestone n="44.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">referente,</lem>
+</app>consulting [the Senate]: the technical expression for bringing a matter before the Senate for action.
+
+<milestone n="44.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rogatus</lem>
+</app>: each Senator in turn was asked his opinion  (<app>
+<lem xml:lang="lat">sententiam</lem>
+</app>)by the consul or other presiding officer; cf. <app>
+<lem xml:lang="lat">hos sententiam rogo,</lem>
+</app>Cat. 1, sect. <bibl n="Cic. Catil. 1.9">9</bibl>.
+
+<milestone n="44.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">patres conscriptos</lem>
+</app>: see note on Cat. 1, sect. <bibl n="Cic. Catil. 1.9">9</bibl>,<ref n="pl103.6">p. 103, l. 6</ref>.
+
+<milestone n="44.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fuisse desideraturos</lem>
+</app> (the regular way of expressing the contrary to fact apodosis in indir. disc.), <gloss>would have missed:</gloss> §<bibl n="AG 589">589</bibl>, b, 2 (337, b, 2); 321, A, 2; G. 656, N.2; H. 647 (527, iii); H.-B. 581, b, 1. </p>
+</div>
+<div type="textpart" n="45" subtype="section">
+<milestone n="44.9" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">contionem habuit,</lem>
+</app>
+<gloss>made a speech:</gloss>
+<foreign xml:lang="lat">contio</foreign> means, strictly, an assembly called for the purpose of listening to discussion merely (so in l.12, below).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ad urbem,</lem>
+</app>i.e. in the Campus Martius, not in the city. Pompey was elected in his absence, and while still clothed with the military imperium: he could not therefore enter the city to meet the citizens, but called them to him outside the walls.
+
+<milestone n="44.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ubi</lem>
+</app>,<gloss>in which.</gloss>
+<milestone n="44.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in eo</lem>
+</app>,<gloss>at that point</gloss> (properly <gloss>on that point).</gloss>
+<milestone n="44.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">suam</lem>
+</app> by its emphatic position gives the force of the English <gloss>what</gloss> THEY <gloss>desired.</gloss>
+<milestone n="16" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="46" subtype="section">
+<milestone n="44.20" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">religione</lem>
+</app>,<gloss>regard for oath.</gloss>
+<milestone n="44.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tribuniciam,</lem>
+</app>i.e., the law referred to in the note on sect. <bibl n="Cic. Ver. 1.1.44">44</bibl>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">unum,</lem>
+</app>
+<gloss>one, it is true;</gloss> but since he was <gloss>a man of no means at all</gloss> (<app>
+<lem xml:lang="lat">vel tenuissimum,</lem>
+</app>)his conviction was no proof of the integrity of the courts. The present trial will afford the people the criterion they wish. </p>
+</div>
+<div type="textpart" n="47" subtype="section">
+<milestone n="44.29" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nihil sit,</lem>
+</app>etc., i.e. this is simply a case of guilt and money; there are no political or other disturbing influences. To acquit him, then, will be to admit that you are bribed.
+
+<milestone n="44.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">gratia,</lem>
+</app>
+<gloss>personal popularity.</gloss>
+</p>
+</div>
+<div type="textpart" n="48" subtype="section">
+<milestone n="45.1" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">agam</lem>
+</app>,<gloss>conduct.</gloss>
+<milestone n="45.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">res</lem>
+</app>,<gloss>facts.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">manifestas</lem>
+</app>: a technical word denoting direct proof, not circumstantial evidence.
+
+<milestone n="45.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">a vobis . . . contendere</lem>
+</app>,<gloss>urge upon you.</gloss>
+<milestone n="45.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">eorum,</lem>
+</app>i.e. of the defence. </p>
+</div>
+<div type="textpart" n="49" subtype="section">
+<milestone n="45.8" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">vos</lem>
+</app>: opposed to former juries, which have occasioned the scandal.
+
+<milestone n="45.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">huic ordini:</lem>
+</app>cat. of agent; § <bibl n="AG 375">375</bibl> (232, a); B. 189, 2; G. 354 H 431 (388, 1); H.-B. 373, 2.
+
+<milestone n="45.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">post haec,</lem>
+</app>etc., i.e. since the reorganization of the courts by Sulla (see note on Rosc. Am., sect. <bibl n="Cic. S. Rosc. 1 1">1</bibl>).
+
+<milestone n="45.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">utimur</lem>
+</app>,<gloss>have</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">splendore</lem>
+</app>,<gloss>personal distinction</gloss>, from wealth and exploits.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">dignitate</lem>
+</app>,<gloss>dignity</gloss>, from rank and office.
+
+<milestone n="45.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">si . . . offensum,</lem>
+</app>
+<gloss>if there is any slip</gloss> (a euphemism). 
+<milestone n="17" unit="chapter"/>
+</p>
+</div>
+<div type="textpart" n="50" subtype="section">
+<milestone n="45.17" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">opto</lem>
+</app>,<gloss>pray</gloss>. Observe the adroit union of compliment and threat in this passage, which at the same time forms the transition to the appeal to the praetor presiding. </p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="51–58">
+<div type="textpart" n="51-52" subtype="section">
+<p>Appeal to Glabrio, the presiding praetor, to prevent bribery.
+</p>
+<div type="textpart" n="51" subtype="section">
+<milestone n="45.28 " unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">is:</lem>
+</app> referring to the Senate.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">judicio</lem>
+</app>: abl. of means.
+
+<milestone n="45.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">qui sis</lem>
+</app>,<gloss>what sort of man you are.</gloss>
+<milestone n="46.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">reddere,</lem>
+</app>
+<gloss>pay back.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fac . . . veniat</lem>
+</app>: §<bibl n="AG 565">565</bibl> (33I, f, R.); cf. B. 295, 8; G. 553, I (end); H. 565, 4 (499, 2); H.-B. 502, 3, footnote 2
+
+<milestone n="46.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">legis Aciliae:</lem>
+</app>this (probably <date when="-0101">B.C. 101</date>) provided that there should be neither <foreign xml:lang="lat">ampliatio</foreign> (further hearing) nor <foreign xml:lang="lat">comperendinatio</foreign> (see note on sect. <bibl n="Cic. Ver. 1.1.34">34</bibl>,<ref n="pl40.18">p. 40, l. 18</ref>) in cases of <foreign xml:lang="lat">repetundae</foreign>
+<gloss>.</gloss> All earlier laws were superseded by the Cornelian law of Sulla. </p>
+</div>
+<div type="textpart" n="52" subtype="section">
+<milestone n="46.4" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Summae auctoritates</lem>
+</app>,<gloss>strongest influences</gloss>, especially family traditions, etc. To the Roman mind an <foreign xml:lang="lat">auctor</foreign>, in this sense, was a pattern for imitation.
+
+<milestone n="46.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quae . . . non sinant</lem>
+</app>: best regarded as a purpose clause; cf. § <bibl n="AG 531">531</bibl>. 2, N. (317, N.).
+
+<milestone n="46.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut ne quis</lem>
+</app>, etc.: § <bibl n="AG 537">537</bibl>,a, N. (319, a, N.); G. 545,R.1; H.(499,1); cf. H.-B. 502, 3, a, footnote 2.
+
+<milestone n="46.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nocenti reo,</lem>
+</app>etc., <gloss>for the accused, if guilty, his great wealth has had more weight to increase</gloss> (lit. <gloss>towards</gloss>)<gloss> the suspicion of guilt than (to secure) a means of safety.</gloss>
+</p>
+</div>
+</div>
+<div type="textpart" n="53-56" subtype="section">
+<p>Cicero states his plan for preventing delay. He will introduce his witnesses at once, without preliminary argument. Brief statement of the charges against Verres. End.
+
+<milestone n="18" unit="chapter"/>
+</p>
+<div type="textpart" n="53" subtype="section">
+<milestone n="46.17" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">mihi certum est</lem>
+</app>,<gloss>for my part</gloss> (emph.)  <gloss>am resolved.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">non committere,</lem>
+</app>
+<gloss>not to allow</gloss> (in the weak sense of <gloss>letting it occur</gloss> by mistake or fault).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . . mutetur</lem>
+</app>,<gloss>to be changed</gloss>; §<bibl n="AG 568">568</bibl>, N I (332, e); G. 553, I; cf. H. 566, I (498, ii, N.2).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nobis</lem>
+</app> (eth. dat.), <gloss>our.</gloss>
+<milestone n="46.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">servi,</lem>
+</app>etc.: Hortensius and Metellus (sects. <bibl n="Cic. Ver. 1.1.25">25</bibl>,<bibl n="Cic. Ver. 1.1.27">27</bibl>), while consuls elect, had sent for the Sicilians, but of course without any authority to enforce their coming. Cicero suggests that, if the case is put off till the next year, the summons may be repeated, this time by means of lictors. Each consul was attended by twelve of these officers, who had the power of arresting and coercing (see Manil. Law, note on sect. <bibl n="Cic. Ver. 1.1.32">32</bibl>,<ref n="pl81.15">p. 81, l. 15</ref>).
+
+<milestone n="46.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">novo exemplo,</lem>
+</app>
+<gloss>in an unheard-of manner.</gloss>
+<milestone n="46.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ius suum,</lem>
+</app>
+<gloss>their</gloss> [lost] <gloss>rights</gloss>.
+
+<milestone n="46.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">eorum:</lem>
+</app>this word suggests in a skillfully vague way that Verres, the Metelli, and Hortensius are all in the same conspiracy, as it were, to rob the Sicilians, Verres having used his <gloss>imperium</gloss> to carry out the actual robbery, the others using theirs to protect him by intimidating the victims. </p>
+</div>
+<div type="textpart" n="54" subtype="section">
+<milestone n="46.97" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nobis responderi,</lem>
+</app>i.e. the argument for the defence to be made.
+
+<milestone n="46.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">adducta sit:</lem>
+</app>§<bibl n="AG 593">593</bibl> (342); B. 324, 1; G. 663, 1; H. 652 (529, ii); H-B. 539; if this were not dependent on <app>
+<lem xml:lang="lat">responderi,</lem>
+</app>it would be fut. perf. ind.
+
+<milestone n="46.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">comitiorum, ludorum:</lem>
+</app>the trial came just between the elections and Pompey's votive games (sect. <bibl n="Cic. Ver. 1.1.31">31</bibl>).
+
+<milestone n="46.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">censendi causâ,</lem>
+</app>
+<gloss>on account of the census-taking</gloss> (<gloss>registration</gloss>). At this time censors were in office, for the first time since Sulla's domination: they were holding a registration of property and voters, at which citizens from all parts of Italy were obliged to report. The importance of proceeding with the trial while Rome was thus filled with citizens and provincials is obvious.
+
+<milestone n="46.32" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">vestrum, nostram</lem>
+</app> (<gloss>mine</gloss>), and<app>
+<lem xml:lang="lat">omnium</lem>
+</app> (next page) are predicate after <app>
+<lem xml:lang="lat">esse</lem>
+</app> (<ref n="pl47.2">p. 47, l. 2</ref>).
+
+<milestone n="47.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quid agatur</lem>
+</app> (inc. quest.) depends on the verbal noun <app>
+<lem xml:lang="lat">scientiam,</lem>
+</app>as the next clause does on <app>
+<lem xml:lang="lat">memoriam</lem>
+</app>.
+
+<milestone n="47.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">omnium</lem>
+</app>, i.e. not the inhabitants of Rome alone. </p>
+</div>
+<div type="textpart" n="55" subtype="section">
+<milestone n="47.3" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">principes</lem>
+</app>: the two distinguished brothers, L. and M. Lucullus.
+
+<milestone n="47.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ita testis constituam</lem>
+</app>, etc.: this is the <gloss>criminum ratio</gloss> (sect. <bibl n="Cic. Ver. 1.1.19">19</bibl>, l.14). Cicero's plan appears to be so to arrange his witnesses that their examination shall make the usual long introductory <foreign xml:lang="lat">accusatio</foreign> unnecessary.  He will, he says, produce his witnesses in such an order and with such introduction in each case as to bring out the <foreign xml:lang="lat">crimen totum</foreign>  in the course of these proceedings. When he has explained what he expects to prove in a given instance, he will immediately bring forward the appropriate witnesses, and so on till the whole case is in.
+
+<milestone n="47.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">crimen totum</lem>
+</app>,<gloss>the impeachment as a whole.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">crimen</lem>
+</app> (below),<gloss>the special charge of extortion</gloss> (stated formally in the next section), the only charge for which Verres was really on trial.
+
+<milestone n="47.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">dantur</lem>
+</app>,<gloss>are offered.</gloss>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in singulas res</lem>
+</app>,<gloss>to each point.</gloss>
+<milestone n="47.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illis,</lem>
+</app>the counsel for the defence.
+
+<milestone n="47.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">altera actione,</lem>
+</app>i.e. after the <foreign xml:lang="lat">comperendinatio</foreign>: in this sense the speeches of the <foreign xml:lang="lat">accusatio</foreign> are correctly called <foreign xml:lang="lat">Actio Secunda</foreign> (see note above).
+
+<milestone n="47.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">haec</lem>
+</app> (referring forward to sect. <bibl n="Cic. Ver. 1.1.56">56</bibl>), etc., <gloss>this is all the <foreign xml:lang="lat">Accusatio</foreign> there will be in the first Action.</gloss>
+</p>
+</div>
+<div type="textpart" n="56" subtype="section">
+<milestone n="47.19" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quadringentiens</lem>
+</app>[<foreign xml:lang="lat">centena milia</foreign>]<app>
+<lem xml:lang="lat">sestertium,</lem>
+</app>
+<gloss>40,000,000 sestertii</gloss>, = $2,000,000 (nearly): § <bibl n="AG 634">634</bibl> (379); G. p. 493; H. 757 (647, iv, 1); H-B 675, 2.
+
+<milestone n="47.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">habuissemus:</lem>
+</app>cont. to fact protasis regularly retained, without change of mood or tense, in indir. disc.; § <bibl n="AG 589">589</bibl>, b (337, b); B. 321, B; G. 659; H. 647 (527, iii); H.-B. 581, b, N.; the apodosis is<app>
+<lem xml:lang="lat">opus fuisse</lem>
+</app>for <foreign xml:lang="lat">opus fuit</foreign>
+<gloss>, there would have been no need</gloss>: §<bibl n="AG 517">517</bibl>, c (308, c); B. 304, 3, a; G. 597, R.3 a; H. 525,1 (476, 4); H.-B. 582, 3, a.
+
+<milestone n="47.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Dixi</lem>
+</app>,<gloss>I have done:</gloss> a common formal ending.</p>
+</div>
+</div>
+</div>
+</div>
+<div type="commentary" subtype="speech" n="4">
+<head>The Plunder of Syracuse. (<title xml:lang="lat">In C. Verrem: Actio II., Lib. IV.</title>, ch. 52-60.)</head>
+<p>The passage which follows is from the fourth oration of the <foreign xml:lang="lat">Accusatio</foreign>, the most famous of all, known as the <title xml:lang="lat">De Signis</title> because it treats chiefly of the works of art stolen by Verres. Cicero has been describing the plundering of many temples and public buildings, and in this passage he recounts in detail the case of one chief city, Syracuse, as a climax. Syracuse was by far the largest and richest of all the Greek cities of Italy and Sicily. It was a colony of Corinth, founded <date>B.C. 734</date>, and in course of time obtained the rule over the whole eastern part of Sicily. It remained independent, with a considerable territory, after the western part of the island (far the larger part) passed under the power of Rome in the First Punic War; but in the Second Punic War (B.C. 212) it was captured by Marcellus, and ever after was subject to Rome. It was at this time the capital of the province.
+</p>
+<div type="textpart" subtype="chapter" n="1" corresp="urn:cts:latinLit:phi0474.phi005:4.115–4.135">
+<div type="textpart" n="1" corresp="urn:cts:latinLit:phi0474.phi005:4.115-4.116" subtype="section">
+<p>Contrast between the treatment of Syracuse by the conqueror Marcellus in time of war and its treatment by Verres, the governor, in time of peace.
+</p>
+<div type="textpart" n="2" corresp="urn:cts:latinLit:phi0474.phi0054.115" subtype="section">
+<milestone n="48.3" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">aliquando</lem>
+</app>,<gloss>at last</gloss>, implying impatience, here assumed as a kind of apology to his hearers for the length of his account.
+
+<milestone n="48.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Marcello</lem>
+</app>: M. Claudius Marcellus, of a noble plebeian family  (all the other families of the Claudian <gloss>gens</gloss> were patrician), was the ablest general the Romans had in the early years of the Second Punic War, but illiterate and cruel.  His capture of Syracuse was in <date when="-0212">B.C. 212</date>.  He was killed in battle <date when="-0208">B.C. 208</date>.
+</p>
+<p> The contrast between Verres and Marcellus is a brilliant one; nevertheless, the orator exaggerates, as on so many occasions.  "Not only did Marcellus stain his military honor by permitting a general pillage of the wealthy mercantile city, in the course of which Archimedes and many other citizens were put to death, but the Roman Senate lent a deaf ear to the complaints which the Syracusans afterwards presented regarding that celebrated general, and neither returned to individuals their property nor restored to the city its freedom" (Mommsen).
+
+<milestone n="48.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">imperatoris</lem>
+</app>: this title, properly belonging to every holder of the <foreign xml:lang="lat">imperium</foreign>, was by usage assumed by the commander only after his first considerable victory.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cohortem</lem>
+</app>,<gloss>train</gloss> of courtiers, etc.: the provincial magistrates, representing the Roman <foreign xml:lang="lat">imperium</foreign>, had almost a royal suite, as well as other insignia of royalty. </p>
+</div>
+<div type="textpart" n="3" corresp="urn:cts:latinLit:phi0474.phi005:4.116" subtype="section">
+<milestone n="48.12" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">omitto</lem>
+</app>: a good example of the rhetorical device known as <foreign xml:lang="lat">praeteritio</foreign>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">locis</lem>
+</app>, i.e. in the other speeches of the <foreign xml:lang="lat">Accusatio</foreign>.
+
+<milestone n="48.13" unit="pg_l"/>
+</p>
+<p>forum: every ancient town had its central market-place or square (<foreign xml:lang="lat">forum</foreign>,<foreign xml:lang="grc">a)gora</foreign>), an open space, used for trading, public assemblies, and the administration of justice.  The same feature exists in European towns at the present day.
+
+<milestone n="49.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">clausus fuisset</lem>
+</app>: Marcellus had been obliged to starve out the city.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Cilicum</lem>
+</app>: Cilicia was the chief seat of the organized bands of pirates who ruled the Mediterranean at this time.
+
+<milestone n="49.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illis rebus</lem>
+</app>, i.e. the plunder of temples, etc.   </p>
+</div>
+</div>
+<div type="textpart" n="4" corresp="urn:cts:latinLit:phi0474.phi005:4.117-4.119" subtype="section">
+<p>Situation and topography of Syracuse.
+</p>
+<div type="textpart" n="5" corresp="urn:cts:latinLit:phi0474.phi005:4.117" subtype="section">
+<milestone n="49.11" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">maximam</lem>
+</app>: the circuit of its walls was about 180 <foreign xml:lang="lat">stadia</foreign> = more than 20 miles.
+
+<milestone n="49.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex omni aditu</lem>
+</app> limits <app>
+<lem xml:lang="lat">praeclaro ad aspectum</lem>
+</app>.
+
+<milestone n="49.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in aedificatione</lem>
+</app>, etc., i.e. enclosed by the buildings of the city. Ancient harbors (as at Athens) were often at a considerable distance from the city.
+
+<milestone n="49.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">conjunguntur</lem>
+</app>: Ortygia (or <foreign xml:lang="lat">Insula</foreign>), the site of the original town, had an independent harbor on each side connected by a narrow channel. This channel is the <app>
+<lem xml:lang="lat">exitus</lem>
+</app> mentioned. </p>
+</div>
+<div type="textpart" n="6" corresp="urn:cts:latinLit:phi0474.phi005:4.118" subtype="section">
+<milestone n="50.2" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Hieronis</lem>
+</app>: Hiero II, king of Syracuse (<date when="-0270">B.C. 270</date> to about 216), who was during most of his reign a steadfast ally of Rome.
+
+<milestone n="50.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Dianae</lem>
+</app>: the quail, <foreign xml:lang="grc">o)/rtux</foreign>  (whence the name <gloss>Ortygia</gloss>), was sacred to Diana (Artemis).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">istius</lem>
+</app>, i.e. of Verres.
+
+<milestone n="50.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Arethusa</lem>
+</app>: for the myth of Arethusa and Alpheus, see Ovid, Met. 5.573-641; Gayley, <gloss>Classic Myths</gloss>. 
+</p>
+</div>
+<div type="textpart" n="7" corresp="urn:cts:latinLit:phi0474.phi005:4.119" subtype="section">
+<milestone n="50.10" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Achradina</lem>
+</app>, the plain and table-land north of Ortygia
+
+<milestone n="50.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">prytaneum</lem>
+</app>:  the building in which the city was conceived to have its home. Here was the hearth, sacred to Vesta, whence colonists carried the sacred fire to kindle a new hearth in the <gloss>prytaneum</gloss> of their new home.  It was also used for courts of justice, public banquets, etc.  Such public buildings were usually grouped round the forum in the centre of the city.
+
+<milestone n="50.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">urbis</lem>
+</app>, i.e. Achradina.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">perpetua</lem>
+</app>,<gloss>running its whole length</gloss>.
+
+<milestone n="50.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">continentur</lem>
+</app>,<gloss>are lined in continuous rows</gloss>.
+
+<milestone n="50.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">gymnasium</lem>
+</app>:  the place for exercise and baths, with porticos, groves, and halls.
+
+<milestone n="50.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">coaedificata</lem>
+</app>,<gloss>built up</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Neapolis</lem>
+</app>, i.e. "the new city."
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quam ad summam</lem>
+</app>,<gloss>at the highest point of which</gloss>.   
+</p>
+</div>
+</div>
+<div type="textpart" n="8" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.121" subtype="section">
+<p>Marcellus, the conqueror at Syracuse: compare Verres, the governor.
+</p>
+<div type="textpart" n="9" coresp="urn:cts:latinLit:phi0474.phi005:4.120" subtype="section">
+<milestone n="51.4" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">pulchritudinem</lem>
+</app>: the English would put it less abstractly, — <gloss>this beautiful city</gloss>.
+
+<milestone n="51.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in</lem>
+</app>,<gloss>in respect to</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">habuit victoriae rationem</lem>
+</app>,<gloss>had regard for the right of victory</gloss>.
+
+<milestone n="51.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">deportare</lem>
+</app>: a Roman custom, imitated in the nineteenth century by Napoleon.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">possent</lem>
+</app>, subj. of characteristic.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">humanitatis</lem>
+</app>,<gloss>the part of humanity</gloss>. 
+</p>
+</div>
+<div type="textpart" n="10" corresp="urn:cts:latinLit:phi0474.phi005:4.121" subtype="section">
+<milestone n="51.15" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Honoris</lem>
+</app> etc  the worship of abstractions was a characteristic of the Roman religion  Marcellus restored the temple of Honor and built the temple of Virtus, the two were so connected that in common parlance they were referred to as a single edifice
+
+<milestone n="51.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in aedibus</lem>
+</app>, i.e. in his own house in town
+
+<milestone n="51.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ornamento</lem>
+</app>, i.e. as being free from stolen treasures
+
+<milestone n="51.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">deum nullum</lem>
+</app> translate, in order to keep the emphasis of the position, <gloss>of the gods not one</gloss> (i e not a single statue)
+
+<milestone n="51.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">comparetis</lem>
+</app>, i e in renown and in personal character
+
+<milestone n="51.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">pacem cum bello</lem>
+</app>, etc  implying that the administration of Verres in time of peace was worse than the armed capture by Marcellus
+</p>
+<p>
+<app>
+<lem xml:lang="lat">forum et juris dictionem</lem>
+</app>,<gloss>law and justice</gloss> the forum is mentioned as being the place where the praetor administered justice; <app>
+<lem xml:lang="lat">juris dictio</lem>
+</app> was his special function (see note on Verres, 1, sect. <bibl n="Cic. Ver. 1.1.12">12</bibl>, p.32, 1.13).   </p>
+</div>
+</div>
+<div type="textpart" n="11" corresp="urn:cts:latinLit:phi0474.phi005:4.120-4.59" subtype="section">
+<p>Details of the robberies of Verres.
+</p>
+<div type="textpart" n="12" corresp="urn:cts:latinLit:phi0474.phi005:4.122" subtype="section">
+<milestone n="52.1" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">aedis Minervae</lem>
+</app>: the illustration shows how this ancient temple of Minerva in Syracuse has been made over into a church.
+
+<milestone n="52.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tamen in bello</lem>
+</app>: translate <gloss>though in war, still</gloss>, etc.  The particle tamen ("still") often suggests a concession ("although"), not expressed, but loosely implied in the context or the circumstances; here the implied concession is "though the rights of an enemy in war are unlimited."
+</p>
+<p>
+<app>
+<lem xml:lang="lat">religionum</lem>
+</app>,<gloss>things sacred</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">consuetudinis</lem>
+</app>, i.e. things hallowed by use.
+
+<milestone n="52.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Agathocli</lem>
+</app>: tyrant of Syracuse, <date from="-0317" to="-0289">
+<date when="-0317">B.C. 317</date>-289</date>. 
+
+<milestone n="52.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">visendum</lem>
+</app>: see Manil., sect. <bibl n="Cic. Man. 40">40</bibl>,<gloss>p.85, l</gloss>. 6, note.
+
+<milestone n="52.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">profana fecisset</lem>
+</app>: the Romans had a formula by which they called away (<foreign xml:lang="lat">evocare</foreign>) and gained over to their side the tutelary deities of any cities they were besieging.  Of course, the temples of these gods then lost all their sanctity and became profane buildings.  With the same idea the true name of Rome and that of its tutelar divinity were said to be kept as a mystery, lest they should become known to an enemy, who might thus disarm the city of its protector.
+</p>
+<p> Notwithstanding this doctrine, the Romans were often, as in the case of Marcellus, prevented by religious feeling (<foreign xml:lang="lat">religione</foreign>) from violating the sacred edifices of conquered cities.  Often, too, they transferred the worship of the deities in question to Rome.  On the whole idea, cf. Aeneid, 2. 351.
+
+<milestone n="53.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">jam</lem>
+</app> belongs with sacra religiosaque. </p>
+</div>
+<div type="textpart" n="13" corresp="urn:cts:latinLit:phi0474.phi005:4.123" subtype="section">
+<milestone n="53.6" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">id quod</lem>
+</app>,<gloss>what</gloss>
+<milestone n="53.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">deberet</lem>
+</app>: subj. of characteristic.  <pb n="320"/>
+<milestone n="53.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in quibus erant</lem>
+</app>,<gloss>upon which were represented</gloss>.
+
+<milestone n="53.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cognitione formarum</lem>
+</app>,<gloss>acquaintance with their features</gloss>.
+
+<milestone n="53.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tamen</lem>
+</app>: see note on p.52, i. 4. </p>
+</div>
+<div type="textpart" n="14" corresp="urn:cts:latinLit:phi0474.phi005:4.124" subtype="section">
+<milestone n="53.23" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">tam . . . cupidum</lem>
+</app>,<gloss>that I am so eager</gloss> (in appos. with <foreign xml:lang="lat">quod</foreign>).
+
+<milestone n="53.30" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illi</lem>
+</app>, i.e. the Greeks, as being over-fond of art. The Romans were inclined to look down upon culture and the fine arts as being less manly than politics and war;  cf. the famous passage in the Aeneid, 6. 846-853.
+
+<milestone n="54.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">argumenta</lem>
+</app>,<gloss>subjects</gloss> or <gloss>stories</gloss> (in relief) ; cf. Aeneid, vi. 20, and note.
+
+<milestone n="54.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Gorgonis</lem>
+</app>: the head of Medusa, a favorite subject of ancient art.  See Fig. 10, from an ancient marble mask.
+
+<milestone n="54.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">bullas</lem>
+</app>, i.e. knobs. </p>
+</div>
+<div type="textpart" n="15" corresp="urn:cts:latinLit:phi0474.phi005:4.125" subtype="section">
+<milestone n="54.11" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">in hoc nomine</lem>
+</app>,<gloss>at this item</gloss> (i.e. wondering why Verres should have taken these).
+
+<milestone n="54.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commoveri</lem>
+</app>,<gloss>were surprised</gloss>.
+
+<milestone n="54.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">satis esset</lem>
+</app>, i.e. they were only curiosities.  Any natural object which was, in the view of the ancients, out of the common order of nature was regarded as a <foreign xml:lang="lat">monstrum</foreign> or <foreign xml:lang="lat">prodigium</foreign>, and as therefore associated in some w-ay with the gods ; hence such objects were frequently dedicated in temples.
+
+<milestone n="54.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">id</lem>
+</app> merely repeats <app>
+<lem xml:lang="lat">hastas</lem>
+</app>. 
+</p>
+</div>
+<div type="textpart" n="16" corresp="urn:cts:latinLit:phi0474.phi005:4.126" subtype="section">
+<milestone n="54.17" unit="pg_l"/>
+<p>nam explains (ironically) why he asks the last question.  A passion for art might, he suggests, excuse the theft of such an object as the Sappho, but the stealing of the bamboos was a wanton sacrilege.
+
+<milestone n="54.21" unit="pg_l"/>
+</p>
+<p>potius, etc., <gloss>rather than this most tasteful and cultivated</gloss> man.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">haberet</lem>
+</app>: §<bibl n="AG 444">444</bibl> (268); B. 277; G. 265; H. 559, 4 (484. v). H.-B. 503.
+
+<milestone n="54.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nimirum</lem>
+</app> (continuing the irony), <gloss>of course</gloss>.
+
+<milestone n="54.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nostrum</lem>
+</app>,<gloss>of us</gloss> (emph.), opp. to <gloss>Verres</gloss>.<pb n="321"/>
+<milestone n="54.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">eat</lem>
+</app> (hort. subj.), <gloss>must go</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ad aedem Felicitatis</lem>
+</app>: the temple of <foreign xml:lang="lat">Felicitas</foreign> was adorned with the spoils of conquered Corinth. Catulus had adorned his temple of <foreign xml:lang="lat">Fortuna</foreign>, and Metellus his portico, with splendid works of art.
+
+<milestone n="54.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">istorum</lem>
+</app>, Verres and his friends.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Tusculanum</lem>
+</app>,<gloss>villa at Tusculum</gloss> (about 15 miles southeast of Rome) where the wealthy Romans, Hortensius among the rest, had splendid country-houses.
+
+<milestone n="54.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ornatum</lem>
+</app>, i.e. as it was on festal days.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commodarit</lem>
+</app>,<gloss>lent</gloss>:  such works of art were often placed temporarily in the Forum; cf. our modern "loan exhibitions."
+
+<milestone n="54.31" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">operari</lem>
+</app>,<gloss>mere day-laborer</gloss>: said in contempt of Verres's pretensions to culture.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">studia</lem>
+</app>,<gloss>fine</gloss>
+<gloss>tastes</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">delicias</lem>
+</app>,<gloss>luxurious pleasures</gloss> (both ironical).
+
+<milestone n="55.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">appositior</lem>
+</app>,<gloss>better fitted</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ad ferenda</lem>
+</app>, etc., <gloss>to carry</gloss> (as a porter) <gloss>than to carry off</gloss> (as a connoisseur): a sarcasm on Verres's coarse and heavy build. </p>
+</div>
+<div type="textpart" n="17" corresp="urn:cts:latinLit:phi0474.phi005:4.127" subtype="section">
+<milestone n="55.5" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Graeculus</lem>
+</app>: in contemptuous allusion to his pretence of taste.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">subtiliter judicat</lem>
+</app>,<gloss>is a fine connoisseur of</gloss>.
+
+<milestone n="55.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nunc</lem>
+</app>,<gloss>now</gloss> (as it is) opposed to <app>
+<lem xml:lang="lat">si</lem>
+</app> . . .<app>
+<lem xml:lang="lat">tulisset</lem>
+</app>. 
+</p>
+</div>
+<div type="textpart" n="18" corresp="urn:cts:latinLit:phi0474.phi005:4.128" subtype="section">
+<milestone n="56.2" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">parinum</lem>
+</app> (corrupt and meaningless): the common reading is parvum; perhaps the old conjecture Parium, <gloss>of Parian marble</gloss>, is best.
+
+<milestone n="56.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Libero patre</lem>
+</app>: not <gloss>Liber his father</gloss>, but <gloss>father Liber</gloss>, pater being a common attribute of Liber as well as of Mars and other gods. <app>
+<lem xml:lang="lat">Liberi filius</lem>
+</app> (1.6) is spurious. </p>
+</div>
+<div type="textpart" n="19" corresp="urn:cts:latinLit:phi0474.phi005:4.129" subtype="section">
+<milestone n="56.9" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">Jovem</lem>
+</app>: the statue was of Zeus <foreign xml:lang="grc">ou)/rios</foreign>, god of favorable weather, identified, from some fancied resemblance, with <foreign xml:lang="lat">Juppiter imperator</foreign>.
+
+<milestone n="56.10" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">suo</lem>
+</app>: the emphatic position continues the emphasis on <app>
+<lem xml:lang="lat">Jovem</lem>
+</app>.<pb n="322"/>
+<milestone n="56.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Flamininus</lem>
+</app>: T. Quinctius Flamininus, who defeated Philip of Macedon at Cynoscephalae, <date when="-0197">B.C. 197</date>.
+
+<milestone n="56.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in Ponti ore</lem>
+</app>: the Thracian Bosporus, the strait extending from Constantinople to the Black Sea, about 1 7 miles.
+
+<milestone n="56.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sua</lem>
+</app>: §<bibl n="AG 301">301</bibl>, b (196, c); cf. B. 244, 4; G. 309, 2; H. 503, 2 (449, 2); H.-B. 264, 2.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Capitolio</lem>
+</app>: the Capitol, or Temple of Jupiter Capitolinus, had three <foreign xml:lang="lat">cellae</foreign>, or chapels, sacred to the Capitolian triad, Jupiter, Juno, and Minerva.  This was now the most illustrious temple, "the earthly abode," of Jupiter. </p>
+</div>
+<div type="textpart" n="4.130" subtype="section">
+<milestone n="56.24" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">incolae</lem>
+</app>,<gloss>residents</gloss>, i.e. persons of foreign birth who made Syracuse their home, without having obtained citizenship ; advenae (next line), <gloss>visitors</gloss>. 
+</p>
+</div>
+<div type="textpart" n="4.131" subtype="section">
+<milestone n="56.28" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">adventu</lem>
+</app>, abl. of cause.
+
+<milestone n="57.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">mensas Delphicas</lem>
+</app>: tables with three legs, like the Delphic tripod (see Figs. 13, 14); vasa Corinthia were made of a kind of bronze, of peculiar beauty and very costly.  </p>
+</div>
+</div>
+<div type="textpart" n="4.132-4.135" subtype="section">
+<p>Robberies of works of art are especially odious to men of Greek blood.
+</p>
+<div type="textpart" n="4.132" subtype="section">
+<milestone n="57.17" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">levia et contemnenda</lem>
+</app>: cf. note on <ref n="pl53.30">p. 53, l. 30</ref>.
+
+<milestone n="57.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fanorum</lem>
+</app>,<gloss>shrines</gloss>: the word indicates the consecrated spot rather than the temple or altar erected upon it. </p>
+</div>
+<div type="textpart" n="4.133" subtype="section">
+<milestone n="57.27" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nisi forte</lem>
+</app>: introducing, as usual, an absurd supposition.
+
+<milestone n="57.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">desierunt</lem>
+</app>,<gloss>ceased</gloss>, i.e. by the transference of the courts to the Senators.
+
+<milestone n="58.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Crasso</lem>
+</app>: L. Licinius Crassus, the famous orator, and Quintus Scaevola, <gloss>pontifex maximus</gloss>, the famous jurist and statesman, were close friends, and colleagues in nearly every office.  They were curule aediles, <date when="-0103">B.C. 103</date>, and gave the first exhibition of lion-fights.  The splendor of their aedileship was the work of Crassus, a man of elegant and luxurious tastes, while Scaevola was moderate and simple in his habits.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Claudio</lem>
+</app>: probably a brother of Claudia, the wife of Tiberius Gracchus. In his aedileship, <date when="-0099">B.C. 99</date>, he exhibited fights of elephants.
+
+<milestone n="58.4" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commercium</lem>
+</app>: Crassus and Claudius would have bought such objects of art if anybody could have done it.
+
+<milestone n="58.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fuisse</lem>
+</app>, sc. <foreign xml:lang="lat">commercium</foreign>. 
+</p>
+</div>
+<div type="textpart" n="4.134" subtype="section">
+<milestone n="58.9" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">referri</lem>
+</app>,<gloss>be entered</gloss>, has for subject <app>
+<lem xml:lang="lat">pretio . . . abalienasse</lem>
+</app>.
+
+<milestone n="58.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rebus istis</lem>
+</app>,<gloss>things of that sort</gloss>.
+
+<milestone n="58.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">apud illos</lem>
+</app>, i.e. the Greeks generally. </p>
+</div>
+<div type="textpart" n="4.135" subtype="section">
+<milestone n="58.19" unit="pg_l"/>
+<p>The cities referred to in this section were all centres of Greek art or celebrated for the possession of some masterpiece.  Reginos: Rhegium, <gloss>Reggio</gloss>, was a very ancient Greek city at the point of Italy nearest Sicily.  It was a colony of Chalcis, probably founded in the eighth century B.C., and became a Roman <foreign xml:lang="lat">municipium</foreign> after the Social War, <date from="-0091" to="-0090">
+<date when="-0091">B.C. 91</date>-90</date>.
+
+<milestone n="58.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">merere velle</lem>
+</app>,<gloss>would take</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">illa</lem>
+</app>,<gloss>that famous</gloss>.
+
+<milestone n="58.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Tarentinos</lem>
+</app>: Tarentum was the largest Greek city in Italy, a colony of Sparta, founded in the eighth century B.C., subjugated by Rome just after the invasion of Pyrrhus, <date when="-0272">B.C. 272</date>.
+
+<milestone n="58.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Cnidios . . . Coos</lem>
+</app>: observe the chiasm.
+
+<milestone n="58.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">buculam</lem>
+</app>: the celebrated bronze cow of Myron.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">longum</lem>
+</app> est, <gloss>it would be tedious</gloss>: §<bibl n="AG 522">522</bibl>, a (311, c) ; B. 304, 3 ; G. 254, R.1 ; H. 525, 2 (476,5); H.-B. 582, 3, b.   </p>
+</div>
+</div>
+</div>
+</div>
+<!-- More from the Second Verrine -->
+<div type="commentary" subtype="speech" n="2">
+<head>Crucifiction of a Roman Citizen</head>
+<div type="textpart" subtype="chapter" n="5">
+<div type="textpart" subtype="section">
+<div type="textpart" n="5.159" subtype="section">
+<milestone n="59.1" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">nunc</lem>
+</app>, opposed to the time of the <foreign xml:lang="lat">actio prima</foreign>, which he has just referred to.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">uno genere</lem>
+</app>,<gloss>this one class</gloss> of crimes.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tot horas . . . dicam</lem>
+</app>: §<bibl n="AG 466">466</bibl> (276, a) ; B. 259, 4; G. 230; H. 533 (467, iii, 2); H.-B. 485.
+
+<milestone n="59.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tenerem</lem>
+</app>: for tense, see § <bibl n="AG 485">485</bibl>,j (287, i); B. 268,7, b; G. 511, R.2; H. 547, I (495, i) ; cf. H.-B. 481.  <pb n="324"/>
+<milestone n="59.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">de tanta re</lem>
+</app>, etc.: Cicero has now arrived at the climax of his accusation: the case of Gavius is so outrageous that it would require all his powers to characterize it.  But, he says, he has already used the strongest language of which he is master in describing other and less heinous crimes, and he has not attempted to keep the attention of the jurors by variety in the charges  What then can he do to make this horrible case, the most abominable of the crimes of Verres sufficiently impressive?  There is but one thing left to do he will <gloss>tell the bare facts</gloss>, which need no eloquence to emphasize them.
+
+<milestone n="59.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">rem</lem>
+</app> (emphat.), <gloss>the bare facts</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in medio</lem>
+</app>,<gloss>before you</gloss>. 
+</p>
+</div>
+<div type="textpart" n="5.160" subtype="section">
+<milestone n="59.10" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">in illo numero</lem>
+</app> Cicero has been describing the treatment of a number of fugitives from the insurrectionary army of Sertorius in Spain who had made their way to Sicily after the death of Sertorius, <date when="-0072">B.C. 72</date>, and the overthrow of his faction by Pompey
+
+<milestone n="59.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">lautumiis</lem>
+</app>,<gloss>the stone pits</gloss> (ancient quarries) at Syracuse used as a prison.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Messanam</lem>
+</app> (now (<gloss>Messina</gloss>) the point of Sicily nearest Italy  Messana founded as a Greek colony in the eighth century B.C., was at this time one of the very few privileged towns (<foreign xml:lang="lat">civitates foederatae</foreign>) of Sicily.  It was specially favored by Verres, and, according to Cicero, was an accomplice of his iniquities. Fig. 15 shows a representation of the <gloss>pharos</gloss> (lighthouse) of Messana from a coin of Sex. Pompey ; the reverse has a representation of Scylla.
+
+<milestone n="59.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Reginorum</lem>
+</app>: Rhegium is almost in sight of Messana
+
+<milestone n="59.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">odore</lem>
+</app>,<gloss>breath</gloss>.
+
+<milestone n="59.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">recta</lem>
+</app>, sc. <foreign xml:lang="lat">via</foreign>.
+
+<milestone n="59.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in praetorio</lem>
+</app>,<gloss>the house</gloss> (or <gloss>official residence</gloss>)<gloss>of the</gloss> praetor.
+
+<milestone n="59.23" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">adjutricem</lem>
+</app>, etc.: § <bibl n="AG 282">282</bibl>, c (184, ,b); B. 169,3; G. 321; H.393, I (363, I); H.-B. 319.
+
+<milestone n="59.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">magistratum Mamertinum</lem>
+</app>,<gloss>a magistrate of Messana</gloss>: the city of Messana had been treacherously taken possession of by a body of mercenaries, who called themselves <gloss>Mamertini</gloss> (children of Mars), about <date when="-0282">B.C. 282</date>.  Though the name of the city was not changed, its citizens were from this time called <gloss>Mamertini</gloss>. 
+</p>
+</div>
+<div type="textpart" n="5.161" subtype="section">
+<milestone n="60.10" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">exspectabant</lem>
+</app>,<gloss>were on the watch to see</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quo tandem</lem>
+</app>,<gloss>how far</gloss>:<app>
+<lem xml:lang="lat">tandem</lem>
+</app> (as also <app>
+<lem xml:lang="lat">nam</lem>
+</app>) gives a sense of <gloss>wonder</gloss> to the question.  <pb n="325"/>
+<milestone n="60.13" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">expediri</lem>
+</app>,<gloss>to be got ready</gloss>, i.e. by untying the <foreign xml:lang="lat">fasces</foreign> (rods and axe), which were the badge of the praetor's <foreign xml:lang="lat">imperium</foreign>.
+
+<milestone n="60.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">meruisse</lem>
+</app> (sc. <foreign xml:lang="lat">stipendia</foreign>),<gloss>served</gloss> as a soldier.
+
+<milestone n="60.15" unit="pg_l"/>
+</p>
+<p>Panhormi (<gloss>all harbor</gloss>). 
+</p>
+<p>
+<app>
+<lem xml:lang="lat">negotiaretur</lem>
+</app>, i.e. as head or agent of some house engaged in speculation (cf. Verr. 1, sect. <bibl n="Cic. Ver. 1.1.20">20</bibl>).  This kind of business was generally carried on by Roman <foreign xml:lang="lat">equites</foreign>, and on a large scale.
+
+<milestone n="60.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fugitivorum</lem>
+</app>,<gloss>runaway slaves</gloss>, who had been concerned in the frightful servile war of Spartacus, <date from="-0073" to="-0071">B.C. 73-71</date>.
+
+<milestone n="60.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">esset</lem>
+</app>: subj. of characteristic. </p>
+</div>
+<div type="textpart" n="5.162" subtype="section">
+<milestone n="60.21" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">caedebatur</lem>
+</app>: observe the emphatic position. This imperf. and those following make a lively description of the scene instead of a mere statement of the facts.
+
+<milestone n="61.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">audiebatur</lem>
+</app>,<gloss>could be</gloss>
+<gloss>heard</gloss>: §<bibl n="AG 471">471</bibl>, f (277, g); G. 233.
+
+<milestone n="61.2" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">commemoratione</lem>
+</app>,<gloss>claim</gloss>.
+
+<milestone n="61.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">pestem</lem>
+</app>,<gloss>accursed thing</gloss>. 
+</p>
+</div>
+<div type="textpart" n="5.163" subtype="section">
+<milestone n="61.10" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">lex Porcia</lem>
+</app>: this forbade the scourging of citizens.  <pb n="326"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">leges Semproniae</lem>
+</app> (of Caius Gracchus): these gave Roman citizens the right of appeal to the judgment of the whole people in capital cases, even against the <gloss>military imperium</gloss>.  In <gloss>civil</gloss> life this right had existed ever since the foundation of the republic.  Cf., in English law, the right of trial "by one's peers."
+
+<milestone n="61.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">tribunicia potestas</lem>
+</app> see note on Veri 1 sect 44 (p 43,1 3 )
+
+<milestone n="61.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">non inhibebat</lem>
+</app>  Cf note on <app>
+<lem xml:lang="lat">audiebatur</lem>
+</app> (1 1)
+
+<milestone n="61.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut</lem>
+</app> (interrog), <gloss>how</gloss>
+<milestone n="61.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Glabrionem</lem>
+</app> subject of <app>
+<lem xml:lang="lat">facere</lem>
+</app>
+<milestone n="61.26" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ut . . .  dimitteret</lem>
+</app> result clause, in appos with <app>
+<lem xml:lang="lat">id</lem>
+</app>.
+
+<milestone n="61.27" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">consilium</lem>
+</app>
+<gloss>jury</gloss>  he feared that the lynch law would get the start of a legal verdict
+
+<milestone n="61.28" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">repetisse</lem>
+</app>,<gloss>inflicted</gloss> (lit. <gloss>exacted</gloss>, punishment being regarded as <gloss>a forfeit</gloss>).
+
+<milestone n="61.29" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">veritus esset</lem>
+</app> has for its subject <app>
+<lem xml:lang="lat">populus Romanus</lem>
+</app>. Observe the exactness of tense-relations expressed by the pluperf. and the periphrastic <app>
+<lem xml:lang="lat">esset persoluturus</lem>
+</app>,<gloss>was not likely to pay</gloss>. 
+</p>
+</div>
+<div type="textpart" n="5.164" subtype="section">
+<milestone n="62.2" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quid . . . sit</lem>
+</app>,<gloss>what will happen to you</gloss>.
+
+<milestone n="62.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">Gavium istum</lem>
+</app>,<gloss>that G. of yours</gloss> (i.e. the G. whom you misrepresent).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">repentinum</lem>
+</app>,<gloss>suddenly discovered</gloss>.
+
+<milestone n="62.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">neque</lem>
+</app>, etc., <gloss>and this I will show</gloss>, etc.  Notice that in Latin the connective attracts the negative whenever it can.
+
+<milestone n="62.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">aliquis</lem>
+</app>: Gavius was a very common name in South Italy.
+
+<milestone n="62.8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ad arbitrium tuum</lem>
+</app>,<gloss>at your discretion</gloss> (i.e. as many as you like).
+
+<milestone n="62.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sero</lem>
+</app>,<gloss>too late</gloss> (for you, but not too late for the court).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">judices</lem>
+</app>, obj. of doceant. </p>
+</div>
+<div type="textpart" n="5.165" subtype="section">
+<milestone n="62.15" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">patronis</lem>
+</app>: see note on Rosc. Am., <ref n="pl3.17">p. 3, l. 17</ref>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">istuc ipsum</lem>
+</app>,<gloss>that single fact</gloss>.
+
+<milestone n="62.17" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">nuper tu</lem>
+</app>, etc.: of course an imaginary incident, since this oration was never delivered.
+
+<milestone n="62.19" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ideo</lem>
+</app>,<gloss>for this reason</gloss>, i.e. <app>
+<lem xml:lang="lat">quod . . . quaereret</lem>
+</app>.
+
+<milestone n="62.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">jam</lem>
+</app>, i.e. after you have said that.
+
+<milestone n="62.24" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">ex eo genere</lem>
+</app>: explained by the clause <app>
+<lem xml:lang="lat">non qui . . . dicerent</lem>
+</app> (characteristic). </p>
+</div>
+<div type="textpart" n="5.166" subtype="section">
+<milestone n="63.2" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">induatur</lem>
+</app>, etc.: § <bibl n="AG 156">156</bibl>, a (111, a) ; B. 175, 2, d; G. 218; H. 407 (377); H.-B. 288, 3; <gloss>tie himself up and strangle himself</gloss> (as in a noose) ; Cf. our "give the man rope enough and hell hang himself."
+
+<milestone n="63.3" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">qui esset</lem>
+</app>,<gloss>what he was</gloss> (i.e. whether a citizen or not).  <pb n="327"/>
+<milestone n="63.5-8" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">si . . . ducerere</lem>
+</app>,<app>
+<lem xml:lang="lat">quid . . . clamitares</lem>
+</app>, etc.: in this past condition, cont. to fact, the imperf. is used instead of the pluperf., because the supposition is general rather than particular ; § <bibl n="AG 517">517</bibl>, a (308, a) ; G. 597, R.1 ; H. 579, I (510, N.2) ; H.-B. 581; <gloss>if you, caught</gloss>, etc. <gloss>had ever been in the hands of men who were dragging you off to punishment, what other cry would you have raised than, "I am a Roman citizen"?</gloss>
+<milestone n="63.11" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">profuisset</lem>
+</app>,<gloss>would have availed</gloss>, i.e. in the case supposed (as defined in the preceding sentence):  thus <app>
+<lem xml:lang="lat">profuisset</lem>
+</app> involves its own protasis; § <bibl n="AG 522">522</bibl> (311); B. 305, 1; G. 600, 1; H. 575, 9 (507, N.7); H.-B. 582, 4.  It is a complete proposition, which is made conditional by <app>
+<lem xml:lang="lat">si</lem>
+</app>; §<bibl n="AG 523">523</bibl> (311, d) ; H.-B. 582,4: it is also made the protasis of a new apod., <app>
+<lem xml:lang="lat">potuit</lem>
+</app>, 1.15; § <bibl n="AG 522">522</bibl>, a (311, c); B. 304, 3; G. 597, R.3, a; H. 583 (511, I, N.3) ; H.-B. 582, 3, a.
+
+<milestone n="63.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">qui</lem>
+</app>, concessive ; <app>
+<lem xml:lang="lat">cum</lem>
+</app>, causal.
+
+<milestone n="63.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">usurpatione</lem>
+</app>,<gloss>claim</gloss> (lit. <gloss>using</gloss> the word). </p>
+</div>
+<div type="textpart" n="5.167" subtype="section">
+<milestone n="63.18" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">quo</lem>
+</app> =<app>
+<lem xml:lang="lat">ad quos</lem>
+</app>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cognitoribus</lem>
+</app>,<gloss>vouchers</gloss>.
+
+<milestone n="63.20" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">legum existimationis</lem>
+</app>, obj. gen. with <app>
+<lem xml:lang="lat">periculo</lem>
+</app>.
+
+<milestone n="63.21" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">continentur</lem>
+</app>,<gloss>are restrained</gloss>.
+
+<milestone n="63.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">sermonis . . . societate</lem>
+</app>,<gloss>by fellowship in language, rights, and interests</gloss>. 
+</p>
+</div>
+<div type="textpart" n="5.168" subtype="section">
+<milestone n="64.2" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">tolle</lem>
+</app>, a sort of protasis: § <bibl n="AG 521">521</bibl>, b (310, b) ; B. 305, 2; G. 598; H. 560, 3 (487, 3); H.-B. 497, 2 ; the apod. is <app>
+<lem xml:lang="lat">jam</lem>
+</app> . . .<app>
+<lem xml:lang="lat">praecluseris</lem>
+</app> (ll.6-9, below).
+
+<milestone n="64.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quod velit</lem>
+</app> (subj. of integral part), <gloss>any he pleases</gloss>.
+
+<milestone n="64.6" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quod . . . ignoret</lem>
+</app>,<gloss>because one may not know him</gloss>.
+
+<milestone n="64.7" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">liberas civitates</lem>
+</app>: the allied states in the provinces, which were not strictly under the jurisdiction of the praetors.
+
+<milestone n="64.9" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">praecluseris</lem>
+</app>, fut. perf.
+
+<milestone n="64.12" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">adservasses</lem>
+</app>,<gloss>you might have kept</gloss>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">custodiis</lem>
+</app>: abl. of means.
+
+<milestone n="64.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">cognosceret</lem>
+</app>,<gloss>should he know</gloss>: equiv. to a protasis with <app>
+<lem xml:lang="lat">si</lem>
+</app> ; §<bibl n="AG 521">521</bibl>, b (330, b) ; B. 305, 2; G. 598; H. 573, N. (507, iii, i); H.-B. 504, l.
+
+<milestone n="64.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">si ignoraret</lem>
+</app>: Cicero here ironically lays down, under the form of a calm and reasonable alternative, the principle that Verres might crucify any Roman citizen whom he did not personally know and who could not furnish a rich man to identify him.
+
+<milestone n="64.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">hoc juris</lem>
+</app>: §<bibl n="AG 346">346</bibl>, a, 3 (216, a, 3); B. 201,2; G. 369; H. 442,1 (397, 3); H.-B. 346.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">at . . . tolleretur</lem>
+</app>: clause of purpose. </p>
+</div>
+<div type="textpart" n="5.169" subtype="section">
+<milestone n="64.21" unit="pg_l"/>
+<p>
+<app>
+<lem xml:lang="lat">hostis</lem>
+</app>, i.e. by his acts he has virtually declared himself the open enemy of the state as if he were a foreign power  <pb n="328"/>
+  making war on the rights of Roman citizens (hence <foreign xml:lang="lat">hostis</foreign> rather than <foreign xml:lang="lat">inimicus</foreign>).
+</p>
+<p>
+<app>
+<lem xml:lang="lat">non illi</lem>
+</app>: both words are emphatic, <gloss>it is not to this person</gloss> (in particular) <gloss>but to</gloss>, etc., <gloss>that you were hostile</gloss>.
+
+<milestone n="64.22" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quid enim attinuit</lem>
+</app>, etc., for <gloss>what did it have to do with the case that you should order</gloss>, etc.: why should you have ordered, etc., unless by these gratuitous severities you wished to show your hatred of the very name of citizen?
+
+<milestone n="64.25" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">fretum</lem>
+</app>, the <gloss>strait</gloss> of Messina.
+
+<milestone n="64.32" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">divisa</lem>
+</app>,<gloss>thus divided</gloss>.
+
+<milestone n="65.1" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">alumnum</lem>
+</app>,<gloss>foster-child</gloss>, i.e. adopted citizen.
+
+<milestone n="65.4" unit="pg_l"/>
+</p>
+<p> Observe the double climax: <app>
+<lem xml:lang="lat">facinus</lem>
+</app>,<app>
+<lem xml:lang="lat">scelus</lem>
+</app>,<app>
+<lem xml:lang="lat">parricidium</lem>
+</app> ;<app>
+<lem xml:lang="lat">vincire</lem>
+</app>,<app>
+<lem xml:lang="lat">verberare</lem>
+</app>,<app>
+<lem xml:lang="lat">necare</lem>
+</app>.  For the crucifixion of a citizen Cicero can find no word strong enough ; hence the summit of the climax is reached in quid dicam?
+
+<milestone n="65.5" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">parricidium</lem>
+</app>: for the horror with which this crime was regarded by the Romans, see Rosc. Am., sects. <bibl n="Cic. Ver. 2.2.28">28</bibl>,<bibl n="Cic. Ver. 2.2.29">29</bibl>.
+
+<milestone n="65.14" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">in comitio</lem>
+</app>: i.e. publicly in Rome and in the very centre of Roman freedom and Roman life.  The <foreign xml:lang="lat">comitium</foreign> was an open space north of the Forum, on higher ground (see Plan of Forum, top) ; it was used for the most ancient <foreign xml:lang="lat">comitia</foreign>, the <foreign xml:lang="lat">curiata</foreign> (in which the people were assembled by the thirty hereditary <foreign xml:lang="lat">curiae</foreign>), for hearing lawsuits, and for <foreign xml:lang="lat">contiones</foreign>.  The <foreign xml:lang="lat">curia</foreign>, or Senate-house, fronted toward the <foreign xml:lang="lat">comitium</foreign>.
+</p>
+<p>
+<app>
+<lem xml:lang="lat">quod</lem>
+</app>, i.e. <gloss>that point which</gloss>.
+
+<milestone n="65.15" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">celebritate</lem>
+</app>, i.e. as being a crowded thoroughfare.
+
+<milestone n="65.16" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">potuit</lem>
+</app>, sc. <gloss>fieri</gloss>.
+
+<milestone n="65.18" unit="pg_l"/>
+</p>
+<p>
+<app>
+<lem xml:lang="lat">praetervectione</lem>
+</app>, etc., <gloss>on the track of all who sail to and fro</gloss> (by the Strait of Messina, the necessary route to Greece). </p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

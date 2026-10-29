@@ -1,0 +1,25 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:latinLit:sec00009"
+    urn="urn:cts:latinLit:sec00009.sec002"
+    xml:lang="eng"
+>
+    <ti:title xml:lang="eng">"Impeachment of Verres" in Select Orations of Cicero, Allen and
+        Greenough's Edition.</ti:title>
+    <!--
+      The commentary node has three attributes :
+        - The first one, workUrn, contains only the urn up to the work component
+        - The second, urn, contains the full urn
+        - The third, xml:lang, contains the language of the commentary
+    -->
+    <ti:commentary workUrn="urn:cts:latinLit:sec00009.sec002"
+        urn="urn:cts:latinLit:sec00009.sec002.perseus-eng1" xml:lang="eng">
+        <ti:label xml:lang="eng">"Impeachment of Verres" in Select Orations of Cicero, Allen and
+            Greenough's Edition.</ti:label>
+        <ti:label xml:lang="lat">In C. Verrem</ti:label>
+        <ti:description xml:lang="eng">"Impeachment of Verres" in Allen and Greenough's Select
+            Orations,
+            edited
+            by J. B. Greenough and G. L. Kittredge </ti:description>
+        <ti:about urn="urn:cts:latinLit:phi0474" />
+    </ti:commentary>
+</ti:work>
